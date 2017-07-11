@@ -1,0 +1,31 @@
+ActionBar {
+    background-color:  #3C5AFD;
+    color: white;
+}
+StackLayout{
+    
+    color:red;
+}
+
+TabView{
+    tab-text-color: #00b9e6;
+}
+#float-btn{
+    
+    background-color: #30bcff;
+    width:56;
+    height:56;
+    text-align:center;
+    vertical-align: middle;
+    margin-top: 80%;
+    margin-left: 80%;
+    border-radius: 50%;
+    margin-bottom: 20;
+    z-index:1003;
+}
+#float-btn-txt{
+    color:#ffffff;
+    font-size:36;
+    margin-top:-4;
+    
+}

@@ -1,0 +1,36 @@
+<!--
+<ActionBar title="GetFit1st" class="">
+    <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
+    
+    <ActionItem text="Activity" ios.position="right" android.position="popup" color="#8C489F"></ActionItem>
+    <ActionItem text="Account" ios.position="right" android.position="popup" color="#8C489F"></ActionItem>
+    <ActionItem text="Settings" ios.position="right" android.position="popup" color="#8C489F"></ActionItem>
+    <ActionItem text="Logout" ios.position="right" android.position="popup" color="#8C489F" (tap) = "logout()"></ActionItem>
+</ActionBar>
+-->
+
+
+<!-- >> tabview-html -->
+<TabView selectedIndex="0" (selectedIndexChange)="onIndexChanged($event)"  selectedTabTextColor="white" tabBackgroundColor="#3C5AFD" color="orange">
+	<StackLayout *tabItem="{title: '', iconSource: '~/Images/myTask_active.png'}">
+        <router-outlet name="mytaskoutlet"></router-outlet>
+	</StackLayout>
+	<StackLayout *tabItem="{title: '', iconSource:'~/Images/otherTask_active.png'}">
+       
+        <router-outlet name="othertaskoutlet"></router-outlet>
+	</StackLayout>
+    <StackLayout *tabItem="{title: '', iconSource: '~/Images/performance.png'}">
+       
+		<router-outlet name="performancekoutlet"></router-outlet>
+	</StackLayout>
+     <StackLayout *tabItem="{title: '', iconSource: '~/Images/maintenance.png'}">
+       
+		<router-outlet name="maintenanceoutlet"></router-outlet>
+	</StackLayout>
+    
+</TabView>
+<StackLayout id="float-btn">
+        <Label text="+" (tap)="create()" id="float-btn-txt"></Label>
+        
+    </StackLayout>
+<!-- << tabview-html -->
