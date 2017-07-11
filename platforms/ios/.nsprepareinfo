@@ -1,7 +1,7 @@
 {
-	"time": "Tue Jul 11 2017 17:46:11 GMT+1000 (AEST)",
+	"time": "Tue Jul 11 2017 18:07:21 GMT+1000 (AEST)",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": false,
-	"changesRequireBuildTime": "Tue Jul 11 2017 12:06:47 GMT+1000 (AEST)"
+	"changesRequireBuild": true,
+	"changesRequireBuildTime": "Tue Jul 11 2017 18:07:21 GMT+1000 (AEST)"
 }

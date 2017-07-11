@@ -1,0 +1,17 @@
+#register{
+    background-color: #1F497D;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 5;
+    padding-bottom: 5;
+}
+#registrationPageLayout{
+    background-color: #E6B8AF;
+    padding-top:20;
+}
+
+TextField{
+    min-height:30;
+    padding-left:5;
+    border-bottom: 2px solid red;
+}
