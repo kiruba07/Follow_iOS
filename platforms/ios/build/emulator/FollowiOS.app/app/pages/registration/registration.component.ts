@@ -11,6 +11,8 @@ import {
     remove,
     clear
 } from "application-settings";
+import firebase = require("nativescript-plugin-firebase");
+import { User } from "../../service/user";
 
 @Component({
   selector: "my-app",
@@ -18,19 +20,51 @@ import {
   styleUrls: ["pages/registration/registration-common.css", "pages/registration/registration.css"]
 })
 export class RegistrationComponent {
-  // Your TypeScript logic goes here
-   public noBoolKey: boolean;
+  // public noBoolKey: boolean;
    
+   user:User
    constructor(private router: Router) {
-    
-  }
+    this.user = new User();
+   }
   
   register(){
   
-  setBoolean("noBoolKey", true);
-        this.noBoolKey = hasKey("noBoolKey");
+  console.log("tapped");
+  console.log("User-----"+this.user.userName);
+  console.log("password----"+this.user.password);
+  console.log("phone number---"+this.user.phoneNumber);
+  var uName=this.user.userName;
+  var password=this.user.password;
+  var phoneNumber=this.user.phoneNumber;
+  
+   console.log("User-//////----"+uName);
+  console.log("password--/////--"+password);
+  console.log("phone number-//////--"+phoneNumber);
+  
+//firebase.createUser({
+  //  email: this.user.userName,
+    //password: this.user.password
+  //}).then(
+    //  function (result) {
+      //  console.log("Login success");
+      //},
+      //function (errorMessage) {
+        //console.log("Login failrue");
+      //}
+  //);
+  
+  //set db
+        firebase.push(
+              '/gfsfg',
+              {'username':uName}
+        ).then(function(result){
+            console.log("created key: " + result.key);
+        });
+    
+    //setBoolean("noBoolKey", true);
+       // this.noBoolKey = hasKey("noBoolKey");
         //console.log("Bool Key---"this.noBoolKey);
         
-        this.router.navigate(["/mainfragment"]);
+        //this.router.navigate(["/mainfragment"]);
   }
 }

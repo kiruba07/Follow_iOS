@@ -4,14 +4,15 @@
     font-weight: bold;
     padding-top: 5;
     padding-bottom: 5;
+    height:40;
 }
-#registrationPageLayout{
-    background-color: #E6B8AF;
-    padding-top:20;
+#fName,#lName,#eMail, #Password, #contactNumber{
+ margin-top: 3;
+  background-color: #E6B8AF;
+  border-bottom: 10px solid red;
+   padding-left:10;
+   min-height:45;
 }
-
-TextField{
-    min-height:30;
-    padding-left:5;
-    border-bottom: 2px solid red;
+#contactNumber{
+margin-bottom: 3;
 }

@@ -1,0 +1,7 @@
+<GridLayout rows="46,46,46,*,auto" id="gridlayout">
+        <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"></TextField>
+        <TextField row="1" id="category" [(ngModel)]="user.category" hint="Category"></TextField>
+        <TextField row="2" id="showDateTime" [(ngModel)]="user.dateTime" hint="Due Date & Time"></TextField>
+        <TextField row="3" id="assignee"  [(ngModel)]="user.assignee" hint="Assignee"></TextField>
+        <Button row="4" id="assignTask" (tap)="assignTask()"  text="Assign Task"></Button>
+</GridLayout>

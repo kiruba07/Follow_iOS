@@ -6,18 +6,20 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
+		214D251E6F6F4AB08AC982F4 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A30C52F448138767F4B6 /* TNSWidgets.framework */; };
+		2A29B872AFE944C08BFD886F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26389653B3EE4007834D5DDC /* Assets.xcassets */; };
+		4DEC5839F2F34E7C98EFBD00 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C185A30C52F448138767F4B6 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69DBB5B606C0496C9C0A6CEF /* TelerikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA050E342964A1EBB25EC75 /* TelerikUI.framework */; };
+		6BA2B0F236164465A6BB44E5 /* TelerikAppFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03876D3FDB9465383AE5CA8 /* TelerikAppFeedback.framework */; };
+		763DBA32CBBF4D418ABBC812 /* TelerikUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBA050E342964A1EBB25EC75 /* TelerikUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		8E08D5F8668B4E50962E87F6 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4E6CDCCBDE5941A6883600A7 /* build.xcconfig */; };
+		9D94CE96A66B4A84922A690F /* TelerikAppFeedback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E03876D3FDB9465383AE5CA8 /* TelerikAppFeedback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD8A2E36DD81401580B1000E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7DF2C04C4043F8AF96CB3B /* LaunchScreen.storyboard */; };
+		C2A84C9E9094DA0837846335 /* Pods_FollowiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEB293D1691CD737D83CCF3 /* Pods_FollowiOS.framework */; };
 		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
 		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
-		4F0DA2FE1E4545A997762C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B1E12931214BB593DAB4C2 /* Assets.xcassets */; };
-		0333404A2D694735BAF77DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00E6F1C5FDC4591BDE88AC2 /* LaunchScreen.storyboard */; };
-		985126F5374043EA9D99867C /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BD26E896EAB5432BBB60E707 /* build.xcconfig */; };
-		35DB8C221FA04421B71FCD24 /* TelerikAppFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB080D5823824074A8623580 /* TelerikAppFeedback.framework */; };
-		FD86C34974CE491EAD791263 /* TelerikAppFeedback.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB080D5823824074A8623580 /* TelerikAppFeedback.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F4DD84F58C824744BE4DDAC4 /* TelerikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F12951577D044DFBBE88B3D /* TelerikUI.framework */; };
-		11D6847A77A348389E7E9CD4 /* TelerikUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F12951577D044DFBBE88B3D /* TelerikUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4ECBAE3B07A9471CBE10E334 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9B46026E44519097E309 /* TNSWidgets.framework */; };
-		38FD8CD6AC004454A890839F /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9B46026E44519097E309 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D25AF167B2DD44818103164A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242586A03AD4489085E4AA59 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +29,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD86C34974CE491EAD791263 /* TelerikAppFeedback.framework in Embed Frameworks */,
-				11D6847A77A348389E7E9CD4 /* TelerikUI.framework in Embed Frameworks */,
-				38FD8CD6AC004454A890839F /* TNSWidgets.framework in Embed Frameworks */,
+				9D94CE96A66B4A84922A690F /* TelerikAppFeedback.framework in Embed Frameworks */,
+				763DBA32CBBF4D418ABBC812 /* TelerikUI.framework in Embed Frameworks */,
+				4DEC5839F2F34E7C98EFBD00 /* TNSWidgets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,22 +39,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		242586A03AD4489085E4AA59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = "GoogleService-Info.plist"; path = "FollowiOS/Resources/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26389653B3EE4007834D5DDC /* Assets.xcassets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Assets.xcassets; path = FollowiOS/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		4E6CDCCBDE5941A6883600A7 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = build.xcconfig; path = FollowiOS/Resources/build.xcconfig; sourceTree = "<group>"; };
+		5B7DF2C04C4043F8AF96CB3B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = FollowiOS/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		679F54E11F1E181800BCD936 /* FollowiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FollowiOS.entitlements; sourceTree = "<group>"; };
 		858B832E18CA111C00AB12DE /* FollowiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B833918CA111C00AB12DE /* FollowiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FollowiOS-Info.plist"; sourceTree = "<group>"; };
 		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		858B833F18CA111C00AB12DE /* FollowiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FollowiOS-Prefix.pch"; sourceTree = "<group>"; };
 		858B843318CA22B800AB12DE /* FollowiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEB293D1691CD737D83CCF3 /* Pods_FollowiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FollowiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C185A30C52F448138767F4B6 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		CBA050E342964A1EBB25EC75 /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios/TelerikUI.framework"; sourceTree = "<group>"; };
 		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
 		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
 		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
 		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
-		24B1E12931214BB593DAB4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = Assets.xcassets; path = "FollowiOS/Resources/Assets.xcassets"; sourceTree = "<group>"; fileEncoding = 4; };
-		C00E6F1C5FDC4591BDE88AC2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = "FollowiOS/Resources/LaunchScreen.storyboard"; sourceTree = "<group>"; fileEncoding = 4; };
-		BD26E896EAB5432BBB60E707 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = build.xcconfig; path = "FollowiOS/Resources/build.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; };
-		AB080D5823824074A8623580 /* TelerikAppFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikAppFeedback.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios/TelerikAppFeedback.framework"; sourceTree = "<group>"; };
-		6F12951577D044DFBBE88B3D /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios/TelerikUI.framework"; sourceTree = "<group>"; };
-		864B9B46026E44519097E309 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		E03876D3FDB9465383AE5CA8 /* TelerikAppFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikAppFeedback.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios/TelerikAppFeedback.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DB8C221FA04421B71FCD24 /* TelerikAppFeedback.framework in Frameworks */,
-				F4DD84F58C824744BE4DDAC4 /* TelerikUI.framework in Frameworks */,
-				4ECBAE3B07A9471CBE10E334 /* TNSWidgets.framework in Frameworks */,
+				6BA2B0F236164465A6BB44E5 /* TelerikAppFeedback.framework in Frameworks */,
+				69DBB5B606C0496C9C0A6CEF /* TelerikUI.framework in Frameworks */,
+				214D251E6F6F4AB08AC982F4 /* TNSWidgets.framework in Frameworks */,
+				C2A84C9E9094DA0837846335 /* Pods_FollowiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,7 @@
 				858B833718CA111C00AB12DE /* FollowiOS */,
 				858B833018CA111C00AB12DE /* Frameworks */,
 				858B832F18CA111C00AB12DE /* Products */,
+				DDB9C897E17EEE0A8C86FEAA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,9 +98,10 @@
 		858B833018CA111C00AB12DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB080D5823824074A8623580 /* TelerikAppFeedback.framework */,
-				6F12951577D044DFBBE88B3D /* TelerikUI.framework */,
-				864B9B46026E44519097E309 /* TNSWidgets.framework */,
+				E03876D3FDB9465383AE5CA8 /* TelerikAppFeedback.framework */,
+				CBA050E342964A1EBB25EC75 /* TelerikUI.framework */,
+				C185A30C52F448138767F4B6 /* TNSWidgets.framework */,
+				9EEB293D1691CD737D83CCF3 /* Pods_FollowiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 		858B833718CA111C00AB12DE /* FollowiOS */ = {
 			isa = PBXGroup;
 			children = (
+				679F54E11F1E181800BCD936 /* FollowiOS.entitlements */,
 				CD45EE7A18DC2D5800FB50C0 /* app */,
 				858B833818CA111C00AB12DE /* Supporting Files */,
 			);
@@ -121,12 +130,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DDB9C897E17EEE0A8C86FEAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E070579D1B39A9D000214BF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				24B1E12931214BB593DAB4C2 /* Assets.xcassets */,
-				C00E6F1C5FDC4591BDE88AC2 /* LaunchScreen.storyboard */,
-				BD26E896EAB5432BBB60E707 /* build.xcconfig */,
+				26389653B3EE4007834D5DDC /* Assets.xcassets */,
+				5B7DF2C04C4043F8AF96CB3B /* LaunchScreen.storyboard */,
+				4E6CDCCBDE5941A6883600A7 /* build.xcconfig */,
+				242586A03AD4489085E4AA59 /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -138,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "FollowiOS" */;
 			buildPhases = (
+				7BE0BB293874C492CCFF42BF /* [CP] Check Pods Manifest.lock */,
 				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
 				858B83F218CA22B800AB12DE /* Sources */,
 				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
@@ -145,6 +163,8 @@
 				858B842C18CA22B800AB12DE /* Resources */,
 				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
 				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+				C57800D65C6DC149CE829001 /* [CP] Embed Pods Frameworks */,
+				20C285EC381A265FB01F0FCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +184,17 @@
 				CLASSPREFIX = TNS;
 				LastUpgradeCheck = 500;
 				ORGANIZATIONNAME = Telerik;
+				TargetAttributes = {
+					858B83EF18CA22B800AB12DE = {
+						DevelopmentTeam = YAGJRBD6P5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "FollowiOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -189,15 +220,61 @@
 			files = (
 				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
 				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
-				4F0DA2FE1E4545A997762C40 /* Assets.xcassets in Resources */,
-				0333404A2D694735BAF77DFE /* LaunchScreen.storyboard in Resources */,
-				985126F5374043EA9D99867C /* build.xcconfig in Resources */,
+				2A29B872AFE944C08BFD886F /* Assets.xcassets in Resources */,
+				BD8A2E36DD81401580B1000E /* LaunchScreen.storyboard in Resources */,
+				8E08D5F8668B4E50962E87F6 /* build.xcconfig in Resources */,
+				D25AF167B2DD44818103164A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20C285EC381A265FB01F0FCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FollowiOS/Pods-FollowiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BE0BB293874C492CCFF42BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C57800D65C6DC149CE829001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FollowiOS/Pods-FollowiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,7 +362,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -322,7 +398,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -347,7 +422,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hariprakash Velappan (3BK6DZ9DTJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YAGJRBD6P5;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FollowiOS/FollowiOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -355,16 +439,11 @@
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/FollowiOS/FollowiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = FollowiOS;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
-					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
-				);
 			};
 			name = Debug;
 		};
@@ -375,20 +454,24 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hariprakash Velappan (3BK6DZ9DTJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YAGJRBD6P5;
 				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FollowiOS/FollowiOS-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/FollowiOS/FollowiOS-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = FollowiOS;
-				VALID_ARCHS = "armv7 arm64";
-				WRAPPER_EXTENSION = app;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
 					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui-pro/platforms/ios\"",
 					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FollowiOS/FollowiOS-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FollowiOS/FollowiOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = FollowiOS;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};

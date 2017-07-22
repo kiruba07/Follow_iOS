@@ -6,6 +6,7 @@ import { DataItemService } from "../../service/dataItem.service";
 import { ListViewEventData, RadListView } from "nativescript-telerik-ui-pro/listview";
 import { View } from "tns-core-modules/ui/core/view";
 
+
 @Component({
   selector: "my-app",
    providers: [DataItemService],
@@ -15,8 +16,9 @@ import { View } from "tns-core-modules/ui/core/view";
 export class MyTaskComponent implements OnInit
 {
     private _dataItems: ObservableArray<DataItem>;
-
-    constructor(private _dataItemService: DataItemService) {
+    
+    constructor(private _dataItemService: DataItemService,private router: Router) {
+        
     }
 
     get dataItems(): ObservableArray<DataItem> {
@@ -35,5 +37,9 @@ export class MyTaskComponent implements OnInit
     swipeLimits.left = leftItem.getMeasuredWidth();
     swipeLimits.right = rightItem.getMeasuredWidth();
     swipeLimits.threshold = leftItem.getMeasuredWidth() / 2;
-}
+   }
+   createTask(){
+
+    this.router.navigate(["/createtask"]);
+   }
 }

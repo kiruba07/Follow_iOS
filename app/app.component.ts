@@ -11,7 +11,7 @@ import {
     remove,
     clear
 } from "application-settings";
-
+import firebase = require("nativescript-plugin-firebase");
 
 @Component({
   selector: "main",
@@ -20,9 +20,25 @@ import {
 export class AppComponent {
 
  public noBoolKey: boolean;
+ 
   constructor(private router: Router){
     
+    firebase.init({
+      
+      persist: false,
+      
+    }).then(
+      (instance) => {
+        console.log("firebase.init done");
+      },
+      (error) => {
+        console.log("firebase.init error: " + error);
+      }
+    );
+//firebase.logout();
     this.noBoolKey = hasKey("noBoolKey");
+
+    //console.log("Bool val---"+getBoolean("noBoolKey"));
     if(this.noBoolKey)
     {
       console.log("Alreday registered ----");

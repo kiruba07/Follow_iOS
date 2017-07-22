@@ -6,9 +6,9 @@ Environment  LANG=en_US.US-ASCII PATH=/Applications/Xcode.app/Contents/Developer
 BuilderIdent ProcessPCH\ /Users/kirubanandh/Documents/TNS/Follow_iOS/platforms/ios/build/sharedpch/FollowiOS-Prefix-guyejpmqkgflwkethtvflltvzcep/FollowiOS-Prefix.pch.pch\ FollowiOS/FollowiOS-Prefix.pch\ normal\ i386\ objective-c\ com.apple.compilers.llvm.clang.1_0.compiler
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/SDKSettings.plist 0 1494473346 1893 33204
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/CoreServices/SystemVersion.plist 0 1493252971 418 33188
-InputFile    /Users/kirubanandh/Documents/TNS/Follow_iOS/platforms/ios/FollowiOS/FollowiOS-Prefix.pch 0 1499760329 236 33188
+InputFile    /Users/kirubanandh/Documents/TNS/Follow_iOS/platforms/ios/FollowiOS/FollowiOS-Prefix.pch 0 1499994050 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/SDKSettings.plist 0 1494473346 1893 33204
-InputFile    /Users/kirubanandh/Documents/TNS/Follow_iOS/platforms/ios/FollowiOS/FollowiOS-Prefix.pch 0 1499760329 236 33188
+InputFile    /Users/kirubanandh/Documents/TNS/Follow_iOS/platforms/ios/FollowiOS/FollowiOS-Prefix.pch 0 1499994050 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/include/Availability.h 0 1486049190 16257 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/include/AvailabilityInternal.h 0 1485390706 2638930 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h 0 1488862740 6943 33188
