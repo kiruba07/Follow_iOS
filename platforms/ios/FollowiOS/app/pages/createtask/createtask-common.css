@@ -1,4 +1,4 @@
-#gridLayout{
+#gridLayout,#checkboxToggle{
     font-family: 'FontAwesome',fontawesome-webfont;
 }
 #taskName,#category,#showDateTime,#assignee{

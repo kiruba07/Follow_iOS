@@ -9,5 +9,6 @@ export class User {
   category:string;
   dateTime:string;
   assignee:string[];
+  show:boolean;
 
 }

@@ -2,6 +2,25 @@
         <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"></TextField>
         <TextField row="1" id="category" [(ngModel)]="user.category" hint="Category"></TextField>
         <TextField row="2" id="showDateTime" [(ngModel)]="user.dateTime" hint="Due Date & Time"></TextField>
-        <TextField row="3" id="assignee"  [(ngModel)]="user.assignee" hint="Assignee"></TextField>
+        <TextField row="3" id="assignee"  [(ngModel)]="user.assignee" hint="Assignee" (tap)="selectAssignee()"></TextField>
+        
+
+        <RadListView  [items]="contactList" swipeActions="false" selectionBehavior="None" 
+         [visibility]="show">
+        <ng-template  let-item="item">
+                <StackLayout orientation="horizontal">
+
+                        <GridLayout rows="*" columns="35,*" id="contactGridLayout">                         
+                        <Label row="0" col="0" cssClass="uncheck" text="&#xf096; " id="checkboxToggle"></Label>
+                        <Label row="0" col="1"  id="contactName" [text]="item.name"></Label>
+                        </GridLayout>
+                
+                </StackLayout>
+        </ng-template>
+        </RadListView>
+
+
+
+
         <Button row="4" id="assignTask" (tap)="assignTask()"  text="Assign Task"></Button>
 </GridLayout>

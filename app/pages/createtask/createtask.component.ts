@@ -13,20 +13,48 @@ import {
     remove,
     clear
 } from "application-settings";
+import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { ListViewItems } from "../../service/listviewitems";
+import { Observable } from "data/observable";
+
 
 @Component({
   selector: "my-app",
   templateUrl: "pages/createtask/createtask.html",
   styleUrls: ["pages/createtask/createtask-common.css", "pages/createtask/createtask.css"]
 })
-export class CreateTaskComponent {
+export class CreateTaskComponent 
+{
   // Your TypeScript logic goes here
-  user: User
-  constructor(private router: Router){
+   user: User
+   contactList=new ObservableArray([]);
+   listViewItems:ListViewItems;
+    observable:Observable
+    show:string;
 
-    this.user = new User();
-   
-  }
+    constructor(private router: Router)
+    {
+        this.user = new User();
+        this.observable= new Observable;
+        this.listViewItems=new ListViewItems;
+        this.contactList=this.listViewItems.getContactList();
+        this.show="collapse";
+    }
+
+
+
+    selectAssignee(){
+        console.log("Tapped----");
+        if(this.show=="visible"){
+            this.show = 'collapse';
+        }
+        else{
+            this.show = 'visible';
+        }
+        
+        
+    }
+
   public assignTask() 
   {
 
@@ -88,7 +116,7 @@ export class CreateTaskComponent {
         var completionCount=0;
         var myCompletionStatus=0;
         var idTemp;
-        var assigneesSelected=["1234","7777"];
+        var assigneesSelected=["123456789","12345"];
         var devicePhoneNumber=getString("devicePhoneNumber");
         var deviceRegisteredUserName=getString("deviceRegisteredUserName");
         /** temporary values assigned need to chagne later */
