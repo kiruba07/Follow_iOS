@@ -25,28 +25,28 @@ export class ListViewItems
         if (!result.error) {
          //   console.log("Event type: " + result.type);
            // console.log("Key: " + result.key);
-            console.log("Value: " + JSON.stringify(result.value));
+            //console.log("Value: " + JSON.stringify(result.value));
             
 
             var resultJson=result.value;
                 for(var key in resultJson)
                 {
-                    console.log('key:::'+key);
+                    //console.log('key:::'+key);
                    // console.log('key:::'+resultJson[key]);
 
                     if(resultJson[key]==null || resultJson[key]=="null"){
-                        console.log("key is  null---");
+                      //  console.log("key is  null---");
                     }
                     else{
-                        console.log("key is not  null---");
+                       // console.log("key is not  null---");
                         var createdBy;
                         var taskName;
                         var dueDate;
                         var remainderCount;
                         var completionStatus;
                         
-                        console.log("value::::---createdBy------:::1------"+resultJson[key]["createdBy"]);
-                        console.log('key--------------'+key);
+                       // console.log("value::::---createdBy------:::1------"+resultJson[key]["createdBy"]);
+                        //console.log('key--------------'+key);
 
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
@@ -54,7 +54,7 @@ export class ListViewItems
                         resultJson[key]["remainderCount"]==null && 
                         resultJson[key]["completionStatus"]==null)
                         {
-                            console.log("value is null---");
+                            //console.log("value is null---");
                             //     console.log('key:::'+key);
                         // console.log("value::::---createdBy------:::"+key+'------'+createdBy);
                         // console.log("value::::----taskName-----:::"+key+'------'+taskName);
@@ -67,7 +67,7 @@ export class ListViewItems
                             
                         
 
-                        console.log("value is not null---");
+                        //console.log("value is not null---");
                             createdBy=resultJson[key]["createdBy"];
                             taskName=resultJson[key]["taskName"];
                             dueDate=resultJson[key]["dueDate"];
@@ -86,7 +86,7 @@ export class ListViewItems
                                 {
                                     "createdBy":createdBy , 
                                     "taskName":taskName, 
-                                    "dueDate": "03-08-2017 10:00AM",
+                                    "dueDate": dueDate,
                                     "remainderCount": remainderCount, 
                                     "completionStatus": "2/10" 
                                 },
@@ -132,32 +132,34 @@ export class ListViewItems
             {
                 //   console.log("Event type: " + result.type);
             // console.log("Key: " + result.key);
-                console.log("Value contact list------: " + JSON.stringify(result.value));
+               // console.log("Value contact list------: " + JSON.stringify(result.value));
                 var resultJson=result.value;
                 for(var key in resultJson)
                 {
                     console.log('key:::'+key);
                     if(resultJson[key]==null || resultJson[key]=="null")
                     {
-                        console.log("key is  null---");
+                        //console.log("key is  null---");
                         
                     }
                     else
                     {
-                        console.log("key is not  null---");
+                        //console.log("key is not  null---");
 
                         if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null)
                         {
-                            console.log("Value is null");
+                            //console.log("Value is null");
 
                         }
                         else
                         {
-                            console.log("Value is not null");
+                            //console.log("Value is not null");
                             contactList.push({
 
                                 "name":resultJson[key]["fName"]+" "+resultJson[key]["lName"],
-                                "number":key
+                                "number":key,
+                                "checkBox":"\u{f096}",
+                                "selected":false
 
                             });
                             console.log("Contact list----"+contactList);
