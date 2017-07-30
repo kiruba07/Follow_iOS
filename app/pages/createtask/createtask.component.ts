@@ -247,7 +247,7 @@ export class CreateTaskComponent
         var recipentsCount=1;
         var remainderCount=0;
         var completionCount=0;
-        var myCompletionStatus=0;
+        var myCompletionStatus=false;
         var idTemp;
        //var assigneesSelected=["123456789","12345"];
         //var assigneesSelected=this.selectedItems;

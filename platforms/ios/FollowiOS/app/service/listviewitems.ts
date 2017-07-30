@@ -88,7 +88,8 @@ export class ListViewItems
                                     "taskName":taskName, 
                                     "dueDate": dueDate,
                                     "remainderCount": remainderCount, 
-                                    "completionStatus": "2/10" 
+                                    "completionStatus": "2/10",
+                                    "key":key
                                 },
                             );
                         }

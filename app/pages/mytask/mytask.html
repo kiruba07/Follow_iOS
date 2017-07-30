@@ -1,5 +1,9 @@
 <GridLayout id="myTaskDetailsDock">
-    <RadListView  [items]="dataItems" swipeActions="true" selectionBehavior="None" (itemSwipeProgressStarted)="onSwipeCellStarted($event)">
+    <RadListView  #myListView  [items]="dataItems" swipeActions="true"
+     selectionBehavior="None"
+      (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
+      pullToRefresh="true" 
+      >
       <ng-template  let-item="item">
             <StackLayout orientation="vertical">
                 <GridLayout id="grid1" class="gridLayout" columns="28,*,80" rows="*,*,*">
@@ -22,11 +26,12 @@
 
             </StackLayout>
     </ng-template>
+        
         <GridLayout *tkListItemSwipeTemplate columns="70, *, 70" id="gridSwipe">
-            <StackLayout id="deleteView" col="0"  tap="onLeftSwipeClick">
+            <StackLayout id="deleteView" col="0"  (tap)="onLeftSwipeClick($event)">
                 <Label id="deleteIcon" text="&#xf1f8; "></Label>
             </StackLayout>
-            <StackLayout id="doneView" col="2"  tap="onLeftSwipeClick">
+            <StackLayout id="doneView" col="2"  (tap)="onRightSwipeClick($event)">
                 <Label id="doneIcon" text="&#xf058; " ></Label>
             </StackLayout>
         </GridLayout>
