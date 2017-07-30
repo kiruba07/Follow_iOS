@@ -21,7 +21,7 @@ import { DatePicker } from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import { Page } from "ui/page";
 
-
+import { RouterExtensions } from "nativescript-angular/router";
 
 
 @Component({
@@ -48,7 +48,7 @@ export class CreateTaskComponent
     datePickervalue:string;
     taskField;
     today=new Date();
-    constructor(private router: Router,private page: Page)
+    constructor(private router: Router,private page: Page,private routerExtensions: RouterExtensions)
     {
         this.user = new User();
         this.observable= new Observable;
@@ -61,6 +61,12 @@ export class CreateTaskComponent
         this.checkTry="check";
         
     }
+
+     public goBack() {
+         console.log("Back tapped");
+        this.routerExtensions.backToPreviousPage();
+    }
+
     hideDatePicker(args){
         console.log("tapped---");
         this.datePickerView = 'collapse';

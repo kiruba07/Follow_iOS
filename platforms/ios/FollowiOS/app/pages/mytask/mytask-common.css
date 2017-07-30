@@ -12,8 +12,21 @@
     margin-top:12;   
     font-size:17;
 }
-.gridLayout{
+/* .gridLayout{
     background-color:#CFE2F3;
+    margin-top: 3;
+    padding-left: 12;
+    padding-bottom:5;
+} */
+.completed{
+ background-color:#98FB98;
+ /* #00FF00 */
+    margin-top: 3;
+    padding-left: 12;
+    padding-bottom:5;
+}
+.notCompleted{
+ background-color:#CFE2F3;
     margin-top: 3;
     padding-left: 12;
     padding-bottom:5;

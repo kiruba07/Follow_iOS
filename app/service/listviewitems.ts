@@ -14,89 +14,129 @@ import { ObservableArray } from "tns-core-modules/data/observable-array";
 
 export class ListViewItems
 {
+
+    
     getMyTaskdetails()
     {
         var dataItems=new ObservableArray([]);
-        //this.dataItems;
-        var onQueryEvent = function(result) {
-        // note that the query returns 1 match at a time
-        // in the order specified in the query
+        
+
+        var onQueryEvent = function(result)
+        {
+        
         
         if (!result.error) {
-         //   console.log("Event type: " + result.type);
-           // console.log("Key: " + result.key);
-            //console.log("Value: " + JSON.stringify(result.value));
-            
-
+         
             var resultJson=result.value;
+            //for not comepleted items
                 for(var key in resultJson)
                 {
-                    //console.log('key:::'+key);
-                   // console.log('key:::'+resultJson[key]);
-
-                    if(resultJson[key]==null || resultJson[key]=="null"){
-                      //  console.log("key is  null---");
-                    }
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
                     else{
-                       // console.log("key is not  null---");
+                       
                         var createdBy;
                         var taskName;
                         var dueDate;
                         var remainderCount;
                         var completionStatus;
-                        
-                       // console.log("value::::---createdBy------:::1------"+resultJson[key]["createdBy"]);
-                        //console.log('key--------------'+key);
-
+                        var myCompletionStatus;
+            
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
                            resultJson[key]["dueDate"]==null && 
                         resultJson[key]["remainderCount"]==null && 
-                        resultJson[key]["completionStatus"]==null)
-                        {
-                            //console.log("value is null---");
-                            //     console.log('key:::'+key);
-                        // console.log("value::::---createdBy------:::"+key+'------'+createdBy);
-                        // console.log("value::::----taskName-----:::"+key+'------'+taskName);
-                        // console.log("value::::----dueDate-----:::"+key+'------'+dueDate);
-                        // console.log("value::::----remainderCount-----:::"+key+'------'+remainderCount);
-                        // console.log("value::::----completionStatus-----:::"+key+'------'+completionStatus);
-                            
+                        resultJson[key]["completionStatus"]==null &&
+                        resultJson[key]["myCompletionStatus"]==null)
+                        { 
                         }
-                        else{
-                            
-                        
+                        else
+                        {
 
-                        //console.log("value is not null---");
                             createdBy=resultJson[key]["createdBy"];
                             taskName=resultJson[key]["taskName"];
                             dueDate=resultJson[key]["dueDate"];
                             remainderCount=resultJson[key]["remainderCount"];
                             completionStatus=resultJson[key]["completionStatus"];
-
-
-                        //console.log('key:::'+key);
-                        // console.log("value::::---createdBy------:::"+key+'------'+createdBy);
-                        // console.log("value::::----taskName-----:::"+key+'------'+taskName);
-                        // console.log("value::::----dueDate-----:::"+key+'------'+dueDate);
-                        // console.log("value::::----remainderCount-----:::"+key+'------'+remainderCount);
-                        // console.log("value::::----completionStatus-----:::"+key+'------'+completionStatus);
-
-                            dataItems.push(
+                            if(resultJson[key]["myCompletionStatus"])
+                            {
+                            }
+                            else
+                            {
+                                myCompletionStatus="notCompleted";
+                                dataItems.push(
                                 {
                                     "createdBy":createdBy , 
                                     "taskName":taskName, 
                                     "dueDate": dueDate,
                                     "remainderCount": remainderCount, 
                                     "completionStatus": "2/10",
-                                    "key":key
+                                    "key":key,
+                                    "myCompletionStatus":myCompletionStatus
                                 },
                             );
+                            }
+                            
+
+                        
                         }
                     }
  
                 }
+            // for  completed items
+            for(var key in resultJson)
+                {
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
+                    else{
+                       
+                        var createdBy;
+                        var taskName;
+                        var dueDate;
+                        var remainderCount;
+                        var completionStatus;
+                        var myCompletionStatus;
+            
+                        if(resultJson[key]["createdBy"]==null && 
+                            resultJson[key]["taskName"]==null  && 
+                           resultJson[key]["dueDate"]==null && 
+                        resultJson[key]["remainderCount"]==null && 
+                        resultJson[key]["completionStatus"]==null &&
+                        resultJson[key]["myCompletionStatus"]==null)
+                        { 
+                        }
+                        else
+                        {
 
+                            createdBy=resultJson[key]["createdBy"];
+                            taskName=resultJson[key]["taskName"];
+                            dueDate=resultJson[key]["dueDate"];
+                            remainderCount=resultJson[key]["remainderCount"];
+                            completionStatus=resultJson[key]["completionStatus"];
+                            if(resultJson[key]["myCompletionStatus"])
+                            {
+                                myCompletionStatus="completed";
+                                dataItems.push(
+                                {
+                                    "createdBy":createdBy , 
+                                    "taskName":taskName, 
+                                    "dueDate": dueDate,
+                                    "remainderCount": remainderCount, 
+                                    "completionStatus": "2/10",
+                                    "key":key,
+                                    "myCompletionStatus":myCompletionStatus
+                                },
+                            );
+                            }
+                            else
+                            {
+                            }
+                            
+
+                        
+                        }
+                    }
+ 
+                }
+                
             
         }
         
@@ -113,11 +153,12 @@ export class ListViewItems
             
             orderBy: {
                 type: firebase.QueryOrderByType.KEY,
-               //value: 'taskName' // mandatory when type is 'child'
             },
             
         }
     );
+                            
+
     return dataItems;
     }
 

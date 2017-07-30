@@ -1,8 +1,6 @@
 import { Router } from "@angular/router";
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
-import { DataItem } from "../../service/dataItem";
-import { DataItemService } from "../../service/dataItem.service";
 import { ListViewEventData, RadListView } from "nativescript-telerik-ui-pro/listview";
 import { View } from "tns-core-modules/ui/core/view";
 import firebase = require("nativescript-plugin-firebase");
@@ -19,7 +17,8 @@ import {
 } from "application-settings";
 import { ListViewItems } from "../../service/listviewitems";
 import { RadListViewComponent } from "nativescript-telerik-ui-pro/listview/angular";
-import { topmost } from "ui/frame";
+import * as timerModule  from "tns-core-modules/timer";
+
 
 @Component({
   selector: "my-app",
@@ -29,21 +28,20 @@ import { topmost } from "ui/frame";
 })
 export class MyTaskComponent implements OnInit
 {
-    //private _dataItems: ObservableArray<DataItem>;
+
      dataItems=new ObservableArray([]);
      listViewItems:ListViewItems
     constructor(private router: Router) {
         this.listViewItems=new ListViewItems;
     }
-    
-
-    // get dataItems(): ObservableArray<DataItem> {
-    //     return this._dataItems;
-    // }
-    @ViewChild("myListView") listViewComponent: RadListViewComponent;
     ngOnInit() {
-        //this._dataItems = new ObservableArray(this._dataItemService.getDataItems());
-        this.dataItems=this.listViewItems.getMyTaskdetails();   
+       
+        this.dataItems=this.listViewItems.getMyTaskdetails();  
+     //   console.log("Grid=="+this.gridLayout.page.getViewById("grid1"));
+        
+
+
+    
     }
     public onSwipeCellStarted(args: ListViewEventData)
     {
@@ -55,8 +53,19 @@ export class MyTaskComponent implements OnInit
     swipeLimits.right = rightItem.getMeasuredWidth();
     swipeLimits.threshold = leftItem.getMeasuredWidth() / 2;
    }
-    
-   onRightSwipeClick(args)
+   public onPullToRefreshInitiated(args: ListViewEventData){
+
+    console.log("Pul to refresh")
+
+    this.dataItems=this.listViewItems.getMyTaskdetails();  
+    timerModule.setTimeout(function ()
+     {
+            var listView = args.object;
+            listView.notifyPullToRefreshFinished();
+        },1000);
+
+   }
+   doneTask(args)
    {
     
         var tapIndex=this.dataItems.indexOf(args.object.bindingContext)
@@ -74,10 +83,31 @@ export class MyTaskComponent implements OnInit
                 ).then(
                   (res)=>{
                     console.log("Task has been upadates successfully in my task details---"+res);
-                    this.router.navigate([
-                              '/mainfragment',
-                              { outlets: { mytaskoutlet: ['mytask'] } }
-                            ]);
+                    this.dataItems=this.listViewItems.getMyTaskdetails();   
+                  
+                  },(res)=>{
+                    console.log("Problem in updating my task details---"+res);
+                  });
+        
+        
+
+   }
+   deleteTask(args)
+   {
+    
+        var tapIndex=this.dataItems.indexOf(args.object.bindingContext)
+
+        console.log("Item Kay======"+this.dataItems.getItem(tapIndex).key);
+        console.log("Task Name======"+this.dataItems.getItem(tapIndex).taskName);
+
+        var devicePhoneNumber=getString("devicePhoneNumber");
+
+        firebase.remove(
+                '/MyTaskDetails/'+devicePhoneNumber+'/'+this.dataItems.getItem(tapIndex).key,
+                ).then(
+                  (res)=>{
+                    console.log("Task has been upadates successfully in my task details---"+res);
+                    this.dataItems=this.listViewItems.getMyTaskdetails();   
                   
                   },(res)=>{
                     console.log("Problem in updating my task details---"+res);

@@ -14,6 +14,7 @@ import {
 import firebase = require("nativescript-plugin-firebase");
 import { User } from "../../service/user";
 import { Authentication } from "../../service/authentication";
+import { Page } from "ui/page";
 
 @Component({
   selector: "my-app",
@@ -25,7 +26,7 @@ export class RegistrationComponent {
    user:User
    authentication:Authentication
    
-   constructor(public router: Router) {
+   constructor(public router: Router,private page: Page) {
      this.user = new User();
      this.authentication= new Authentication();
     }
@@ -43,37 +44,71 @@ export class RegistrationComponent {
    console.log("fNmae-//////----"+fName);
    console.log("lName-//////----"+lName);
    console.log("eMail-//////----"+eMail);
-    console.log("password--/////--"+password);
+  console.log("password--/////--"+password);
   console.log("phone number-//////--"+phoneNumber);
 
-  this.authentication.userAuth(fName,lName,eMail,password,phoneNumber).then(
-  (res)=>
+  if(fName==null || lName==null || eMail==null || password == null || phoneNumber ==null){
+
+    console.log("Validation fail");
+
+  }
+  else
   {
-    console.log("Authentication Success---"+res);
+        console.log("Validation pass");
+        var layout = this.page;
+        var fNameView = layout.getViewById("fName");
+        var lNameView = layout.getViewById("lName");
+        var eMailView = layout.getViewById("eMail");
+        var passwordView = layout.getViewById("Password");
+        var contactNumber = layout.getViewById("contactNumber");
+    
 
-    //on authentication success save the device details in the database
-    this.authentication.saveDeviceDetails(fName,lName,eMail,password,phoneNumber).then(
-    (res)=>
-    {
-      console.log("Device details saved in DB---"+res);
+        if (fNameView.ios || lNameView.ios || eMailView.ios || passwordView.ios || contactNumber.ios)
+        {
+            fNameView.ios.endEditing(true);
+            lNameView.ios.endEditing(true);
+            eMailView.ios.endEditing(true);
+            passwordView.ios.endEditing(true);
+            contactNumber.ios.endEditing(true);
+        }
+         else if (fNameView.android || lNameView.android || eMailView.android || passwordView.android || contactNumber.android)
+        {
+            fNameView.android.clearFocus();
+            lNameView.android.clearFocus();
+            eMailView.android.clearFocus();
+            passwordView.android.clearFocus();
+            contactNumber.android.clearFocus();
+        }
 
-      //store the session for the registration
-      setBoolean("noBoolKey", true);
-      setString("devicePhoneNumber",phoneNumber);
+      this.authentication.userAuth(fName,lName,eMail,password,phoneNumber).then(
+      (res)=>
+      {
+        console.log("Authentication Success---"+res);
 
-      setString("deviceRegisteredUserName",fName.charAt(0)+lName.charAt(0));
-      this.noBoolKey = hasKey("noBoolKey");
-      console.log("Bool Key---"+this.noBoolKey);
-      this.router.navigate(["/mainfragment"]);
-    },
-    (res)=>{
-         console.log("Error in saving device details---"+res);
-    }); 
-  }, 
-  (res)=> {
-    console.log("Authentication Failure---"+res);
-  });
+        //on authentication success save the device details in the database
+        this.authentication.saveDeviceDetails(fName,lName,eMail,password,phoneNumber).then(
+        (res)=>
+        {
+          console.log("Device details saved in DB---"+res);
+
+          //store the session for the registration
+          setBoolean("noBoolKey", true);
+          setString("devicePhoneNumber",phoneNumber);
+
+          setString("deviceRegisteredUserName",fName.charAt(0)+lName.charAt(0));
+          this.noBoolKey = hasKey("noBoolKey");
+          console.log("Bool Key---"+this.noBoolKey);
+          this.router.navigate(["/mainfragment"]);
+        },
+        (res)=>{
+            console.log("Error in saving device details---"+res);
+        }); 
+      }, 
+      (res)=> {
+        console.log("Authentication Failure---"+res);
+      });
   
+  }
   }
   
 }

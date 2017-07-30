@@ -1,3 +1,8 @@
+<!-- <ActionBar title="Create Task">
+     <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
+</ActionBar> -->
+
+
 <GridLayout rows="46,46,46,*,auto" id="gridlayout">
         <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"
          (tap)="hideDatePicker($event)" returnKeyType="next"></TextField>
