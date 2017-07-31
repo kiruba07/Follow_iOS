@@ -138,14 +138,8 @@ export class CreateTaskComponent
     }
 
     onDateChanged(args) {
-        // console.log("Date changed");
-        // console.log("New value==================: " + args.value);
-        // console.log("Old value: " + args.oldValue);
-        // console.log("Day value=====: " + args.Day);
-        // console.log("Year value=====: " + args.Year);
-        // console.log("Month value=====: " + args.moth);
+        
         let dateValue=<DatePicker>args.object;
-        //console.log("Day===Month===Year===="+dateValue.day+" "+dateValue.month+" "+dateValue.year);
         this.datePickervalue=dateValue.day+"/"+dateValue.month+"/"+dateValue.year;
       
     }    
@@ -201,76 +195,145 @@ export class CreateTaskComponent
      //console.log("Date time---"+dateTime);
     //console.log("Assignee---"+assignee);
 
-    
-    var onQueryEvent = function(result) 
-            {
-            if (!result.error) {
-                //console.log("Event type: " + result.type);
-                //console.log("Key: " + result.key);
-                //console.log("Value: " + JSON.stringify(result.value));
-                
-                if(JSON.stringify(result.value)=="null")
-                {// create MyTaskDetails,create regKey,create task id,insert task details
-                   // console.log("Create new table::");
-                    //console.log("This---"+this);
-                    x.enterDataIntoMyTaskDetails("1",taskName,category,dateTime,x);
-                }
-                else{
-                    //console.log("Enter details in the existing table::");
-                    //console.log("This---"+this);
-                    x.enterDataIntoMyTaskDetails("null",taskName,category,dateTime,x);
-                }
-            }
-            
-        };
-
-        if(taskName==null || category==null || this.selectedItems.length<1 || dateTime=="Select End date"){
-            console.log("Empty =====");
-        }
-        else
+    //check the last key in TaskDetails table
+    if(taskName==null || category==null || this.selectedItems.length<1 || dateTime=="Select End date")
+    {
+    console.log("Empty =====");
+    }
+    else
+    {
+        var getLastKeyInTasKDetails = function(result) 
         {
-            firebase.query(
-                onQueryEvent,
-            '/MyTaskDetails/',
+
+                if (!result.error) 
                 {
-                    // set this to true if you want to check if the value exists or just want the event to fire once
-                    // default false, so it listens continuously
-                    singleEvent: true,
-                    // order by company.country
-                    orderBy: {
-                        type: firebase.QueryOrderByType.CHILD,
-                        value: 'taskName' // mandatory when type is 'child'
-                    },
+                    
+                    if(JSON.stringify(result.value)=="null")
+                    {
+                        
+                        x.enterDataIntoTaskDetails("1",taskName,category,dateTime,x);
+                    }   
+                    else
+                    {
+                    
+                        x.enterDataIntoTaskDetails("null",taskName,category,dateTime,x);
+                    }
                 }
-            );
-        }
+                
+            };
+        firebase.query(
+                    getLastKeyInTasKDetails,
+                '/TaskDetails/',
+                    {
+                        
+                        singleEvent: true,
+                    
+                        orderBy: {
+                            type: firebase.QueryOrderByType.CHILD,
+                            value: 'taskName' // mandatory when type is 'child'
+                        },
+                    }
+                );
+    }
+    
 
   }
+    public enterDataIntoTaskDetails(id,taskName,category,dateTime,x)
+    {
+        var y=this;
+         if(id=="1")
+            {
+                firebase.setValue(
+                '/TaskDetails/'+id,
+                {
+                    'taskName':taskName,
+                    'category':category,
+                    'dueDate':dateTime,
+                    
+                }
+                ).then(
+                  (res)=>{
+                    console.log("Task details has been saved successfully in task details first time---"+res);
+                    this.enterDataIntoMyTaskDetails(id,taskName,category,dateTime,x);
+                    this.enterDataIntoOtherTaskDetails(id,taskName,category,dateTime,x);
+                  },(res)=>{
+                    console.log("Problem in saving task details---"+res);
+                  });
+            }
+            else
+            {
+                console.log('entry already there need to get last count value')
+                y.getLastCountAndEnterDetaisInTaskDetailsPage(taskName,category,dateTime,y);
+
+            
+            }
+    }
+    public getLastCountAndEnterDetaisInTaskDetailsPage(taskName,category,dateTime,x)
+    {
+        var y=this;
+        var onQueryEvent = function(result)
+        {
+            var lastKey=0;
+            if (!result.error)
+            {
+                var resultJson=result.value;
+                for(var key in resultJson)
+                {
+                    
+                    lastKey=parseInt(key);
+                   
+                }
+                lastKey=lastKey+1;
+               
+            firebase.setValue(
+            '/TaskDetails/'+lastKey,
+            {
+                    'taskName':taskName,
+                    'category':category,
+                    'dueDate':dateTime,
+            }).then(
+                  (res)=>{
+                    console.log("Task has been saved successfully in task details---"+res);
+                     y.enterDataIntoMyTaskDetails(lastKey,taskName,category,dateTime,y);
+                      y.enterDataIntoOtherTaskDetails(lastKey,taskName,category,dateTime,y);
+                  },(res)=>{
+                    console.log("Problem in saving task details---"+res);
+                  });
+            
+                
+        }
+            
+        };
+        firebase.query(
+            onQueryEvent,
+        '/TaskDetails/',
+            {
+                singleEvent: true,
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+            }
+        );
+    }
     
     public enterDataIntoMyTaskDetails(id,taskName,category,dateTime,x)
     {
+        var y=this;
         /** temporary values assigned need to chagne later */
-        var recipentsCount=1;
+        var recipentsCount=this.selectedItems.length;
         var remainderCount=0;
         var completionCount=0;
         var myCompletionStatus=false;
         var idTemp;
-       //var assigneesSelected=["123456789","12345"];
-        //var assigneesSelected=this.selectedItems;
-       // assigneesSelected.push(this.selectedItems);
-        
-        // for(var i=0;i<this.selectedItems.length;i++){
-        //     assigneesSelected.push(this.selectedItems.getItem(i));
-        // }
-        //console.log("Assignesss selected in assign task========"+this.selectedItems);
+       
         var devicePhoneNumber=getString("devicePhoneNumber");
         var deviceRegisteredUserName=getString("deviceRegisteredUserName");
        
-        //var assigneearray=assigneesSelected.toString.
+        
         for(var i=0;i<this.selectedItems.length;i++)
         {
-            console.log("i value=============="+i);
-            console.log("i value=============="+this.selectedItems[i]);
+            
+            //console.log("i value items=====i========="+i+"======"+this.selectedItems[i]);
 
             if(id=="1")
             {
@@ -289,7 +352,7 @@ export class CreateTaskComponent
                 }
                 ).then(
                   (res)=>{
-                    console.log("Task has been saved successfully in my task details first time---"+res);
+                   // console.log("Task has been saved successfully in my task details first time---"+res);
                     this.router.navigate([
                               '/mainfragment',
                               { outlets: { mytaskoutlet: ['mytask'] } }
@@ -300,14 +363,136 @@ export class CreateTaskComponent
             }
             else
             {
-                console.log('entry already there need to get last count value')
-                this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
+                //console.log("Else   i value items=====i========="+i+"======"+this.selectedItems[i]);
+
+            firebase.setValue(
+            '/MyTaskDetails/'+this.selectedItems[i]+'/'+id,
+            {
+                    'taskName':taskName,
+                    'category':category,
+                    'dueDate':dateTime,
+                    'recipentsCount':recipentsCount,
+                    'remainderCount':remainderCount,
+                    'createdBy':deviceRegisteredUserName,
+                    'createdByRegId':devicePhoneNumber,
+                    'completionCount':completionCount,
+                    'myCompletionStatus':myCompletionStatus,
+            }).then(
+                  (res)=>{
+                    // console.log("Task has been saved successfully in my task details-===i==--"+i+"==="+res);
+                    // console.log("Length===i=="+i+"====="+(y.selectedItems.length-1));
+                    // if(i==(y.selectedItems.length-1))
+                    // {
+                        console.log("===IF==");
+                    y.router.navigate([
+                              '/mainfragment',
+                              { outlets: { mytaskoutlet: ['mytask'] } }
+                            ]);
+                    // }
+                    // else{
+                    //     console.log("===Else==");
+                    // }
+                  },(res)=>{
+                    console.log("Problem in saving my task details---"+res);
+                  });
+
+               // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
 
             
             }
         
         }
     } 
+    public enterDataIntoOtherTaskDetails(id,taskName,category,dateTime,x)
+    {
+        var y=this;
+        /** temporary values assigned need to chagne later */
+        var recipentsCount=this.selectedItems.length;
+        var remainderCount=0;
+        var completionCount=0;
+        var myCompletionStatus=false;
+        var idTemp;
+       
+        var devicePhoneNumber=getString("devicePhoneNumber");
+        var deviceRegisteredUserName=getString("deviceRegisteredUserName");
+        var deletionCount=0;
+       
+        
+        // for(var i=0;i<this.selectedItems.length;i++)
+        // {
+            
+            //console.log("i value items=====i========="+i+"======"+this.selectedItems[i]);
+
+            if(id=="1")
+            {
+                firebase.setValue(
+                '/OtherTaskDetails/'+devicePhoneNumber+'/'+"1",
+                {
+                    'taskName':taskName,
+                    'category':category,
+                    'dueDate':dateTime,
+                    'recipentsCount':recipentsCount,
+                    'remainderCount':remainderCount,
+                    'createdBy':deviceRegisteredUserName,
+                    'createdByRegId':devicePhoneNumber,
+                    'completionCount':completionCount,
+                    'myCompletionStatus':myCompletionStatus,
+                    'deletionCount':deletionCount
+                }
+                ).then(
+                  (res)=>{
+                    console.log("Task has been saved successfully in other task details first time---"+res);
+                    this.router.navigate([
+                              '/mainfragment',
+                              { outlets: { mytaskoutlet: ['mytask'] } }
+                            ]);
+                  },(res)=>{
+                    console.log("Problem in saving my task details---"+res);
+                  });
+            }
+            else
+            {
+                //console.log("Else   i value items=====i========="+i+"======"+this.selectedItems[i]);
+
+            firebase.setValue(
+            '/OtherTaskDetails/'+devicePhoneNumber+'/'+id,
+            {
+                    'taskName':taskName,
+                    'category':category,
+                    'dueDate':dateTime,
+                    'recipentsCount':recipentsCount,
+                    'remainderCount':remainderCount,
+                    'createdBy':deviceRegisteredUserName,
+                    'createdByRegId':devicePhoneNumber,
+                    'completionCount':completionCount,
+                    'myCompletionStatus':myCompletionStatus,
+                    'deletionCount':deletionCount
+            }).then(
+                  (res)=>{
+                    console.log("Task has been saved successfully in other task details-========"+res);
+                    // console.log("Length===i=="+i+"====="+(y.selectedItems.length-1));
+                    // if(i==(y.selectedItems.length-1))
+                    // {
+                        console.log("===IF==");
+                    // y.router.navigate([
+                    //           '/mainfragment',
+                    //           { outlets: { mytaskoutlet: ['mytask'] } }
+                    //         ]);
+                    // }
+                    // else{
+                    //     console.log("===Else==");
+                    // }
+                  },(res)=>{
+                    console.log("Problem in saving my task details---"+res);
+                  });
+
+               // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
+
+            
+            }
+        
+        //}
+    }
     public getLastCountAndEnterDetails(i,seledtedItemsLength,selectedAssignee,recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x)
     {
 
@@ -316,22 +501,18 @@ export class CreateTaskComponent
             var lastKey=0;
             if (!result.error)
             {
-                //console.log("Event type: " + result.type);
-                //console.log("Key: " + JSON.stringify(result.key));
-                //console.log("Value: " + result.value);
-                //console.log("Value next ::::;: " + JSON.stringify(result.value));
                 var resultJson=result.value;
                 for(var key in resultJson)
                 {
-                    //console.log('key:::'+key);
+                    
                     
                     lastKey=parseInt(key);
-                    //console.log('lastKey ::'+lastKey);
+                   
 
                     
                 }
                 lastKey=lastKey+1;
-                //console.log('lastKey ::'+lastKey);
+               
             firebase.setValue(
             '/MyTaskDetails/'+selectedAssignee+'/'+lastKey,
             {

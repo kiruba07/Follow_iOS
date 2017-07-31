@@ -24,15 +24,9 @@ export class AppComponent {
   constructor(private router: Router){
     
     firebase.init({
-    persist: true,
-  // Optionally pass in properties for database, authentication and cloud messaging,
-  // see their respective docs.
-    onAuthStateChanged: function(data) { // optional but useful to immediately re-logon the user when he re-visits your app
-      console.log(data.loggedIn ? "Logged in to firebase" : "Logged out from firebase");
-      if (data.loggedIn) {
-        console.log("user's email address: " + (data.user.email ? data.user.email : "N/A"));
-      }
-    }
+      
+      persist: false,
+      
     }).then(
       (instance) => {
         console.log("firebase.init done");
@@ -41,10 +35,10 @@ export class AppComponent {
         console.log("firebase.init error: " + error);
       }
     );
-    
-  // firebase.logout();
-
+//firebase.logout();
     this.noBoolKey = hasKey("noBoolKey");
+
+    //console.log("Bool val---"+getBoolean("noBoolKey"));
     if(this.noBoolKey)
     {
       console.log("Alreday registered ----");

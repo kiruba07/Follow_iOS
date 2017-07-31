@@ -40,13 +40,21 @@ export class ListViewItems
                         var remainderCount;
                         var completionStatus;
                         var myCompletionStatus;
+                        var recepientsCount;
+                        var createdByNumber;
+                        var completionCount;
             
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
                            resultJson[key]["dueDate"]==null && 
                         resultJson[key]["remainderCount"]==null && 
                         resultJson[key]["completionStatus"]==null &&
-                        resultJson[key]["myCompletionStatus"]==null)
+                        resultJson[key]["myCompletionStatus"]==null &&
+                        resultJson[key]["recipentsCount"]==null &&
+                        resultJson[key]["createdByRegId"]==null &&
+                        resultJson[key]["completionCount"]==null 
+                    
+                        )
                         { 
                         }
                         else
@@ -57,6 +65,10 @@ export class ListViewItems
                             dueDate=resultJson[key]["dueDate"];
                             remainderCount=resultJson[key]["remainderCount"];
                             completionStatus=resultJson[key]["completionStatus"];
+                            recepientsCount=resultJson[key]["recipentsCount"];
+                            createdByNumber=resultJson[key]["createdByRegId"];
+                            completionCount=resultJson[key]["completionCount"];
+
                             if(resultJson[key]["myCompletionStatus"])
                             {
                             }
@@ -69,9 +81,10 @@ export class ListViewItems
                                     "taskName":taskName, 
                                     "dueDate": dueDate,
                                     "remainderCount": remainderCount, 
-                                    "completionStatus": "2/10",
+                                    "completionStatus": completionCount+"/"+recepientsCount,
                                     "key":key,
-                                    "myCompletionStatus":myCompletionStatus
+                                    "myCompletionStatus":myCompletionStatus,
+                                    "createdByNumber":createdByNumber,
                                 },
                             );
                             }
@@ -94,13 +107,20 @@ export class ListViewItems
                         var remainderCount;
                         var completionStatus;
                         var myCompletionStatus;
+                        var recepientsCount;
+                        var createdByNumber;
+                        var completionCount;
             
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
                            resultJson[key]["dueDate"]==null && 
                         resultJson[key]["remainderCount"]==null && 
                         resultJson[key]["completionStatus"]==null &&
-                        resultJson[key]["myCompletionStatus"]==null)
+                       resultJson[key]["myCompletionStatus"]==null &&
+                        resultJson[key]["recipentsCount"]==null &&
+                        resultJson[key]["createdByRegId"]==null &&
+                        resultJson[key]["completionCount"]==null 
+                         )
                         { 
                         }
                         else
@@ -111,6 +131,10 @@ export class ListViewItems
                             dueDate=resultJson[key]["dueDate"];
                             remainderCount=resultJson[key]["remainderCount"];
                             completionStatus=resultJson[key]["completionStatus"];
+                            recepientsCount=resultJson[key]["recipentsCount"];
+                            createdByNumber=resultJson[key]["createdByRegId"];
+                            completionCount=resultJson[key]["completionCount"];
+
                             if(resultJson[key]["myCompletionStatus"])
                             {
                                 myCompletionStatus="completed";
@@ -120,9 +144,10 @@ export class ListViewItems
                                     "taskName":taskName, 
                                     "dueDate": dueDate,
                                     "remainderCount": remainderCount, 
-                                    "completionStatus": "2/10",
+                                     "completionStatus": completionCount+"/"+recepientsCount,
                                     "key":key,
-                                    "myCompletionStatus":myCompletionStatus
+                                    "myCompletionStatus":myCompletionStatus,
+                                    "createdByNumber":createdByNumber
                                 },
                             );
                             }
@@ -161,7 +186,176 @@ export class ListViewItems
 
     return dataItems;
     }
+    getOtherTaskDetails()
+    {
+        var dataItems=new ObservableArray([]);
+        
 
+        var onQueryEvent = function(result)
+        {
+        
+        
+        if (!result.error) {
+         
+            var resultJson=result.value;
+            //for not comepleted items
+                for(var key in resultJson)
+                {
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
+                    else{
+                       
+                        var createdBy;
+                        var taskName;
+                        var dueDate;
+                        var remainderCount;
+                        var completionStatus;
+                        var myCompletionStatus;
+                        var deletionCount;
+                        var recepientsCount;
+                        var completionCount;
+            
+                        if(resultJson[key]["createdBy"]==null && 
+                            resultJson[key]["taskName"]==null  && 
+                           resultJson[key]["dueDate"]==null && 
+                        resultJson[key]["remainderCount"]==null && 
+                        resultJson[key]["completionStatus"]==null &&
+                        resultJson[key]["myCompletionStatus"]==null &&
+                        resultJson[key]["deletionCount"]==null && 
+                        resultJson[key]["recipentsCount"]==null  &&
+                        resultJson[key]["completionCount"]==null
+                        
+                        )
+                        { 
+                        }
+                        else
+                        {
+
+                            createdBy=resultJson[key]["createdBy"];
+                            taskName=resultJson[key]["taskName"];
+                            dueDate=resultJson[key]["dueDate"];
+                            remainderCount=resultJson[key]["remainderCount"];
+                            completionStatus=resultJson[key]["completionStatus"];
+                            deletionCount=resultJson[key]["deletionCount"];
+                            recepientsCount=resultJson[key]["recipentsCount"];
+                            completionCount=resultJson[key]["completionCount"];
+
+                            if(resultJson[key]["myCompletionStatus"])
+                            {
+                            }
+                            else
+                            {
+                                myCompletionStatus="notCompleted";
+                                dataItems.push(
+                                {
+                                    "createdBy":createdBy , 
+                                    "taskName":taskName, 
+                                    "dueDate": dueDate,
+                                    "remainderCount": remainderCount, 
+                                    "completionStatus": completionCount+"/"+recepientsCount,
+                                    "key":key,
+                                    "myCompletionStatus":myCompletionStatus,
+                                    "deletionCount":deletionCount
+                                },
+                            );
+                            }
+                            
+
+                        
+                        }
+                    }
+ 
+                }
+            // for  completed items
+            for(var key in resultJson)
+                {
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
+                    else{
+                       
+                        var createdBy;
+                        var taskName;
+                        var dueDate;
+                        var remainderCount;
+                        var completionStatus;
+                        var myCompletionStatus;
+                        var deletionCount;
+                        var recepientsCount;
+                        var completionCount;
+            
+                        if(resultJson[key]["createdBy"]==null && 
+                            resultJson[key]["taskName"]==null  && 
+                           resultJson[key]["dueDate"]==null && 
+                        resultJson[key]["remainderCount"]==null && 
+                        resultJson[key]["completionStatus"]==null &&
+                        resultJson[key]["myCompletionStatus"]==null &&
+                       resultJson[key]["deletionCount"]==null && 
+                        resultJson[key]["recipentsCount"]==null && 
+                        resultJson[key]["completionCount"]==null 
+                        )
+                        { 
+                        }
+                        else
+                        {
+
+                            createdBy=resultJson[key]["createdBy"];
+                            taskName=resultJson[key]["taskName"];
+                            dueDate=resultJson[key]["dueDate"];
+                            remainderCount=resultJson[key]["remainderCount"];
+                            completionStatus=resultJson[key]["completionStatus"];
+                            deletionCount=resultJson[key]["deletionCount"];
+                             recepientsCount=resultJson[key]["recipentsCount"];
+                             recepientsCount=resultJson[key]["completionCount"];
+
+                            if(resultJson[key]["myCompletionStatus"])
+                            {
+                                myCompletionStatus="completed";
+                                dataItems.push(
+                                {
+                                    "createdBy":createdBy , 
+                                    "taskName":taskName, 
+                                    "dueDate": dueDate,
+                                    "remainderCount": remainderCount, 
+                                    "completionStatus": completionCount+"/"+recepientsCount,
+                                    "key":key,
+                                    "myCompletionStatus":myCompletionStatus,
+                                    "deletionCount":deletionCount
+                                },
+                            );
+                            }
+                            else
+                            {
+                            }
+                            
+
+                        
+                        }
+                    }
+ 
+                }
+                
+            
+        }
+        
+    };
+
+    var devicePhoneNumber=getString("devicePhoneNumber");
+    console.log("Device Phone Number----"+devicePhoneNumber);
+    firebase.query(
+        onQueryEvent,
+       '/OtherTaskDetails/'+devicePhoneNumber,
+        {
+            
+            singleEvent: true,
+            
+            orderBy: {
+                type: firebase.QueryOrderByType.KEY,
+            },
+            
+        }
+    );
+                            
+
+    return dataItems;
+    }
     getContactList()
     {
             var contactList=new ObservableArray([]);

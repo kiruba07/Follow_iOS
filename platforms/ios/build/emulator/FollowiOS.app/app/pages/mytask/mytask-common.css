@@ -10,10 +10,23 @@
     padding-bottom: 2;
     padding-right: 0;
     margin-top:12;   
-    //font-size:18;
+    font-size:17;
 }
-.gridLayout{
+/* .gridLayout{
     background-color:#CFE2F3;
+    margin-top: 3;
+    padding-left: 12;
+    padding-bottom:5;
+} */
+.completed{
+ background-color:#98FB98;
+ /* #00FF00 */
+    margin-top: 3;
+    padding-left: 12;
+    padding-bottom:5;
+}
+.notCompleted{
+ background-color:#CFE2F3;
     margin-top: 3;
     padding-left: 12;
     padding-bottom:5;
@@ -96,12 +109,12 @@
 
 #float-btn{
     
-    background-color: #30bcff;
-    width:40;
-    height:40;
+    background-color: #3C5AFD;
+    width:50;
+    height:50;
     text-align:center;
     vertical-align: middle;
-    margin-top: 80%;
+    margin-top: 85%;
     margin-left: 80%;
     border-radius: 50%;
     margin-bottom: 20;
@@ -110,6 +123,6 @@
 #float-btn-txt{
     color:#ffffff;
     font-size:36;
-    margin-top:-4;
+    margin-top:-5;
     
 }

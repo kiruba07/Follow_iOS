@@ -16,7 +16,7 @@ export class OtherTaskComponent implements OnInit
 {
     private _dataItems: ObservableArray<DataItem>;
 
-    constructor(private _dataItemService: DataItemService) {
+    constructor(private _dataItemService: DataItemService,private router: Router) {
     }
 
     get dataItems(): ObservableArray<DataItem> {
@@ -35,5 +35,10 @@ export class OtherTaskComponent implements OnInit
     swipeLimits.left = leftItem.getMeasuredWidth();
     swipeLimits.right = rightItem.getMeasuredWidth();
     swipeLimits.threshold = leftItem.getMeasuredWidth() / 2;
-}
+    }
+    createTask(){
+            this.router.navigate(["/createtask"]);
+
+    }
+   
 }

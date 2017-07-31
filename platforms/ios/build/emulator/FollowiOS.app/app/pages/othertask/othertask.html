@@ -1,3 +1,8 @@
+<!-- <ActionBar title="Other Task">
+ <NavigationButton  (tap)="goBack()" visibility="collapsed"></NavigationButton> 
+</ActionBar> -->
+
+
 <GridLayout id="otherTaskDetailsDock">
            
              <RadListView  [items]="dataItems" swipeActions="true" selectionBehavior="None" (itemSwipeProgressStarted)="onSwipeCellStarted($event)" id="taskDetailsOverAll">
@@ -105,7 +110,6 @@
                 </GridLayout>
        </RadListView>
     <StackLayout id="float-btn">
-        <Label text="+" (tap)="create()" id="float-btn-txt"></Label>
-        
+        <Label text="+" (tap)="createTask()" id="float-btn-txt"></Label>  
     </StackLayout>
 </GridLayout>

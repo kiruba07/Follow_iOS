@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		214D251E6F6F4AB08AC982F4 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A30C52F448138767F4B6 /* TNSWidgets.framework */; };
 		2A29B872AFE944C08BFD886F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26389653B3EE4007834D5DDC /* Assets.xcassets */; };
@@ -189,6 +190,9 @@
 						DevelopmentTeam = YAGJRBD6P5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};

@@ -1,0 +1,40 @@
+#gridLayout,#checkboxToggle{
+    font-family: 'FontAwesome',fontawesome-webfont;
+}
+#taskName,#category,#showDateTime,#assignee{
+    background-color:#E6B8A5;
+    margin-top:3;
+    padding-left:10;
+}
+#contactList{
+    margin-top:10;
+    background-color:#E6B8A5;
+}
+#contactListView{
+    background-color:#E6B8A5;
+    margin-bottom:0;
+    padding-left:10;
+    font-size:19;
+    min-height: 40;
+    
+}
+#checkboxToggle{
+    font-size:29;
+}
+#assignee{
+    text-align: left;
+    margin-bottom: 3;
+}
+#assignTask{
+    background-color: #1F497D;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom:0;
+    height:45;
+}
+#datePicker{
+    margin-bottom:0;
+    
+}

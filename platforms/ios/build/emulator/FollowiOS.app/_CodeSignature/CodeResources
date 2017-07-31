@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		yzRIyqcnXSa0/3/aj+1j3Lv9sJc=
+		+vTyoHL1extyLUeWAUiNizslg38=
 		</data>
 		<key>Frameworks/Bolts.framework/Bolts</key>
 		<data>
@@ -1026,7 +1026,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		bpZpITVRcmljGw3Qzy2LQBllGRE=
+		BidUtLscczSahIVW3+sZCdkYS5E=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -1034,7 +1034,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		frHR1WE35dbXU9/Sqj9tsFW2U7M=
+		KUQvaKCMwq7wzpTef2Xcd0SSEDA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1078,11 +1078,11 @@
 		</data>
 		<key>app/app.component.js</key>
 		<data>
-		znrB411t9B+5VRY0JNdX3+57bmQ=
+		qSgIBC/A1++TagosczYmaB1G0E0=
 		</data>
 		<key>app/app.component.ts</key>
 		<data>
-		gap48oCVgBPLfCKTri6JYBJJO4Y=
+		Zr0avGmjmAWF7d5WrGftKcZBaLo=
 		</data>
 		<key>app/app.css</key>
 		<data>
@@ -1166,15 +1166,15 @@
 		</data>
 		<key>app/pages/createtask/createtask-common.css</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		TRHcU4pIvLOTFA9OxvCi4aZnp1I=
 		</data>
 		<key>app/pages/createtask/createtask.component.js</key>
 		<data>
-		eKBHs0sbtPlBeMtAZ9s2g25r7CU=
+		tzH9ZgBjsda2GDqACI2aSrXERO4=
 		</data>
 		<key>app/pages/createtask/createtask.component.ts</key>
 		<data>
-		xEz4Cd63JwGJtFHZLwqfTExOkYI=
+		aSoFy0L5QHq7+P8z73XN/sO11M0=
 		</data>
 		<key>app/pages/createtask/createtask.css</key>
 		<data>
@@ -1182,11 +1182,11 @@
 		</data>
 		<key>app/pages/createtask/createtask.html</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		UGKzp2KvITgMw5N685xsNBimHpQ=
 		</data>
 		<key>app/pages/mainfragment/mainfragment-common.css</key>
 		<data>
-		wrYsaOVZa8jbSODueiiL44faMTs=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>app/pages/mainfragment/mainfragment.component.js</key>
 		<data>
@@ -1226,15 +1226,15 @@
 		</data>
 		<key>app/pages/mytask/mytask-common.css</key>
 		<data>
-		+ZnlZeSC6CVY56lmrU1/SEaeQRg=
+		OD3OEMUWHB9ogYtEuNlS4U9Agrc=
 		</data>
 		<key>app/pages/mytask/mytask.component.js</key>
 		<data>
-		gBssYJktV6OfO/eZq2Yf/sp+Nrg=
+		IJfSQGMNmvDmaPlue55aDs7r19E=
 		</data>
 		<key>app/pages/mytask/mytask.component.ts</key>
 		<data>
-		sbNBpdem5IIzl8jjFQ57mUDUYio=
+		S99U6Wwc/9F++c9+NFEQgFs25No=
 		</data>
 		<key>app/pages/mytask/mytask.css</key>
 		<data>
@@ -1242,19 +1242,19 @@
 		</data>
 		<key>app/pages/mytask/mytask.html</key>
 		<data>
-		RqVIj1Uh/mKTRELNr0gti57x3nA=
+		lEOk9wMx9pAOKDQl3ePoqGF/HH8=
 		</data>
 		<key>app/pages/othertask/othertask-common.css</key>
 		<data>
-		PSP1DVqv90jC+n3vHXJwhy8qoHc=
+		NPuj8RvOLkjyZcxWT1b4AZiM+6g=
 		</data>
 		<key>app/pages/othertask/othertask.component.js</key>
 		<data>
-		0vJgsvinKzEdt2FjFS/2bMUIHn8=
+		ym5I6HbHElKoZVjgP2Z0br0pvYI=
 		</data>
 		<key>app/pages/othertask/othertask.component.ts</key>
 		<data>
-		Ycc0dcHG7ipFonQo7n+jvGLYZF8=
+		AcjR/W602cp9s4xV2VyuDRHXAbM=
 		</data>
 		<key>app/pages/othertask/othertask.css</key>
 		<data>
@@ -1262,7 +1262,7 @@
 		</data>
 		<key>app/pages/othertask/othertask.html</key>
 		<data>
-		PSFkIsf8qWKRrQBdmvTxW6ZEGwc=
+		WqQR2p5zr0bnWmQfiu6KQ53LTO4=
 		</data>
 		<key>app/pages/performance/performance-common.css</key>
 		<data>
@@ -1286,15 +1286,15 @@
 		</data>
 		<key>app/pages/registration/registration-common.css</key>
 		<data>
-		z9LL3MopjXVrDM3gYXDNldTkdyY=
+		JswfP0246BDGcflqyJw1ccMgVrw=
 		</data>
 		<key>app/pages/registration/registration.component.js</key>
 		<data>
-		k/QDc5hcEsQgrirm7n+ZCQq0c9Y=
+		OeCTCOX7xLZtVd9hahC/qoY7ibg=
 		</data>
 		<key>app/pages/registration/registration.component.ts</key>
 		<data>
-		dvIloWHrTfuQ0+ADwdxdH5y0cw8=
+		v3gmcDSAQRsyEd7aasSwajy17gk=
 		</data>
 		<key>app/pages/registration/registration.css</key>
 		<data>
@@ -1302,11 +1302,19 @@
 		</data>
 		<key>app/pages/registration/registration.html</key>
 		<data>
-		h0RvpqONt6F6eiDtgg48b8wS+Xo=
+		zMmzgawhIxLtwC/NFuqMqBYd5Aw=
+		</data>
+		<key>app/service/authentication.js</key>
+		<data>
+		naYTkBTwPRJszPNSoOppf0mfwkM=
+		</data>
+		<key>app/service/authentication.ts</key>
+		<data>
+		V6bp/ZIvzNUtwXh6bObK9E3+6D8=
 		</data>
 		<key>app/service/dataItem.js</key>
 		<data>
-		rNv2IkXkBEguY7ioWmqOG/ESSdg=
+		5CX/S7qSsU0OsCfgUR5Tl41VveA=
 		</data>
 		<key>app/service/dataItem.service.js</key>
 		<data>
@@ -1318,7 +1326,15 @@
 		</data>
 		<key>app/service/dataItem.ts</key>
 		<data>
-		AJfIQsokDcPA679UJrVWq/6pvaA=
+		3r8YM0yRY0hyrNgSHBUhH6mBnns=
+		</data>
+		<key>app/service/listviewitems.js</key>
+		<data>
+		Atnl/MeOj5FcI6Y0JQpJcRaeVJk=
+		</data>
+		<key>app/service/listviewitems.ts</key>
+		<data>
+		LtEP0wXgJIf1iJBWPSeCQeRm474=
 		</data>
 		<key>app/service/mock-dataItems.js</key>
 		<data>
@@ -1330,11 +1346,11 @@
 		</data>
 		<key>app/service/user.js</key>
 		<data>
-		b4lNp0uEBdHRZX3pCreBeIx9rCE=
+		CYatDH2XUFM8MxrmamrOmt0kSDY=
 		</data>
 		<key>app/service/user.ts</key>
 		<data>
-		7LsENRsnKEfLXeAOhee7Nbrd7J0=
+		JahWcEdXhLtZPVnF9PYxpEgD7ps=
 		</data>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
 		<data>
@@ -15154,11 +15170,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yzRIyqcnXSa0/3/aj+1j3Lv9sJc=
+			+vTyoHL1extyLUeWAUiNizslg38=
 			</data>
 			<key>hash2</key>
 			<data>
-			TGfOupjG7lJN/EhVMgDk2pEPK3Hf6PvP/NqmjVRPSRU=
+			5o8rEcygaGdWiPetR3UUcV1Ei7kqSD6SEcfvBlRHOkc=
 			</data>
 		</dict>
 		<key>Frameworks/Bolts.framework/Bolts</key>
@@ -16854,11 +16870,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bpZpITVRcmljGw3Qzy2LQBllGRE=
+			BidUtLscczSahIVW3+sZCdkYS5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			c/hQgBa76O6n9ObJnJL+CcWMkxu/29z4EAr8OU+u0Ms=
+			+ptk9bnVufvID6IsVQTRWP2jlY9fQerj6GjPB6mO3rY=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -16876,11 +16892,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			frHR1WE35dbXU9/Sqj9tsFW2U7M=
+			KUQvaKCMwq7wzpTef2Xcd0SSEDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KhK0r7udxm1jzi0h7LX33KBAEx0nW8EU0uvUFQo4BKA=
+			10sAqBQD47YCJLefZMp756OnNL6a2MgoQHlG1dkZObQ=
 			</data>
 		</dict>
 		<key>app/Images/Thumbs.db</key>
@@ -16986,22 +17002,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			znrB411t9B+5VRY0JNdX3+57bmQ=
+			qSgIBC/A1++TagosczYmaB1G0E0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Suy5c1YKtsQe1eIqTOWaPfMw5ozHrh45QmfTfLKKPjw=
+			w4YZ16pySflIbRsD6UargKeh8v+e1D5jeHRaimlYv9o=
 			</data>
 		</dict>
 		<key>app/app.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gap48oCVgBPLfCKTri6JYBJJO4Y=
+			Zr0avGmjmAWF7d5WrGftKcZBaLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mb7RnQ4HgY+8ykaaTOACf44E9uZ+awN8rneIlggXRfY=
+			qr8FAPu5ggSrxq0ehwy5/6G4Lfk0JiYBym6iv7yBhFs=
 			</data>
 		</dict>
 		<key>app/app.css</key>
@@ -17228,33 +17244,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			TRHcU4pIvLOTFA9OxvCi4aZnp1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			65te8k8v6bmMHGVObO1NDmn1+XfOg8ePqLWjjrbWuFc=
 			</data>
 		</dict>
 		<key>app/pages/createtask/createtask.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eKBHs0sbtPlBeMtAZ9s2g25r7CU=
+			tzH9ZgBjsda2GDqACI2aSrXERO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			idIEi8yVYc0zbb3awjLFSQG9Bo58ANp+p34kP4ykk7g=
+			NJCJ7sYYM0gulPwm8lH86KTRNw5rhvP3awmpHpYPAv4=
 			</data>
 		</dict>
 		<key>app/pages/createtask/createtask.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEz4Cd63JwGJtFHZLwqfTExOkYI=
+			aSoFy0L5QHq7+P8z73XN/sO11M0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LnqJtIqxFC2y3CLFtKEzUD/pVpMoFG/JHG91EMZmoP8=
+			VneaUD5SjGtG0tTT6kBv/pW37QOAoIJB4/F7OCFuvPU=
 			</data>
 		</dict>
 		<key>app/pages/createtask/createtask.css</key>
@@ -17272,22 +17288,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			UGKzp2KvITgMw5N685xsNBimHpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			fmrT+7XdIAUy3ti0C6ahm2ovUC9ZX4Rku/a/YAtE3s8=
 			</data>
 		</dict>
 		<key>app/pages/mainfragment/mainfragment-common.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wrYsaOVZa8jbSODueiiL44faMTs=
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			auGP4SZbedQpn3rJX+AbMaAdFYlJPnENo8yzCTOP0Xs=
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>app/pages/mainfragment/mainfragment.component.js</key>
@@ -17393,33 +17409,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+ZnlZeSC6CVY56lmrU1/SEaeQRg=
+			OD3OEMUWHB9ogYtEuNlS4U9Agrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			FfzPHxnCNRMtaWMoXIoBpvs2gpGV/kdihtNesFgBlCA=
+			Eis8k6IPjrS+pKezxFzLvBQ1cgEN9PjRDaHvLzL+/aE=
 			</data>
 		</dict>
 		<key>app/pages/mytask/mytask.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gBssYJktV6OfO/eZq2Yf/sp+Nrg=
+			IJfSQGMNmvDmaPlue55aDs7r19E=
 			</data>
 			<key>hash2</key>
 			<data>
-			9NyAom+Hcyt55zTAdt0XO8vPwzHDB3CLhVRBdLNMWUk=
+			jra8XRBsLZmQEHc99HrMhtqL2L4SuCSBne13QGuFMWs=
 			</data>
 		</dict>
 		<key>app/pages/mytask/mytask.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sbNBpdem5IIzl8jjFQ57mUDUYio=
+			S99U6Wwc/9F++c9+NFEQgFs25No=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMsN7ziViW7JVBd/hrigDoie/B1VXlGRUDy2fM3sDVk=
+			lGdnjaSmwWGr5uXe3pMpLCD9fEsT3WuffYyVGdj3k3I=
 			</data>
 		</dict>
 		<key>app/pages/mytask/mytask.css</key>
@@ -17437,44 +17453,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RqVIj1Uh/mKTRELNr0gti57x3nA=
+			lEOk9wMx9pAOKDQl3ePoqGF/HH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EtyzIU9JCXAmznsmA9AD7YNDi5KgxqvKH2BYUixlrqI=
+			/iI3tPZ+0nkHynjccSLq8oVvTgQcg8NaJAYqs44WU6U=
 			</data>
 		</dict>
 		<key>app/pages/othertask/othertask-common.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PSP1DVqv90jC+n3vHXJwhy8qoHc=
+			NPuj8RvOLkjyZcxWT1b4AZiM+6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			l99nyzAS2bne/LVv+Oex8h9QnMnx1eiALkgmfMVU1Ns=
+			lM5p/UXiKitH5nn0zJy6pp8Ql793h8Xoj2wPrZtA8IE=
 			</data>
 		</dict>
 		<key>app/pages/othertask/othertask.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0vJgsvinKzEdt2FjFS/2bMUIHn8=
+			ym5I6HbHElKoZVjgP2Z0br0pvYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			N1W7IuGY8jMbDPZN+PGUXRytsxMdpP/HZQWqO+EZPtk=
+			dCn6vXfSIEtVIbnekXlLA0vgO4uDKC6JZlsjiLIo74g=
 			</data>
 		</dict>
 		<key>app/pages/othertask/othertask.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ycc0dcHG7ipFonQo7n+jvGLYZF8=
+			AcjR/W602cp9s4xV2VyuDRHXAbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zhtuoPQP8unw3PBaLi7W+DU7mdWgzV6PTLFxKZ8Vhcw=
+			Hm2n1738lCrcALEFN2Nff72xNvkjVGWtYCZrdxKEw+I=
 			</data>
 		</dict>
 		<key>app/pages/othertask/othertask.css</key>
@@ -17492,11 +17508,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PSFkIsf8qWKRrQBdmvTxW6ZEGwc=
+			WqQR2p5zr0bnWmQfiu6KQ53LTO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nQhwIHt9CLAiOu4mqgcA8zaq35/3wQuI19hRAvIgAZE=
+			lGH2WTfIrXQhIpI5tF1pB8r2eQiESSE1Pq9YYT+Dm20=
 			</data>
 		</dict>
 		<key>app/pages/performance/performance-common.css</key>
@@ -17558,33 +17574,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z9LL3MopjXVrDM3gYXDNldTkdyY=
+			JswfP0246BDGcflqyJw1ccMgVrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hm6+v1fUe+vnihODZKV43gSVwIXHz9tlrVsUE/xyzmk=
+			9yq3TlkmnV1xwiyDJU1WXZmCDIC/wrcEaE8Ki3TzX5A=
 			</data>
 		</dict>
 		<key>app/pages/registration/registration.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k/QDc5hcEsQgrirm7n+ZCQq0c9Y=
+			OeCTCOX7xLZtVd9hahC/qoY7ibg=
 			</data>
 			<key>hash2</key>
 			<data>
-			jPWbalYMsrgQIbgPDvu6Ken5SA10Q9+LMv87u/hdX/w=
+			RSgdnM+zADRVz41E5ldkQyoRGQ65ql7jHhJHzSgjHxU=
 			</data>
 		</dict>
 		<key>app/pages/registration/registration.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dvIloWHrTfuQ0+ADwdxdH5y0cw8=
+			v3gmcDSAQRsyEd7aasSwajy17gk=
 			</data>
 			<key>hash2</key>
 			<data>
-			LURfBmtxgG4nQodcHt5BKEjlfAkh4oOWMxzZMlCGaHY=
+			ap1O2QLFj2lp3emhiLuUKXghrhvx4EJ0Ne5Q/Is0e7c=
 			</data>
 		</dict>
 		<key>app/pages/registration/registration.css</key>
@@ -17602,22 +17618,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h0RvpqONt6F6eiDtgg48b8wS+Xo=
+			zMmzgawhIxLtwC/NFuqMqBYd5Aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xR6cRGsiclk7rG/AKB7PM/9LsXy8M06AUQSA/fZ1brg=
+			GSnjeAAqdBYnbpSHvmWk3Mtpp+1f4SaslR/sVF/h6dY=
+			</data>
+		</dict>
+		<key>app/service/authentication.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			naYTkBTwPRJszPNSoOppf0mfwkM=
+			</data>
+			<key>hash2</key>
+			<data>
+			CtbFpXZHc+HhPvRwrslynfoQBh+hvWxo6mgXyEW1Lx4=
+			</data>
+		</dict>
+		<key>app/service/authentication.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V6bp/ZIvzNUtwXh6bObK9E3+6D8=
+			</data>
+			<key>hash2</key>
+			<data>
+			lDvuFReLiMKIRmjLUTquzkErQ0MRQRt0kpS2FHpmhjw=
 			</data>
 		</dict>
 		<key>app/service/dataItem.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rNv2IkXkBEguY7ioWmqOG/ESSdg=
+			5CX/S7qSsU0OsCfgUR5Tl41VveA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ga7QhXNfjZoOs1Uvi55ig9qRd+kPJqdxn5j79B0MC8M=
+			+VdGe9ssNQ8KAVC3ncnH13nZJOXktuzXziP//ZlryBA=
 			</data>
 		</dict>
 		<key>app/service/dataItem.service.js</key>
@@ -17646,11 +17684,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AJfIQsokDcPA679UJrVWq/6pvaA=
+			3r8YM0yRY0hyrNgSHBUhH6mBnns=
 			</data>
 			<key>hash2</key>
 			<data>
-			JyS6fzZzWQAeYXiuOvv+8D5YrVoZGievxOe1XREQhyE=
+			8K71u0Dldi2j1X+w2E9TDkXnKNJh6Er6A7eH1WbDgHQ=
+			</data>
+		</dict>
+		<key>app/service/listviewitems.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Atnl/MeOj5FcI6Y0JQpJcRaeVJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			X/iuP81ep1qDoanJffYauq2F0ndOHGWJKLfL7hIvFeE=
+			</data>
+		</dict>
+		<key>app/service/listviewitems.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LtEP0wXgJIf1iJBWPSeCQeRm474=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ut+pxqZC57xeVQjCMDxasGJpKI5F6UQ74owPeKaLW3k=
 			</data>
 		</dict>
 		<key>app/service/mock-dataItems.js</key>
@@ -17679,22 +17739,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b4lNp0uEBdHRZX3pCreBeIx9rCE=
+			CYatDH2XUFM8MxrmamrOmt0kSDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BanJaDSUSFXrndzK77MZ6J55o5KF01cCKF2HhJExEdA=
+			jgxS963nkfGgByu4Cbb8REzBMskHJ9gi5jlAzJTj/Sg=
 			</data>
 		</dict>
 		<key>app/service/user.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7LsENRsnKEfLXeAOhee7Nbrd7J0=
+			JahWcEdXhLtZPVnF9PYxpEgD7ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			XjhvA0XeuWo+efQH4ekvYwUclExoRcMYq7+oaeLPdoQ=
+			bAGdnk6lAH+d9yMlx6qUJa3yuyJbRZvRnpkfc0ogSrY=
 			</data>
 		</dict>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
