@@ -11,12 +11,13 @@
              pullToRefresh="true"
              (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
              id="taskDetailsOverAll"
+
              >
                  
               <ng-template  let-item="item">
                 <StackLayout orientation="vertical">
                   <GridLayout rows="*,*">
-                        <GridLayout id="taskGridViewRow1" class="gridLayout" tap="{{iTemTap}}" row="0" columns="auto,*,*,80" rows="*,*,*">
+                        <GridLayout id="taskGridViewRow1" class="gridLayout" (tap)="iTemTap(item)" row="0" columns="auto,*,*,80" rows="*,*,*">
                                 <StackLayout  orientation="horizontal">
                                     <Label id="asigneeName" class="asigneeName" [text]="item.createdBy"></Label>
                                 </StackLayout>
@@ -45,16 +46,34 @@
                      </GridLayout>
                     
                    <!--Detailed task View-->
-                   <StackLayout  id="taskDetailedView"  orientation="vertical" row="1" visibility="{{ showDetailedView ? 'visible' : 'collapsed' }}">
-                       <Button id="sendReminder" tap="{{sendReminder}}" text="SEND REMINDER"></Button>
-                        
+                   <StackLayout  id="taskDetailedView"  orientation="vertical" row="1" visibility="collapsed">
+                       <Button id="sendReminder" (tap)="sendReminder" text="SEND REMINDER"></Button>
+                        <ListView [items]="detailedDataItems">
+                            <template let-item="item">
+                                <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
+                                        <StackLayout  orientation="horizontal" row="0" col="0">
+                                            <Label id="asigneeName" class="asigneeName" [text]="item.assigneeName"></Label>                                                        
+                                        </StackLayout>
+                                        <StackLayout  orientation="horizontal"  row="0" col="1">
+                                            <Label text="&#xf0f3; " class="reminderFlag" ></Label>                                    
+                                            <Label id="reminderCount" class="remonderCount" [text]="item.remainderCount" ></Label>
+                                        </StackLayout>
+                                                    
+                                        <StackLayout row="2" orientation="horizontal" row="0" col="2">
+                                            <Label text="&#xf1f8; " class="deletionFlag" ></Label>                                        
+                                            <Label id="deleteCount" class="deleteCount" [text]="item.deletionCount" ></Label>
+                                        </StackLayout>
+                                                        
+                                        <StackLayout row="2" orientation="horizontal" row="0" col="3">             
+                                            <Label text="&#xf11e; " class="completionFlag" ></Label>                                                                  
+                                        </StackLayout>                                 
+                                    </GridLayout> 
+                            </template>
+                        </ListView>
                         <!--<ListView items="detailedView">
                             <ListView.itemTemplate>-->
                             
-                                        <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
-                                        <!--<StackLayout  orientation="horizontal" col="0" colSpan="4">
-                                            <Button id="sendReminder" tap="{{sendReminder}}" text="SEND REMINDER"/>
-                                        </StackLayout>-->
+                                        <!-- <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
                                         <StackLayout  orientation="horizontal" row="0" col="0">
                                             <Label id="asigneeName" class="asigneeName" text="DV"></Label>                                                        
                                         </StackLayout>
@@ -73,9 +92,6 @@
                                         </StackLayout>                                 
                                     </GridLayout> 
                                     <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
-                                        <!--<StackLayout  orientation="horizontal" col="0" colSpan="4">
-                                            <Button id="sendReminder" tap="{{sendReminder}}" text="SEND REMINDER"/>
-                                        </StackLayout>-->
                                         <StackLayout  orientation="horizontal" row="0" col="0">
                                             <Label id="asigneeName" class="asigneeName" text="DV"></Label>                                                        
                                         </StackLayout>
@@ -92,7 +108,7 @@
                                         <StackLayout row="2" orientation="horizontal" row="0" col="3">             
                                             <Label text="&#xf11e; " class="completionFlag" ></Label>                                                                  
                                         </StackLayout>                                 
-                                    </GridLayout>                            
+                                    </GridLayout>                             -->
                             <!--</ListView.itemTemplate>
                     </ListView>-->
                  

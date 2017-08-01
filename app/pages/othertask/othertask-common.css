@@ -23,10 +23,13 @@
     margin-top:12;   
     font-size:18;
 }
-#taskDetailedView{
+#taskDetailedView .asigneeName{
+     font-size:17;
+}
+/* #taskDetailedView{
     opacity: 0;
   
-}
+} */
 .gridLayout{
     background-color:#E6B8AF;
     margin-top: 3;

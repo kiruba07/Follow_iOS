@@ -15,7 +15,7 @@ import { ObservableArray } from "tns-core-modules/data/observable-array";
 export class ListViewItems
 {
 
-    
+      
     getMyTaskdetails()
     {
         var dataItems=new ObservableArray([]);
@@ -186,10 +186,153 @@ export class ListViewItems
 
     return dataItems;
     }
+    getOtherTaskDetailsDetailedDetails()
+    {
+            var detailedDataItems=new ObservableArray([]);
+            var onQueryEvent = function(result)
+            {
+            
+            if (!result.error) {
+            
+                var resultJson=result.value;
+                //for not comepleted items
+                    for(var key in resultJson)
+                    {
+                        if(resultJson[key]==null || resultJson[key]=="null"){}
+                        else{
+                        
+                
+                            if(resultJson[key]["createdBy"]==null && 
+                                resultJson[key]["taskName"]==null  && 
+                            resultJson[key]["dueDate"]==null && 
+                            resultJson[key]["remainderCount"]==null && 
+                            resultJson[key]["completionStatus"]==null &&
+                            resultJson[key]["myCompletionStatus"]==null &&
+                            resultJson[key]["deletionCount"]==null && 
+                            resultJson[key]["recipentsCount"]==null  &&
+                            resultJson[key]["completionCount"]==null
+                            
+                            )
+                            { 
+                            }
+                            else
+                            {
+
+                                if(resultJson[key]["myCompletionStatus"])
+                                {
+                                }
+                                else
+                                {
+                                    //myCompletionStatus="notCompleted";
+                                    //console.log("Detailed details===="+resultJson[key]["AssigneeDetails"]);
+                                    for(var key1 in resultJson[key]["AssigneeDetails"])
+                                    {
+                                        // console.log("Detailed Key==="+key1);
+                                        // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
+                                        // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
+                                        // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
+                                        detailedDataItems.push(
+                                        {
+                                            "assigneeName":resultJson[key]["AssigneeDetails"][key1]["assigneeName"] , 
+                                                "remainderCount":resultJson[key]["AssigneeDetails"][key1]["remainderCount"], 
+                                                "deletionCount": resultJson[key]["AssigneeDetails"][key1]["deletionCount"],
+                                                "assigneeNumber": key1, 
+                                        
+                                            },
+                                        );
+                                        //console.log("For loop==="+detailedDataItems);
+                                    }
+                                    
+                                }
+                            
+                            }
+                        }
+    
+                    }
+                    //console.log("Out side For not completed loop==="+detailedDataItems);
+                // for  completed items
+                for(var key in resultJson)
+                    {
+                        if(resultJson[key]==null || resultJson[key]=="null"){}
+                        else{
+                        
+                
+                            if(resultJson[key]["createdBy"]==null && 
+                                resultJson[key]["taskName"]==null  && 
+                            resultJson[key]["dueDate"]==null && 
+                            resultJson[key]["remainderCount"]==null && 
+                            resultJson[key]["completionStatus"]==null &&
+                            resultJson[key]["myCompletionStatus"]==null &&
+                        resultJson[key]["deletionCount"]==null && 
+                            resultJson[key]["recipentsCount"]==null && 
+                            resultJson[key]["completionCount"]==null 
+                            )
+                            { 
+                            }
+                            else
+                            {
+
+                                if(resultJson[key]["myCompletionStatus"])
+                                {
+                                    //myCompletionStatus="completed";
+                                    //console.log("Detailed details===="+resultJson[key]["AssigneeDetails"]);
+                                    for(var key1 in resultJson[key]["AssigneeDetails"])
+                                    {
+                                        // console.log("Detailed Key==="+key1);
+                                        // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
+                                        // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
+                                        // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
+                                        detailedDataItems.push(
+                                        {
+                                            "assigneeName":resultJson[key]["AssigneeDetails"][key1]["assigneeName"] , 
+                                                "remainderCount":resultJson[key]["AssigneeDetails"][key1]["remainderCount"], 
+                                                "deletionCount": resultJson[key]["AssigneeDetails"][key1]["deletionCount"],
+                                                "assigneeNumber": key1, 
+                                        
+                                            },
+                                        );
+                                    }
+                                }
+                                else
+                                {
+                                }
+                                
+
+                            
+                            }
+                        }
+    
+                    }
+                    
+                
+            }
+     console.log("Detailed Items Query==="+detailedDataItems.toLocaleString);
+                
+            
+        };
+
+        var devicePhoneNumber=getString("devicePhoneNumber");
+        console.log("Device Phone Number----"+devicePhoneNumber);
+        firebase.query(
+            onQueryEvent,
+        '/OtherTaskDetails/'+devicePhoneNumber,
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+        console.log("Detailed Items Return==="+detailedDataItems);
+        return detailedDataItems;
+    }
     getOtherTaskDetails()
     {
         var dataItems=new ObservableArray([]);
-        
+        var x=this;
 
         var onQueryEvent = function(result)
         {
@@ -256,7 +399,9 @@ export class ListViewItems
                                     "myCompletionStatus":myCompletionStatus,
                                     "deletionCount":deletionCount
                                 },
-                            );
+                                );
+                                
+                                
                             }
                             
 
@@ -319,7 +464,7 @@ export class ListViewItems
                                     "myCompletionStatus":myCompletionStatus,
                                     "deletionCount":deletionCount
                                 },
-                            );
+                                );
                             }
                             else
                             {
@@ -361,30 +506,26 @@ export class ListViewItems
             var contactList=new ObservableArray([]);
             var onQueryEvent = function(result)
             {
-            // note that the query returns 1 match at a time
-            // in the order specified in the query
             
             if (!result.error)
             {
-                //   console.log("Event type: " + result.type);
-            // console.log("Key: " + result.key);
-               // console.log("Value contact list------: " + JSON.stringify(result.value));
+                
                 var resultJson=result.value;
                 for(var key in resultJson)
                 {
                     console.log('key:::'+key);
                     if(resultJson[key]==null || resultJson[key]=="null")
                     {
-                        //console.log("key is  null---");
+                        
                         
                     }
                     else
                     {
-                        //console.log("key is not  null---");
+                        
 
                         if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null)
                         {
-                            //console.log("Value is null");
+                            
 
                         }
                         else
@@ -395,7 +536,8 @@ export class ListViewItems
                                 "name":resultJson[key]["fName"]+" "+resultJson[key]["lName"],
                                 "number":key,
                                 "checkBox":"\u{f096}",
-                                "selected":false
+                                "selected":false,
+                                "nameLabel":resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0),
 
                             });
                             console.log("Contact list----"+contactList);

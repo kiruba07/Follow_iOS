@@ -35,6 +35,7 @@ export class CreateTaskComponent
    user: User
    contactList=new ObservableArray([]);
    selectedItems:string[]=[];
+   selectedItemsName:string[]=[];
    listViewItems:ListViewItems;
     observable:Observable
     checkTry;
@@ -123,9 +124,9 @@ export class CreateTaskComponent
         let  mm = this.today.getMonth()+1; //January is 0!
         let yyyy = this.today.getFullYear();
 
-        console.log("Current Date ====="+dd);
-        console.log("Current month ====="+mm);
-        console.log("Current year ====="+yyyy);
+        // console.log("Current Date ====="+dd);
+        // console.log("Current month ====="+mm);
+        // console.log("Current year ====="+yyyy);
 
         datePicker.year = yyyy;
          datePicker.month =mm;
@@ -153,11 +154,13 @@ export class CreateTaskComponent
             for(var i=0;i<this.selectedItems.length;i++)
             {
                 var curItem=this.selectedItems[i];
+                //var curItemName=this.selectedItemsName[i]
                 console.log('cur item----'+curItem);
                 if(curItem==item.number)
                 {
                     console.log('index ::::::'+i);
                     this.selectedItems.splice(i,1);
+                    this.selectedItemsName.splice(i,1);
                 }
             }
 
@@ -169,6 +172,8 @@ export class CreateTaskComponent
         else{
              item.checkBox="\u{f046}";
             this.selectedItems.push(item.number);
+            this.selectedItemsName.push(item.nameLabel);
+            
         }
 
         item.selected=!item.selected;
@@ -379,19 +384,13 @@ export class CreateTaskComponent
                     'myCompletionStatus':myCompletionStatus,
             }).then(
                   (res)=>{
-                    // console.log("Task has been saved successfully in my task details-===i==--"+i+"==="+res);
-                    // console.log("Length===i=="+i+"====="+(y.selectedItems.length-1));
-                    // if(i==(y.selectedItems.length-1))
-                    // {
+                    
                         console.log("===IF==");
                     y.router.navigate([
                               '/mainfragment',
                               { outlets: { mytaskoutlet: ['mytask'] } }
                             ]);
-                    // }
-                    // else{
-                    //     console.log("===Else==");
-                    // }
+                    
                   },(res)=>{
                     console.log("Problem in saving my task details---"+res);
                   });
@@ -425,6 +424,7 @@ export class CreateTaskComponent
 
             if(id=="1")
             {
+
                 firebase.setValue(
                 '/OtherTaskDetails/'+devicePhoneNumber+'/'+"1",
                 {
@@ -442,13 +442,29 @@ export class CreateTaskComponent
                 ).then(
                   (res)=>{
                     console.log("Task has been saved successfully in other task details first time---"+res);
-                    this.router.navigate([
-                              '/mainfragment',
-                              { outlets: { mytaskoutlet: ['mytask'] } }
-                            ]);
+                    // this.router.navigate([
+                    //           '/mainfragment',
+                    //           { outlets: { mytaskoutlet: ['mytask'] } }
+                    //         ]);
                   },(res)=>{
                     console.log("Problem in saving my task details---"+res);
                   });
+
+                for(var j=0;j<this.selectedItems.length;j++)
+                {
+                    firebase.setValue(
+                    'OtherTaskDetails/'+devicePhoneNumber+'/1/AssigneeDetails/'+this.selectedItems[j],
+                    {
+                        'assigneeName':this.selectedItemsName[j],
+                        'remainderCount':0,
+                        'deletionCount':0
+                    });
+                }
+
+
+
+
+
             }
             else
             {
@@ -470,24 +486,21 @@ export class CreateTaskComponent
             }).then(
                   (res)=>{
                     console.log("Task has been saved successfully in other task details-========"+res);
-                    // console.log("Length===i=="+i+"====="+(y.selectedItems.length-1));
-                    // if(i==(y.selectedItems.length-1))
-                    // {
-                        console.log("===IF==");
-                    // y.router.navigate([
-                    //           '/mainfragment',
-                    //           { outlets: { mytaskoutlet: ['mytask'] } }
-                    //         ]);
-                    // }
-                    // else{
-                    //     console.log("===Else==");
-                    // }
                   },(res)=>{
                     console.log("Problem in saving my task details---"+res);
                   });
 
                // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
-
+            for(var j=0;j<this.selectedItems.length;j++)
+                {
+                    firebase.setValue(
+                    'OtherTaskDetails/'+devicePhoneNumber+'/'+id+'/AssigneeDetails/'+this.selectedItems[j],
+                    {
+                        'assigneeName':this.selectedItemsName[j],
+                        'remainderCount':0,
+                        'deletionCount':0
+                    });
+                }
             
             }
         

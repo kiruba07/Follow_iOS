@@ -30,14 +30,18 @@ import {
 export class OtherTaskComponent implements OnInit
 {
     dataItems=new ObservableArray([]);
+    detailedDataItems= new ObservableArray([]);
     listViewItems:ListViewItems;
 
     constructor(private router: Router) {
         this.listViewItems=new ListViewItems;
+        this.detailedDataItems=this.listViewItems.getOtherTaskDetailsDetailedDetails();
     }
 
     ngOnInit() {
         this.dataItems=this.listViewItems.getOtherTaskDetails();  
+        //this.detailedDataItems=this.listViewItems.getOtherTaskDetailsDetailedDetails(); 
+       // console.log("Detailed Items in other task component=="+this.detailedDataItems);
     }
     public onSwipeCellStarted(args: ListViewEventData)
     {
@@ -85,6 +89,10 @@ export class OtherTaskComponent implements OnInit
         //delete task in my task details page
        
    }
+    itemTap(item)
+    {
+        
+    }
 
     createTask(){
             this.router.navigate(["/createtask"]);
