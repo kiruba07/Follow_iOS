@@ -46,7 +46,7 @@
                      </GridLayout>
                     
                    <!--Detailed task View-->
-                   <StackLayout  id="taskDetailedView"  orientation="vertical" row="1" visibility="collapsed">
+                   <StackLayout  id="taskDetailedView"  orientation="vertical" row="1" visibility="visible">
                        <Button id="sendReminder" (tap)="sendReminder" text="SEND REMINDER"></Button>
                         <ListView [items]="detailedDataItems">
                             <template let-item="item">
