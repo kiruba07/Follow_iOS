@@ -156,11 +156,6 @@
    border-radius: 2;
    margin-left:2;
   
-   /* border-right: 10px solid white; */
-    /* margin-left:20;
-    margin-right:20; */
-   
-  
 }
 
 #float-btn{
@@ -186,7 +181,7 @@
     position: absolute;
     /* min-height: 50; */
     background-color: white; 
-    opacity: 0.9;
+    opacity: 0.95;
     
     /* margin-top:50; */
     
@@ -195,7 +190,12 @@
  margin:20; 
  margin-top:25%; 
 position: absolute;
+padding:3;
 min-height:50;
+border-color: #1F497D;
+border-width:2;
+border-radius: 3;
+
 /* vertical-align: middle; */
 }
 .asigneeNameDetailed{

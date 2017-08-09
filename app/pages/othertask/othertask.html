@@ -1,6 +1,6 @@
-<!-- <ActionBar title="Other Task">
+ <ActionBar [title]="pageTitle" visibility="collapsed">
  <NavigationButton  (tap)="goBack()" visibility="collapsed"></NavigationButton> 
-</ActionBar> -->
+</ActionBar> 
 
 
 <GridLayout id="otherTaskDetailsDock">
@@ -87,6 +87,7 @@
         <Label text="+" (tap)="createTask()" id="float-btn-txt"></Label>  
     </StackLayout>
     <StackLayout id="dView" [visibility]="showDetailedView">
+         
         <StackLayout id="fullView">
                     <GridLayout  class="" columns="*,*" rows="40">
                         <Button id="sendReminder" row="0" col="0" (tap)="sendReminder()" text="SEND REMINDER"></Button>
@@ -115,5 +116,6 @@
                             </template>
                         </ListView>
             </StackLayout>
+         
     </StackLayout>
 </GridLayout>

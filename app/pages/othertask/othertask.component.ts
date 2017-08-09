@@ -36,13 +36,14 @@ export class OtherTaskComponent implements OnInit
     listViewItems:ListViewItems;
     tappedItemKey;
     
+    pageTitle;
    
     showDetailedView;
 
     constructor(private router: Router,private page: Page) {
         this.listViewItems=new ListViewItems;
         this.showDetailedView="collapse";
-
+        this.pageTitle="Other Task";
         
     }
 
@@ -210,7 +211,9 @@ export class OtherTaskComponent implements OnInit
                 '/OtherTaskDetails/'+devicePhoneNumber+'/'+tappedItemKey,
                 {
                     'remainderCount':result.value+1,
-                });
+                }).then((res)=>{
+                    
+                },(res)=>{});
             }
         }
         firebase.query(
@@ -226,8 +229,14 @@ export class OtherTaskComponent implements OnInit
               
           }
         );
+        timerModule.setTimeout(function ()
+        {
+            x.dataItems=x.listViewItems.getOtherTaskDetails();
+            x.showDetailedView="collapse"; 
+        },500);
         
 
+        
         
        
 

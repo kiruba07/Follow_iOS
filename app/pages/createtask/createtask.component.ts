@@ -49,6 +49,7 @@ export class CreateTaskComponent
     datePickervalue:string;
     taskField;
     today=new Date();
+    pageTitle;
     constructor(private router: Router,private page: Page,private routerExtensions: RouterExtensions)
     {
         this.user = new User();
@@ -60,6 +61,7 @@ export class CreateTaskComponent
         this.datePickerView="collapse";
         this.buttonView="visible";
         this.checkTry="check";
+        this.pageTitle="Create Task";
         
     }
 
@@ -115,6 +117,12 @@ export class CreateTaskComponent
         this.buttonView="visible";
         this.hideSoftKeypad();
         
+    }
+    cancel(){
+        this.router.navigate([
+                              '/mainfragment',
+                              { outlets: { mytaskoutlet: ['mytask'] } }
+                            ]);
     }
      onPickerLoaded(args) {
         let datePicker = <DatePicker>args.object;

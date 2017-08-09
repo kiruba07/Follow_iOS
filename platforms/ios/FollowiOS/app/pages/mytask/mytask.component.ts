@@ -31,8 +31,10 @@ export class MyTaskComponent implements OnInit
 
      dataItems=new ObservableArray([]);
      listViewItems:ListViewItems
+     pageTitle;
     constructor(private router: Router) {
         this.listViewItems=new ListViewItems;
+        this.pageTitle="My Task";
     }
     ngOnInit() {
        
@@ -43,6 +45,10 @@ export class MyTaskComponent implements OnInit
 
     
     }
+    onViewLoaded(){
+      alert("Loaded");
+    }
+    
     public onSwipeCellStarted(args: ListViewEventData)
     {
     var swipeLimits = args.data.swipeLimits;
