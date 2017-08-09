@@ -23,9 +23,24 @@
     margin-top:12;   
     font-size:18;
 }
-#taskDetailedView{
+.taskDetailedView .asigneeName{
+     font-size:17;
+}
+/* #taskDetailedView{
     opacity: 0;
   
+} */
+.hide{
+    visibility:collapse;
+}
+.show{
+    visibility:visible;
+}
+.showDetailedView{
+    visibility: visible;
+}
+.CollapseDetailedView{
+    visibility: collapse;
 }
 .gridLayout{
     background-color:#E6B8AF;
@@ -120,7 +135,7 @@
       margin-top:3;
        padding-top:30;  
 }
-#taskDetailedView{
+.taskDetailedView{
     margin-top:10;
     margin-bottom:10;
     margin-right:10;
@@ -137,12 +152,12 @@
 
 #float-btn{
     
-    background-color: #30bcff;
-    width:40;
-    height:40;
+    background-color: #3C5AFD;
+    width:50;
+    height:50;
     text-align:center;
     vertical-align: middle;
-    margin-top: 80%;
+    margin-top: 85%;
     margin-left: 80%;
     border-radius: 50%;
     margin-bottom: 20;
@@ -151,6 +166,6 @@
 #float-btn-txt{
     color:#ffffff;
     font-size:36;
-    margin-top:-4;
+    margin-top:-5;
     
 }

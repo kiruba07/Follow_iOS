@@ -145,8 +145,15 @@ export class MyTaskComponent implements OnInit
               },
               
           }
-      );  
-      
+      ); 
+        
+      //update individual completion stats in other task details
+              firebase.update(
+                '/OtherTaskDetails/'+this.dataItems.getItem(tapIndex).createdByNumber+'/'+this.dataItems.getItem(tapIndex).key+'/AssigneeDetails/'+devicePhoneNumber,
+                {
+                    'completionStatus':true,
+                }
+                );
    }
    deleteTask(args)
    {
@@ -203,8 +210,15 @@ export class MyTaskComponent implements OnInit
               },
               
           }
-      );
+        );
 
+        //update individual deletion count in other task details
+              firebase.update(
+                '/OtherTaskDetails/'+this.dataItems.getItem(tapIndex).createdByNumber+'/'+this.dataItems.getItem(tapIndex).key+'/AssigneeDetails/'+devicePhoneNumber,
+                {
+                    'deletionCount':1,
+                }
+                );
         
 
    }

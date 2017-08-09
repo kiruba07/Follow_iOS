@@ -1,1 +1,24 @@
-<Label text="maintenance"></Label>
+<Accordion items="items" itemTapped="tapped" headerTextBold="true" headerTextColor="white" headerColor="pink" headerTextColor="blue"
+    allowMultiple="true"  selectedIndex="2">
+ 
+    <ng-template accordionHeaderTemplate let-item="item" let-i="index">
+        <GridLayout backgroundColor="blue" columns="auto,*">
+            <Label text="title"></Label>
+        </GridLayout>
+    </ng-template>
+ 
+    <ng-template accordionItemTemplate let-item="item" let-parent="parentIndex" let-even="even" let-child="childIndex">
+        <StackLayout>
+            <Label text="text"></Label>
+        </StackLayout>
+    </ng-template>
+ 
+    <!-- IOS Only -->
+    <ng-template accordionFooterTemplate let-item="item" let-i="index">
+        <GridLayout backgroundColor="yellow" columns="auto,*">
+            <Label text="footer"></Label>
+            <Label col="1" text="-"></Label>
+        </GridLayout>
+    </ng-template>
+    <!-- IOS Only -->
+</Accordion>

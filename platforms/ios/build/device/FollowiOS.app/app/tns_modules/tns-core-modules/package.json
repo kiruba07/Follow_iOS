@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "tns-core-modules@~3.1.0",
+        "raw": "tns-core-modules",
         "scope": null,
         "escapedName": "tns-core-modules",
         "name": "tns-core-modules",
-        "rawSpec": "~3.1.0",
-        "spec": ">=3.1.0 <3.2.0",
-        "type": "range"
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
       },
-      "/Users/kirubanandh/Documents/TNS/Follow/node_modules/tns-template-hello-world-ng"
+      "/Users/kirubanandh/Documents/TNS/Follow_iOS"
     ]
   ],
-  "_from": "tns-core-modules@>=3.1.0 <3.2.0",
+  "_from": "tns-core-modules@latest",
   "_id": "tns-core-modules@3.1.0",
   "_inCache": true,
   "_location": "/tns-core-modules",
@@ -29,22 +29,23 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "tns-core-modules@~3.1.0",
+    "raw": "tns-core-modules",
     "scope": null,
     "escapedName": "tns-core-modules",
     "name": "tns-core-modules",
-    "rawSpec": "~3.1.0",
-    "spec": ">=3.1.0 <3.2.0",
-    "type": "range"
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
-    "/tns-template-hello-world-ng"
+    "#USER",
+    "/"
   ],
   "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.1.0.tgz",
   "_shasum": "8925ecae1656b32b4e3265498cb23c1078c2f667",
   "_shrinkwrap": null,
-  "_spec": "tns-core-modules@~3.1.0",
-  "_where": "/Users/kirubanandh/Documents/TNS/Follow/node_modules/tns-template-hello-world-ng",
+  "_spec": "tns-core-modules",
+  "_where": "/Users/kirubanandh/Documents/TNS/Follow_iOS",
   "dependencies": {
     "tns-core-modules-widgets": "3.1.0"
   },

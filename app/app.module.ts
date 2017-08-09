@@ -7,6 +7,7 @@ import { NativeScriptUICalendarModule } from "nativescript-telerik-ui-pro/calend
 import { NativeScriptUIListViewModule } from "nativescript-telerik-ui-pro/listview/angular";
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
+//import { AccordionModule } from "nativescript-accordion/angular";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { routes, navigatableComponents } from "./app.routing";
   bootstrap: [AppComponent],
 
   imports: [
+    //AccordionModule,
     NativeScriptModule,
     NativeScriptFormsModule,
     NativeScriptHttpModule,

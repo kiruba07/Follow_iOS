@@ -1,6 +1,9 @@
     <StackLayout id="registrationPageLayout">
-        <TextField id="userName" hint="User Name" returnKeyType="next" [(ngModel)]="user.userName"></TextField>
+        <TextField id="fName" hint="First Name" returnKeyType="next" [(ngModel)]="user.fName"></TextField>
+        <TextField id="lName" hint="Last Name" returnKeyType="next" [(ngModel)]="user.lName"></TextField>
+        <TextField id="eMail" hint="eMail.." returnKeyType="next" [(ngModel)]="user.eMail" keyboardType="email"></TextField>
+
         <TextField id="Password" hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
         <TextField id="contactNumber" hint="Contact Number" keyboardType="phone" [(ngModel)]="user.phoneNumber"></TextField>
-        <Button id="register" text="Register App" (tap)="register()"></Button>
+        <Button id="register" text="Register App   >" (tap)="register()"></Button>
     </StackLayout>

@@ -1,0 +1,125 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-accordion",
+        "scope": null,
+        "escapedName": "nativescript-accordion",
+        "name": "nativescript-accordion",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/kirubanandh/Documents/TNS/Follow_iOS"
+    ]
+  ],
+  "_from": "nativescript-accordion@latest",
+  "_id": "nativescript-accordion@4.0.1",
+  "_inCache": true,
+  "_location": "/nativescript-accordion",
+  "_nodeVersion": "6.10.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-accordion-4.0.1.tgz_1495587914999_0.40637851785868406"
+  },
+  "_npmUser": {
+    "name": "triniwiz",
+    "email": "fortune.osei@yahoo.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-accordion",
+    "scope": null,
+    "escapedName": "nativescript-accordion",
+    "name": "nativescript-accordion",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-accordion/-/nativescript-accordion-4.0.1.tgz",
+  "_shasum": "0a395f420facf2bca185adf435202e68f4e4aef9",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-accordion",
+  "_where": "/Users/kirubanandh/Documents/TNS/Follow_iOS",
+  "author": {
+    "name": "Osei Fortune",
+    "email": "fortune.osei@yahoo.com"
+  },
+  "bugs": {
+    "url": "https://github.com/triniwiz/nativescript-accordion/issues"
+  },
+  "dependencies": {},
+  "description": "A layout which supports expanding and collapsing child views",
+  "devDependencies": {
+    "@angular/animations": "4.0.3",
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/compiler-cli": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-server": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "nativescript-angular": "~3.0.0",
+    "rxjs": "~5.0.0",
+    "tns-core-modules": "^3.0.0",
+    "tns-platform-declarations": "^3.0.0",
+    "typescript": "~2.2.0",
+    "zone.js": "^0.8.4"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "0a395f420facf2bca185adf435202e68f4e4aef9",
+    "tarball": "https://registry.npmjs.org/nativescript-accordion/-/nativescript-accordion-4.0.1.tgz"
+  },
+  "gitHead": "1e1f6a934e7dcfc413b0533ca7d2a05fad1f131a",
+  "homepage": "https://github.com/triniwiz/nativescript-accordion",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": "MIT",
+  "main": "accordion",
+  "maintainers": [
+    {
+      "name": "triniwiz",
+      "email": "fortune.osei@yahoo.com"
+    }
+  ],
+  "name": "nativescript-accordion",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "3.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triniwiz/nativescript-accordion.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
+    "ngc": "npm run ngc.clean && node --max-old-space-size=8192 ./node_modules/.bin/ngc -p tsconfig.aot.json",
+    "ngc.clean": "find ./src ./ angular/ -name '*.metadata.json' -delete",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-accordion && tns plugin add .. && tns install",
+    "prepublish": "npm run ngc && npm run build",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "version": "4.0.1"
+}

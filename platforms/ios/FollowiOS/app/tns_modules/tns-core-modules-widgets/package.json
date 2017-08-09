@@ -10,7 +10,7 @@
         "spec": "3.1.0",
         "type": "version"
       },
-      "/Users/kirubanandh/Documents/TNS/Follow/node_modules/tns-core-modules"
+      "/Users/kirubanandh/Documents/TNS/Follow_iOS/node_modules/tns-core-modules"
     ]
   ],
   "_from": "tns-core-modules-widgets@3.1.0",
@@ -44,7 +44,7 @@
   "_shasum": "de91a56a0c8cfb3871c68d651ae7803f233f5119",
   "_shrinkwrap": null,
   "_spec": "tns-core-modules-widgets@3.1.0",
-  "_where": "/Users/kirubanandh/Documents/TNS/Follow/node_modules/tns-core-modules",
+  "_where": "/Users/kirubanandh/Documents/TNS/Follow_iOS/node_modules/tns-core-modules",
   "author": {
     "name": "NativeScript team"
   },

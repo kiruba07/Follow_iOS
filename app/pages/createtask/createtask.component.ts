@@ -498,7 +498,8 @@ export class CreateTaskComponent
                     {
                         'assigneeName':this.selectedItemsName[j],
                         'remainderCount':0,
-                        'deletionCount':0
+                        'deletionCount':0,
+                        'completionStatus':false
                     });
                 }
             

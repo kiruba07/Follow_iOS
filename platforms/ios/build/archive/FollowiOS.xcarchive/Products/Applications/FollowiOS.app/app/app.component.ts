@@ -25,7 +25,7 @@ export class AppComponent {
     
     firebase.init({
       
-      persist: true,
+      persist: false,
       
     }).then(
       (instance) => {
@@ -35,12 +35,10 @@ export class AppComponent {
         console.log("firebase.init error: " + error);
       }
     );
-    
-    
-    
-  // firebase.logout();
-
+//firebase.logout();
     this.noBoolKey = hasKey("noBoolKey");
+
+    //console.log("Bool val---"+getBoolean("noBoolKey"));
     if(this.noBoolKey)
     {
       console.log("Alreday registered ----");

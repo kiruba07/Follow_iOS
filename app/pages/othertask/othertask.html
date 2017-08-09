@@ -7,8 +7,8 @@
            
              <RadListView  [items]="dataItems" swipeActions="true" 
              selectionBehavior="None" 
-             (itemSwipeProgressStarted)="onSwipeCellStarted($event)" 
              pullToRefresh="true"
+             (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
              (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
              id="taskDetailsOverAll"
 
@@ -17,7 +17,7 @@
               <ng-template  let-item="item">
                 <StackLayout orientation="vertical">
                   <GridLayout rows="*,*">
-                        <GridLayout id="taskGridViewRow1" class="gridLayout" (tap)="iTemTap(item)" row="0" columns="auto,*,*,80" rows="*,*,*">
+                        <GridLayout id="taskGridViewRow1" class="gridLayout" (tap)="itemTap(item)" row="0" columns="auto,*,*,80" rows="*,*,*">
                                 <StackLayout  orientation="horizontal">
                                     <Label id="asigneeName" class="asigneeName" [text]="item.createdBy"></Label>
                                 </StackLayout>
@@ -46,7 +46,7 @@
                      </GridLayout>
                     
                    <!--Detailed task View-->
-                   <StackLayout  id="taskDetailedView"  orientation="vertical" row="1" visibility="visible">
+                   <!-- <StackLayout  [id]="item.detailedViewkey"  class="taskDetailedView hide" orientation="vertical" row="1" >
                        <Button id="sendReminder" (tap)="sendReminder" text="SEND REMINDER"></Button>
                         <ListView [items]="detailedDataItems">
                             <template let-item="item">
@@ -69,52 +69,8 @@
                                         </StackLayout>                                 
                                     </GridLayout> 
                             </template>
-                        </ListView>
-                        <!--<ListView items="detailedView">
-                            <ListView.itemTemplate>-->
-                            
-                                        <!-- <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
-                                        <StackLayout  orientation="horizontal" row="0" col="0">
-                                            <Label id="asigneeName" class="asigneeName" text="DV"></Label>                                                        
-                                        </StackLayout>
-                                        <StackLayout  orientation="horizontal"  row="0" col="1">
-                                            <Label text="&#xf0f3; " class="reminderFlag" ></Label>                                    
-                                            <Label id="reminderCount" class="remonderCount" text="1" ></Label>
-                                        </StackLayout>
-                                                    
-                                        <StackLayout row="2" orientation="horizontal" row="0" col="2">
-                                            <Label text="&#xf1f8; " class="deletionFlag" ></Label>                                        
-                                            <Label id="deleteCount" class="deleteCount" text="4" ></Label>
-                                        </StackLayout>
-                                                        
-                                        <StackLayout row="2" orientation="horizontal" row="0" col="3">             
-                                            <Label text="&#xf11e; " class="completionFlag" ></Label>                                                                  
-                                        </StackLayout>                                 
-                                    </GridLayout> 
-                                    <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
-                                        <StackLayout  orientation="horizontal" row="0" col="0">
-                                            <Label id="asigneeName" class="asigneeName" text="DV"></Label>                                                        
-                                        </StackLayout>
-                                        <StackLayout  orientation="horizontal"  row="0" col="1">
-                                            <Label text="&#xf0f3; " class="reminderFlag" ></Label>                                    
-                                            <Label id="reminderCount" class="remonderCount" text="1" ></Label>
-                                        </StackLayout>
-                                                    
-                                        <StackLayout row="2" orientation="horizontal" row="0" col="2">
-                                            <Label text="&#xf1f8; " class="deletionFlag" ></Label>                                        
-                                            <Label id="deleteCount" class="deleteCount" text="4" ></Label>
-                                        </StackLayout>
-                                                        
-                                        <StackLayout row="2" orientation="horizontal" row="0" col="3">             
-                                            <Label text="&#xf11e; " class="completionFlag" ></Label>                                                                  
-                                        </StackLayout>                                 
-                                    </GridLayout>                             -->
-                            <!--</ListView.itemTemplate>
-                    </ListView>-->
-                 
-                 </StackLayout>
-               
-                   <!--Ends-->
+                        </ListView> 
+                 </StackLayout>-->
                  </GridLayout>   
                </StackLayout>
              </ng-template>
@@ -129,5 +85,35 @@
        </RadListView>
     <StackLayout id="float-btn">
         <Label text="+" (tap)="createTask()" id="float-btn-txt"></Label>  
+    </StackLayout>
+    <StackLayout id="dView" [visibility]="showDetailedView">
+        <StackLayout id="fullView">
+                    <GridLayout  class="" columns="*,*" rows="40">
+                        <Button id="sendReminder" row="0" col="0" (tap)="sendReminder()" text="SEND REMINDER"></Button>
+                        <Button id="cancel" row="0" col="1" (tap)="cancel()" text="CANCEL"></Button>
+                    </GridLayout>
+                        <ListView [items]="detailedDataItems">
+                            <template let-item="item">
+                                <GridLayout  class="gridLayout" columns="*,*,*" rows="*">
+                                        <StackLayout  orientation="horizontal" row="0" col="0">
+                                            <Label id="asigneeName" class="asigneeNameDetailed" [text]="item.assigneeName"></Label>                                                        
+                                        </StackLayout>
+                                        <StackLayout  orientation="horizontal"  row="0" col="1">
+                                            <Label text="&#xf0f3; " class="reminderFlag" ></Label>                                    
+                                            <Label id="reminderCount" class="remonderCount" [text]="item.remainderCount" ></Label>
+                                        </StackLayout>
+                                                    
+                                        <StackLayout orientation="horizontal" row="0" col="2">
+                                            <Label text="&#xf1f8; " class="deletionFlag" ></Label>                                        
+                                            <Label id="deleteCount" class="deleteCount" [text]="item.deletionCount" ></Label>
+                                        </StackLayout>
+                                                        
+                                        <!-- <StackLayout row="2" orientation="horizontal" row="0" col="3">             
+                                            <Label text="&#xf11e; " class="completionFlag" ></Label>                                                                  
+                                        </StackLayout>                                  -->
+                                    </GridLayout> 
+                            </template>
+                        </ListView>
+            </StackLayout>
     </StackLayout>
 </GridLayout>

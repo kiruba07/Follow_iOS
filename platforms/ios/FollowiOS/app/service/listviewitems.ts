@@ -186,136 +186,73 @@ export class ListViewItems
 
     return dataItems;
     }
-    getOtherTaskDetailsDetailedDetails()
+    getOtherTaskDetailsDetailedDetails(key)
     {
             var detailedDataItems=new ObservableArray([]);
             var onQueryEvent = function(result)
             {
             
-            if (!result.error) {
+
+            if (!result.error)
+            {
+                
             
                 var resultJson=result.value;
-                //for not comepleted items
+                
                     for(var key in resultJson)
                     {
+                       
                         if(resultJson[key]==null || resultJson[key]=="null"){}
-                        else{
+                        else
+                        {
                         
-                
-                            if(resultJson[key]["createdBy"]==null && 
-                                resultJson[key]["taskName"]==null  && 
-                            resultJson[key]["dueDate"]==null && 
-                            resultJson[key]["remainderCount"]==null && 
-                            resultJson[key]["completionStatus"]==null &&
-                            resultJson[key]["myCompletionStatus"]==null &&
-                            resultJson[key]["deletionCount"]==null && 
-                            resultJson[key]["recipentsCount"]==null  &&
-                            resultJson[key]["completionCount"]==null
-                            
-                            )
-                            { 
-                            }
-                            else
-                            {
+                            // console.log("ELSE===");
+                            // console.log("Assignee Name==="+resultJson[key]["assigneeName"]);
+                            // console.log("deletionCount==="+resultJson[key]["deletionCount"]);
+                            // console.log("remainderCount==="+resultJson[key]["remainderCount"]);
 
-                                if(resultJson[key]["myCompletionStatus"])
-                                {
-                                }
-                                else
-                                {
-                                    //myCompletionStatus="notCompleted";
-                                    //console.log("Detailed details===="+resultJson[key]["AssigneeDetails"]);
-                                    for(var key1 in resultJson[key]["AssigneeDetails"])
-                                    {
-                                        // console.log("Detailed Key==="+key1);
-                                        // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
-                                        // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
-                                        // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
-                                        detailedDataItems.push(
-                                        {
-                                            "assigneeName":resultJson[key]["AssigneeDetails"][key1]["assigneeName"] , 
-                                                "remainderCount":resultJson[key]["AssigneeDetails"][key1]["remainderCount"], 
-                                                "deletionCount": resultJson[key]["AssigneeDetails"][key1]["deletionCount"],
-                                                "assigneeNumber": key1, 
-                                        
-                                            },
-                                        );
-                                        //console.log("For loop==="+detailedDataItems);
-                                    }
-                                    
-                                }
-                            
-                            }
-                        }
-    
-                    }
-                    //console.log("Out side For not completed loop==="+detailedDataItems);
-                // for  completed items
-                for(var key in resultJson)
-                    {
-                        if(resultJson[key]==null || resultJson[key]=="null"){}
-                        else{
-                        
-                
-                            if(resultJson[key]["createdBy"]==null && 
-                                resultJson[key]["taskName"]==null  && 
-                            resultJson[key]["dueDate"]==null && 
-                            resultJson[key]["remainderCount"]==null && 
-                            resultJson[key]["completionStatus"]==null &&
-                            resultJson[key]["myCompletionStatus"]==null &&
-                        resultJson[key]["deletionCount"]==null && 
-                            resultJson[key]["recipentsCount"]==null && 
-                            resultJson[key]["completionCount"]==null 
-                            )
-                            { 
-                            }
+                            if(resultJson[key]["assigneeName"]==null && 
+                                resultJson[key]["deletionCount"]==null  && 
+                            resultJson[key]["remainderCount"]==null ){}
                             else
-                            {
-
-                                if(resultJson[key]["myCompletionStatus"])
-                                {
-                                    //myCompletionStatus="completed";
-                                    //console.log("Detailed details===="+resultJson[key]["AssigneeDetails"]);
-                                    for(var key1 in resultJson[key]["AssigneeDetails"])
-                                    {
-                                        // console.log("Detailed Key==="+key1);
-                                        // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
-                                        // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
-                                        // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
-                                        detailedDataItems.push(
-                                        {
-                                            "assigneeName":resultJson[key]["AssigneeDetails"][key1]["assigneeName"] , 
-                                                "remainderCount":resultJson[key]["AssigneeDetails"][key1]["remainderCount"], 
-                                                "deletionCount": resultJson[key]["AssigneeDetails"][key1]["deletionCount"],
-                                                "assigneeNumber": key1, 
-                                        
-                                            },
-                                        );
-                                    }
-                                }
-                                else
-                                {
-                                }
+                            {    
+                                //   console.log("ELSE===");
                                 
+                                    // for(var key1 in resultJson[key]["AssigneeDetails"])
+                                    // {
+                                        // console.log("Detailed Key==="+key1);
+                                        // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
+                                        // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
+                                        // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
+                                        detailedDataItems.push(
+                                        {
+                                                "assigneeName":resultJson[key]["assigneeName"] , 
+                                                "remainderCount":resultJson[key]["remainderCount"], 
+                                                "deletionCount": resultJson[key]["deletionCount"],
+                                                "assigneeNumber": key, 
+                                                "completionStatus":resultJson[key]["completionStatus"],
 
+                                        
+                                            },
+                                        );
+                                        // console.log("For loop==="+detailedDataItems);
+                                    // }
+                                    
+                               
                             
                             }
                         }
     
                     }
-                    
-                
-            }
-     console.log("Detailed Items Query==="+detailedDataItems.toLocaleString);
-                
-            
+            } 
         };
 
         var devicePhoneNumber=getString("devicePhoneNumber");
         console.log("Device Phone Number----"+devicePhoneNumber);
+        // console.log("Device Phone Number--Key--"+key);
         firebase.query(
             onQueryEvent,
-        '/OtherTaskDetails/'+devicePhoneNumber,
+        '/OtherTaskDetails/'+devicePhoneNumber+'/'+key+'/AssigneeDetails/',
             {
                 
                 singleEvent: true,
@@ -326,7 +263,7 @@ export class ListViewItems
                 
             }
         );
-        console.log("Detailed Items Return==="+detailedDataItems);
+        //console.log("Detailed Items Return==="+detailedDataItems);
         return detailedDataItems;
     }
     getOtherTaskDetails()
@@ -397,7 +334,8 @@ export class ListViewItems
                                     "completionStatus": completionCount+"/"+recepientsCount,
                                     "key":key,
                                     "myCompletionStatus":myCompletionStatus,
-                                    "deletionCount":deletionCount
+                                    "deletionCount":deletionCount,
+                                    "detailedViewkey":"taskDetailedView"+key
                                 },
                                 );
                                 
@@ -462,7 +400,8 @@ export class ListViewItems
                                     "completionStatus": completionCount+"/"+recepientsCount,
                                     "key":key,
                                     "myCompletionStatus":myCompletionStatus,
-                                    "deletionCount":deletionCount
+                                    "deletionCount":deletionCount,
+                                     "detailedViewkey":"taskDetailedView"+key
                                 },
                                 );
                             }
@@ -483,7 +422,7 @@ export class ListViewItems
     };
 
     var devicePhoneNumber=getString("devicePhoneNumber");
-    console.log("Device Phone Number----"+devicePhoneNumber);
+    console.log("Device Phone Number---othertask=====-"+devicePhoneNumber);
     firebase.query(
         onQueryEvent,
        '/OtherTaskDetails/'+devicePhoneNumber,
