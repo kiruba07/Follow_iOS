@@ -1,6 +1,6 @@
-<!-- <ActionBar title="My Task">
+<ActionBar [title]="pageTitle" visibility="collapsed">
  <NavigationButton  (tap)="goBack()" visibility="collapsed"></NavigationButton> 
-</ActionBar> -->
+</ActionBar> 
 
 
 <GridLayout id="myTaskDetailsDock">
@@ -9,6 +9,7 @@
       (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
       pullToRefresh="true"
       (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+     
       >
       <ng-template  let-item="item">
             <StackLayout orientation="vertical">

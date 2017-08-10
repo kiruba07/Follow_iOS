@@ -16,14 +16,12 @@ var OtherTaskComponent = (function () {
         this.page = page;
         this.dataItems = new observable_array_1.ObservableArray([]);
         this.detailedDataItems = new observable_array_1.ObservableArray([]);
-        this.showView = true;
         this.listViewItems = new listviewitems_1.ListViewItems;
-        this.showView = false;
+        this.showDetailedView = "collapse";
+        this.pageTitle = "Other Task";
     }
     OtherTaskComponent.prototype.ngOnInit = function () {
         this.dataItems = this.listViewItems.getOtherTaskDetails();
-        //this.detailedDataItems=this.listViewItems.getOtherTaskDetailsDetailedDetails(); 
-        // console.log("Detailed Items in other task component=="+this.detailedDataItems);
     };
     OtherTaskComponent.prototype.onSwipeCellStarted = function (args) {
         var swipeLimits = args.data.swipeLimits;
@@ -42,45 +40,130 @@ var OtherTaskComponent = (function () {
         }, 1000);
     };
     OtherTaskComponent.prototype.deleteTask = function (args) {
-        var _this = this;
         var tapIndex = this.dataItems.indexOf(args.object.bindingContext);
         console.log("Item Kay======" + this.dataItems.getItem(tapIndex).key);
         console.log("Task Name======" + this.dataItems.getItem(tapIndex).taskName);
         var createdByNumber = this.dataItems.getItem(tapIndex).createdByNumber;
-        var key = this.dataItems.getItem(tapIndex).key;
+        //var key=this.dataItems.getItem(tapIndex).key;
+        var itemKey = this.dataItems.getItem(tapIndex).key;
         var devicePhoneNumber = application_settings_1.getString("devicePhoneNumber");
+        var x = this;
+        var onQueryEvent = function (result) {
+            console.log("Delete My task");
+            if (!result.error) {
+                console.log("IF");
+                var resultJson = result.value;
+                console.log("Result==" + resultJson);
+                for (var key1 in resultJson) {
+                    console.log("Assignee Number" + key1);
+                    if (key1 == null || key1 == "null") { }
+                    else {
+                        //delete the task in my task details
+                        firebase.remove('/MyTaskDetails/' + key1 + '/' + itemKey);
+                    }
+                }
+                x.deleteOtherTask(devicePhoneNumber, tapIndex, itemKey);
+            }
+        };
+        firebase.query(onQueryEvent, '/OtherTaskDetails/' + devicePhoneNumber + '/' + itemKey + '/AssigneeDetails', {
+            singleEvent: true,
+            orderBy: {
+                type: firebase.QueryOrderByType.KEY,
+            },
+        });
+        timerModule.setTimeout(function () {
+            x.dataItems = x.listViewItems.getOtherTaskDetails();
+        }, 1000);
+    };
+    OtherTaskComponent.prototype.deleteOtherTask = function (devicePhoneNumber, tapIndex, itemKey) {
         //delete task in other task details page
-        firebase.remove('/OtherTaskDetails/' + devicePhoneNumber + '/' + this.dataItems.getItem(tapIndex).key).then(function (res) {
-            console.log("Task has been deleted successfully in other task details---" + res);
-            _this.dataItems = _this.listViewItems.getOtherTaskDetails();
+        firebase.remove('/OtherTaskDetails/' + devicePhoneNumber + '/' + itemKey).then(function (res) {
+            console.log("Task has been deleted successfully in other task details---");
         }, function (res) {
             console.log("Problem in deleting other task details---" + res);
         });
-        //delete task in my task details page
+    };
+    OtherTaskComponent.prototype.cancel = function () {
+        this.showDetailedView = "collapse";
+    };
+    OtherTaskComponent.prototype.getRemainderCountAndUpdate = function (number, cStatus, rCount) {
+        var devicePhoneNumber = application_settings_1.getString("devicePhoneNumber");
+        firebase.update('/MyTaskDetails/' + number + '/' + this.tappedItemKey, {
+            'remainderCount': rCount + 1,
+        });
+        firebase.update('/OtherTaskDetails/' + devicePhoneNumber + '/' + this.tappedItemKey + '/AssigneeDetails/' + number, {
+            'remainderCount': rCount + 1,
+        });
+    };
+    OtherTaskComponent.prototype.sendReminder = function () {
+        console.log("tappedItemKey===" + this.tappedItemKey);
+        var tappedItemKey = this.tappedItemKey;
+        var reminderSendDetails = new observable_array_1.ObservableArray([]);
+        var x = this;
+        var devicePhoneNumber = application_settings_1.getString("devicePhoneNumber");
+        console.log("Length===" + this.detailedDataItems.length);
+        for (var i = 0; i < this.detailedDataItems.length; i++) {
+            var number = this.detailedDataItems.getItem(i).assigneeNumber;
+            var cStatus = this.detailedDataItems.getItem(i).completionStatus;
+            var rCount = this.detailedDataItems.getItem(i).remainderCount;
+            console.log("Number====" + number);
+            console.log("cStatus====" + cStatus);
+            console.log("rCount====" + rCount);
+            if (!cStatus)
+                this.getRemainderCountAndUpdate(number, cStatus, rCount);
+        }
+        // var tapIndex=this.dataItems.indexOf(tappedItemKey);
+        // console.log("Index==="+tapIndex);
+        // let overAllRemainderCount=this.dataItems.getItem(tapIndex).remainderCount;
+        // console.log("overAllRemainderCount====="+overAllRemainderCount);
+        // firebase.update(
+        // '/OtherTaskDetails/'+devicePhoneNumber+'/'+tappedItemKey,
+        // {
+        //     'remainderCount':overAllRemainderCount+1,
+        // });
+        var onQueryEvent = function (result) {
+            if (!result.error) {
+                firebase.update('/OtherTaskDetails/' + devicePhoneNumber + '/' + tappedItemKey, {
+                    'remainderCount': result.value + 1,
+                }).then(function (res) {
+                }, function (res) { });
+            }
+        };
+        firebase.query(onQueryEvent, '/OtherTaskDetails/' + devicePhoneNumber + '/' + tappedItemKey + '/remainderCount', {
+            singleEvent: true,
+            orderBy: {
+                type: firebase.QueryOrderByType.KEY,
+            },
+        });
+        timerModule.setTimeout(function () {
+            x.dataItems = x.listViewItems.getOtherTaskDetails();
+            x.showDetailedView = "collapse";
+        }, 500);
     };
     OtherTaskComponent.prototype.itemTap = function (item) {
         console.log("ITem Key==" + item.key);
+        this.tappedItemKey = item.key;
+        console.log("tappedItemKey===" + this.tappedItemKey);
         this.detailedDataItems = this.listViewItems.getOtherTaskDetailsDetailedDetails(item.key);
-        var layout = this.page;
-        var classLayout = this.page;
-        layout.className = "taskDetailedView";
-        layout.set("class", "taskDetailedView hide");
-        var idName = "taskDetailedView" + item.key;
-        var detailedViewLayout = layout.getViewById(idName);
-        console.log("ID===" + detailedViewLayout);
-        console.log(" class==" + detailedViewLayout.className.split(" ")[1]);
+        this.showDetailedView = "visible";
+        // var layout = this.page;
+        // var idName="taskDetailedView"+item.key;
+        // var detailedViewLayout = layout.getViewById(idName);
+        // console.log("ID==="+detailedViewLayout);
+        // console.log(" class=="+detailedViewLayout.className.split(" ")[1]);
         //  layout.className="taskDetailedView";
         //var classLayout=layout.className="taskDetailedView";
         // console.log("Calss Layout=="+classLayout);
         // layout.set("class","taskDetailedView hide");
-        if (detailedViewLayout.className.split(" ")[1] == 'show') {
-            // console.log("IF==");
-            detailedViewLayout.set("class", "taskDetailedView hide");
-        }
-        else {
-            // console.log("ELSE==");
-            detailedViewLayout.set("class", "taskDetailedView show");
-        }
+        // if(detailedViewLayout.className.split(" ")[1]=='show')
+        // {
+        //     // console.log("IF==");
+        //     detailedViewLayout.set("class","taskDetailedView hide");
+        // }
+        // else{
+        //     // console.log("ELSE==");
+        //     detailedViewLayout.set("class","taskDetailedView show");
+        // }
         //detailedViewLayout.set("visibility","visible");
         //var taskField = layout.getViewById("taskName");
     };
@@ -99,4 +182,3 @@ OtherTaskComponent = __decorate([
     __metadata("design:paramtypes", [router_1.Router, page_1.Page])
 ], OtherTaskComponent);
 exports.OtherTaskComponent = OtherTaskComponent;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3RoZXJ0YXNrLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm90aGVydGFzay5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwwQ0FBeUM7QUFDekMsc0NBQWtEO0FBQ2xELDJFQUF5RTtBQUV6RSxtRUFBaUU7QUFHakUsNkRBQTREO0FBRTVELG9EQUF1RDtBQUN2RCx1REFBMEQ7QUFDMUQsNkRBVThCO0FBQzlCLGdDQUErQjtBQUMvQix1Q0FBdUM7QUFRdkMsSUFBYSxrQkFBa0I7SUFRM0IsNEJBQW9CLE1BQWMsRUFBUyxJQUFVO1FBQWpDLFdBQU0sR0FBTixNQUFNLENBQVE7UUFBUyxTQUFJLEdBQUosSUFBSSxDQUFNO1FBTnJELGNBQVMsR0FBQyxJQUFJLGtDQUFlLENBQUMsRUFBRSxDQUFDLENBQUM7UUFDbEMsc0JBQWlCLEdBQUUsSUFBSSxrQ0FBZSxDQUFDLEVBQUUsQ0FBQyxDQUFDO1FBRzNDLGFBQVEsR0FBWSxJQUFJLENBQUM7UUFHckIsSUFBSSxDQUFDLGFBQWEsR0FBQyxJQUFJLDZCQUFhLENBQUM7UUFDckMsSUFBSSxDQUFDLFFBQVEsR0FBQyxLQUFLLENBQUM7SUFFeEIsQ0FBQztJQUVELHFDQUFRLEdBQVI7UUFDSSxJQUFJLENBQUMsU0FBUyxHQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsbUJBQW1CLEVBQUUsQ0FBQztRQUN4RCxrRkFBa0Y7UUFDbkYsa0ZBQWtGO0lBQ3JGLENBQUM7SUFDTSwrQ0FBa0IsR0FBekIsVUFBMEIsSUFBdUI7UUFFN0MsSUFBSSxXQUFXLEdBQUcsSUFBSSxDQUFDLElBQUksQ0FBQyxXQUFXLENBQUM7UUFDeEMsSUFBSSxTQUFTLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQy9CLElBQUksUUFBUSxHQUFHLFNBQVMsQ0FBQyxXQUFXLENBQU8sV0FBVyxDQUFDLENBQUM7UUFDeEQsSUFBSSxTQUFTLEdBQUcsU0FBUyxDQUFDLFdBQVcsQ0FBTyxZ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XCJAYW5ndWxhci9yb3V0ZXJcIjtcbmltcG9ydCB7IENvbXBvbmVudCwgT25Jbml0IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IE9ic2VydmFibGVBcnJheSB9IGZyb20gXCJ0bnMtY29yZS1tb2R1bGVzL2RhdGEvb2JzZXJ2YWJsZS1hcnJheVwiO1xuaW1wb3J0IHsgRGF0YUl0ZW0gfSBmcm9tIFwiLi4vLi4vc2VydmljZS9kYXRhSXRlbVwiO1xuaW1wb3J0IHsgRGF0YUl0ZW1TZXJ2aWNlIH0gZnJvbSBcIi4uLy4uL3NlcnZpY2UvZGF0YUl0ZW0uc2VydmljZVwiO1xuaW1wb3J0IHsgTGlzdFZpZXdFdmVudERhdGEsIFJhZExpc3RWaWV3IH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC10ZWxlcmlrLXVpLXByby9saXN0dmlld1wiO1xuaW1wb3J0IHsgVmlldyB9IGZyb20gXCJ0bnMtY29yZS1tb2R1bGVzL3VpL2NvcmUvdmlld1wiO1xuaW1wb3J0IHsgTGlzdFZpZXdJdGVtcyB9IGZyb20gXCIuLi8uLi9zZXJ2aWNlL2xpc3R2aWV3aXRlbXNcIjtcbmltcG9ydCB7IFJhZExpc3RWaWV3Q29tcG9uZW50IH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC10ZWxlcmlrLXVpLXByby9saXN0dmlldy9hbmd1bGFyXCI7XG5pbXBvcnQgKiBhcyB0aW1lck1vZHVsZSAgZnJvbSBcInRucy1jb3JlLW1vZHVsZXMvdGltZXJcIjtcbmltcG9ydCBmaXJlYmFzZSA9IHJlcXVpcmUoXCJuYXRpdmVzY3JpcHQtcGx1Z2luLWZpcmViYXNlXCIpO1xuaW1wb3J0IHtcbiAgICBnZXRCb29sZWFuLFxuICAgIHNldEJvb2xlYW4sXG4gICAgZ2V0TnVtYmVyLFxuICAgIHNldE51bWJlcixcbiAgICBnZXRTdHJpbmcsXG4gICAgc2V0U3RyaW5nLFxuICAgIGhhc0tleSxcbiAgICByZW1vdmUsXG4gICAgY2xlYXJcbn0gZnJvbSBcImFwcGxpY2F0aW9uLXNldHRpbmdzXCI7XG5pbXBvcnQgeyBQYWdlIH0gZnJvbSBcInVpL3BhZ2VcIjtcbi8vIGltcG9ydCB7IFZpZXcgfSBmcm9tIFwidWkvY29yZS92aWV3XCI7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogXCJteS1hcHBcIixcbiAgcHJvdmlkZXJzOiBbRGF0YUl0ZW1TZXJ2aWNlXSxcbiAgdGVtcGxhdGVVcmw6IFwicGFnZXMvb3RoZXJ0YXNrL290aGVydGFzay5odG1sXCIsXG4gIHN0eWxlVXJsczogW1wicGFnZXMvb3RoZXJ0YXNrL290aGVydGFzay1jb21tb24uY3NzXCIsIFwicGFnZXMvb3RoZXJ0YXNrL290aGVydGFzay5jc3NcIl1cbn0pXG5leHBvcnQgY2xhc3MgT3RoZXJUYXNrQ29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0XG57XG4gICAgZGF0YUl0ZW1zPW5ldyBPYnNlcnZhYmxlQXJyYXkoW10pO1xuICAgIGRldGFpbGVkRGF0YUl0ZW1zPSBuZXcgT2JzZXJ2YWJsZUFycmF5KFtdKTtcbiAgICBsaXN0Vmlld0l0ZW1zOkxpc3RWaWV3SXRlbXM7XG4gICAgXG4gICAgc2hvd1ZpZXc6IGJvb2xlYW4gPSB0cnVlO1xuXG4gICAgY29uc3RydWN0b3IocHJpdmF0ZSByb3V0ZXI6IFJvdXRlcixwcml2YXRlIHBhZ2U6IFBhZ2UpIHtcbiAgICAgICAgdGhpcy5saXN0Vmlld0l0ZW1zPW5ldyBMaXN0Vmlld0l0ZW1zO1xuICAgICAgICB0aGlzLnNob3dWaWV3PWZhbHNlO1xuICAgICAgICBcbiAgICB9XG5cbiAgICBuZ09uSW5pdCgpIHtcbiAgICAgICAgdGhpcy5kYXRhSXRlbXM9dGhpcy5saXN0Vmlld0l0ZW1zLmdldE90aGVyVGFza0RldGFpbHMoKTsgIFxuICAgICAgICAvL3RoaXMuZGV0YWlsZWREYXRhSXRlbXM9dGhpcy5saXN0Vmlld0l0ZW1zLmdldE90aGVyVGFza0RldGFpbHNEZXRhaWxlZERldGFpbHMoKTsgXG4gICAgICAgLy8gY29uc29sZS5sb2coXCJEZXRhaWxlZCBJdGVtcyBpbiBvdGhlciB0YXNrIGNvbXBvbmVudD09XCIrdGhpcy5kZXRhaWxlZERhdGFJdGVtcyk7XG4gICAgfVxuICAgIHB1YmxpYyBvblN3aXBlQ2VsbFN0YXJ0ZWQoYXJnczogTGlzdFZpZXdFdmVudERhdGEpXG4gICAge1xuICAgICAgICB2YXIgc3dpcGVMaW1pdHMgPSBhcmdzLmRhdGEuc3dpcGVMaW1pdHM7XG4gICAgICAgIHZhciBzd2lwZVZpZXcgPSBhcmdzWydvYmplY3QnXTtcbiAgICAgICAgdmFyIGxlZnRJdGVtID0gc3dpcGVWaWV3LmdldFZpZXdCeUlkPFZpZXc+KCdlbXB0eVZpZXcnKTtcbiAgICAgICAgdmFyIHJpZ2h0SXRlbSA9IHN3aXBlVmlldy5nZXRWaWV3QnlJZDxWaWV3PignZGVsZXRlVmlldycpO1xuICAgICAgICBzd2lwZUxpbWl0cy5sZWZ0ID0gbGVmdEl0ZW0uZ2V0TWVhc3VyZWRXaWR0aCgpO1xuICAgICAgICBzd2lwZUxpbWl0cy5yaWdodCA9IHJpZ2h0SXRlbS5nZXRNZWFzdXJlZFdpZHRoKCk7XG4gICAgICAgIHN3aXBlTGltaXRzLnRocmVzaG9sZCA9IGxlZnRJdGVtLmdldE1lYXN1cmVkV2lkdGgoKSAvIDI7XG4gICAgfVxuXG4gICAgcHVibGljIG9uUHVsbFRvUmVmcmVzaEluaXRpYXRlZChhcmdzOiBMaXN0Vmlld0V2ZW50RGF0YSlcbiAgICB7XG4gICAgICAgIHRoaXMuZGF0YUl0ZW1zPXRoaXMubGlzdFZpZXdJdGVtcy5nZXRPdGhlclRhc2tEZXRhaWxzKCk7ICAgIFxuICAgICAgICB0aW1lck1vZHVsZS5zZXRUaW1lb3V0KGZ1bmN0aW9uICgpXG4gICAgICAgIHtcbiAgICAgICAgICAgICAgICB2YXIgbGlzdFZpZXcgPSBhcmdzLm9iamVjdDtcbiAgICAgICAgICAgICAgICBsaXN0Vmlldy5ub3RpZnlQdWxsVG9SZWZyZXNoRmluaXNoZWQoKTtcbiAgICAgICAgICAgIH0sMTAwMCk7ICAgIFxuXG4gICB9XG4gICBkZWxldGVUYXNrKGFyZ3MpXG4gICB7XG4gICAgXG4gICAgICAgIHZhciB0YXBJbmRleD10aGlzLmRhdGFJdGVtcy5pbmRleE9mKGFyZ3Mub2JqZWN0LmJpbmRpbmdDb250ZXh0KVxuXG4gICAgICAgIGNvbnNvbGUubG9nKFwiSXRlbSBLYXk9PT09PT1cIit0aGlzLmRhdGFJdGVtcy5nZXRJdGVtKHRhcEluZGV4KS5rZXkpO1xuICAgICAgICBjb25zb2xlLmxvZyhcIlRhc2sgTmFtZT09PT09PVwiK3RoaXMuZGF0YUl0ZW1zLmdldEl0ZW0odGFwSW5kZXgpLnRhc2tOYW1lKTtcbiAgICAgICAgdmFyIGNyZWF0ZWRCeU51bWJlcj10aGlzLmRhdGFJdGVtcy5nZXRJdGVtKHRhcEluZGV4KS5jcmVhdGVkQnlOdW1iZXI7XG4gICAgICAgIHZhciBrZXk9dGhpcy5kYXRhSXRlbXMuZ2V0SXRlbSh0YXBJbmRleCkua2V5O1xuICAgICAgICB2YXIgZGV2aWNlUGhvbmVOdW1iZXI9Z2V0U3RyaW5nKFwiZGV2aWNlUGhvbmVOdW1iZXJcIik7XG5cbiAgICAgICAgLy9kZWxldGUgdGFzayBpbiBvdGhlciB0YXNrIGRldGFpbHMgcGFnZVxuICAgICAgICBmaXJlYmFzZS5yZW1vdmUoXG4gICAgICAgICAgICAgICAgJy9PdGhlclRhc2tEZXRhaWxzLycrZGV2aWNlUGhvbmVOdW1iZXIrJy8nK3RoaXMuZGF0YUl0ZW1zLmdldEl0ZW0odGFwSW5kZXgpLmtleSxcbiAgICAgICAgICAgICAgICApLnRoZW4oXG4gICAgICAgICAgICAgICAgICAocmVzKT0+e1xuICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhcIlRhc2sgaGFzIGJlZW4gZGVsZXRlZCBzdWNjZXNzZnVsbHkgaW4gb3RoZXIgdGFzayBkZXRhaWxzLS0tXCIrcmVzKTtcbiAgICAgICAgICAgICAgICAgICAgdGhpcy5kYXRhSXRlbXM9dGhpcy5saXN0Vmlld0l0ZW1zLmdldE90aGVyVGFza0RldGFpbHMoKTsgICBcbiAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgfSwocmVzKT0+e1xuICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhcIlByb2JsZW0gaW4gZGVsZXRpbmcgb3RoZXIgdGFzayBkZXRhaWxzLS0tXCIrcmVzKTtcbiAgICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAvL2RlbGV0ZSB0YXNrIGluIG15IHRhc2sgZGV0YWlscyBwYWdlXG4gICAgICAgXG4gICB9XG4gICAgaXRlbVRhcChpdGVtKVxuICAgIHtcbiAgICAgICAgXG4gICAgICAgIGNvbnNvbGUubG9nKFwiSVRlbSBLZXk9PVwiK2l0ZW0ua2V5KTtcbiAgICAgICAgdGhpcy5kZXRhaWxlZERhdGFJdGVtcz10aGlzLmxpc3RWaWV3SXRlbXMuZ2V0T3RoZXJUYXNrRGV0YWlsc0RldGFpbGVkRGV0YWlscyhpdGVtLmtleSk7XG4gICAgXG4gICAgICAgICBcblxuICAgICAgICB2YXIgbGF5b3V0ID0gdGhpcy5wYWdlO1xuICAgICAgICB2YXIgY2xhc3NMYXlvdXQ9dGhpcy5wYWdlO1xuICAgICAgICBsYXlvdXQuY2xhc3NOYW1lPVwidGFza0RldGFpbGVkVmlld1wiO1xuICAgICAgICBsYXlvdXQuc2V0KFwiY2xhc3NcIixcInRhc2tEZXRhaWxlZFZpZXcgaGlkZVwiKTtcblxuXG4gICAgICAgIHZhciBpZE5hbWU9XCJ0YXNrRGV0YWlsZWRWaWV3XCIraXRlbS5rZXk7XG4gICAgICAgIHZhciBkZXRhaWxlZFZpZXdMYXlvdXQgPSBsYXlvdXQuZ2V0Vmlld0J5SWQoaWROYW1lKTtcbiAgICAgICAgY29uc29sZS5sb2coXCJJRD09PVwiK2RldGFpbGVkVmlld0xheW91dCk7XG4gICAgICAgIGNvbnNvbGUubG9nKFwiIGNsYXNzPT1cIitkZXRhaWxlZFZpZXdMYXlvdXQuY2xhc3NOYW1lLnNwbGl0KFwiIFwiKVsxXSk7XG5cbiAgICAgIC8vICBsYXlvdXQuY2xhc3NOYW1lPVwidGFza0RldGFpbGVkVmlld1wiO1xuICAgICAgICAvL3ZhciBjbGFzc0xheW91dD1sYXlvdXQuY2xhc3NOYW1lPVwidGFza0RldGFpbGVkVmlld1wiO1xuICAgICAgIC8vIGNvbnNvbGUubG9nKFwiQ2Fsc3MgTGF5b3V0PT1cIitjbGFzc0xheW91dCk7XG4gICAgICAgLy8gbGF5b3V0LnNldChcImNsYXNzXCIsXCJ0YXNrRGV0YWlsZWRWaWV3IGhpZGVcIik7XG5cblxuICAgICAgICBpZihkZXRhaWxlZFZpZXdMYXlvdXQuY2xhc3NOYW1lLnNwbGl0KFwiIFwiKVsxXT09J3Nob3cnKVxuICAgICAgICB7XG4gICAgICAgICAgICAvLyBjb25zb2xlLmxvZyhcIklGPT1cIik7XG4gICAgICAgICAgICBkZXRhaWxlZFZpZXdMYXlvdXQuc2V0KFwiY2xhc3NcIixcInRhc2tEZXRhaWxlZFZpZXcgaGlkZVwiKTtcbiAgICAgICAgICAgIFxuICAgICAgICB9XG4gICAgICAgIGVsc2V7XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIC8vIGNvbnNvbGUubG9nKFwiRUxTRT09XCIpO1xuICAgICAgICAgICAgZGV0YWlsZWRWaWV3TGF5b3V0LnNldChcImNsYXNzXCIsXCJ0YXNrRGV0YWlsZWRWaWV3IHNob3dcIik7XG4gICAgICAgICAgICBcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgXG4gICAgICAgIC8vZGV0YWlsZWRWaWV3TGF5b3V0LnNldChcInZpc2liaWxpdHlcIixcInZpc2libGVcIik7XG4gICAgICAgIC8vdmFyIHRhc2tGaWVsZCA9IGxheW91dC5nZXRWaWV3QnlJZChcInRhc2tOYW1lXCIpO1xuICAgICAgICBcbiAgICB9XG5cbiAgICBjcmVhdGVUYXNrKCl7XG4gICAgICAgICAgICB0aGlzLnJvdXRlci5uYXZpZ2F0ZShbXCIvY3JlYXRldGFza1wiXSk7XG5cbiAgICB9XG4gICBcbn1cbiJdfQ==

@@ -24,7 +24,7 @@
     font-size:18;
 }
 .taskDetailedView .asigneeName{
-     font-size:17;
+     font-size:20;
 }
 /* #taskDetailedView{
     opacity: 0;
@@ -36,12 +36,7 @@
 .show{
     visibility:visible;
 }
-.showDetailedView{
-    visibility: visible;
-}
-.CollapseDetailedView{
-    visibility: collapse;
-}
+
 .gridLayout{
     background-color:#E6B8AF;
     margin-top: 3;
@@ -140,14 +135,27 @@
     margin-bottom:10;
     margin-right:10;
     margin-left:10;
+
 }
 #sendReminder{
     background-color: #1F497D;
     color: white;
     font-weight: bold;
-    width:100%;
+   width:50%; 
+   border-radius: 2;
+   
+  
   
    
+}
+#cancel{
+    background-color: #1F497D;
+    color: white;
+    font-weight: bold;
+   width:50%; 
+   border-radius: 2;
+   margin-left:2;
+  
 }
 
 #float-btn{
@@ -168,4 +176,37 @@
     font-size:36;
     margin-top:-5;
     
+}
+#dView{
+    position: absolute;
+    /* min-height: 50; */
+    background-color: white; 
+    opacity: 0.95;
+    
+    /* margin-top:50; */
+    
+}
+#fullView{
+ margin:20; 
+ margin-top:25%; 
+position: absolute;
+padding:3;
+min-height:50;
+border-color: #1F497D;
+border-width:2;
+border-radius: 3;
+
+/* vertical-align: middle; */
+}
+.asigneeNameDetailed{
+    font-size:19;
+    background-color:#4F81BD;
+    color:white;
+    font-weight: bold;
+    padding-left: 3;
+    padding-top: 5;
+    padding-bottom: 2;
+    padding-right: 3;
+    margin-top:12;   
+
 }

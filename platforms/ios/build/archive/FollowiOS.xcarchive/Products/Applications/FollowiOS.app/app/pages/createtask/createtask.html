@@ -1,6 +1,6 @@
-<!-- <ActionBar title="Create Task">
-     <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
-</ActionBar> -->
+ <ActionBar [title]="pageTitle" visibility="collapsed">
+     <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()" visibility="collapsed"></NavigationButton>
+</ActionBar> 
 
 
 <GridLayout rows="46,46,46,*,auto" id="gridlayout">
@@ -43,8 +43,12 @@
         </StackLayout>
 
 
-
-        <Button row="4" id="assignTask" (tap)="assignTask()"  text="Assign Task" [visibility]="buttonView"></Button>
+        <GridLayout  id="button" row="4" class="" columns="*,*" rows="40" [visibility]="buttonView">
+                        <Button id="assignTask" row="0" col="0" (tap)="assignTask()" text="ASSIGN TASK"></Button>
+                        <Button id="cancel" row="0" col="1" (tap)="cancel()" text="CANCEL"></Button>
+                        <!-- <Button row="4" id="assignTask" (tap)="assignTask()"  text="Assign Task" [visibility]="buttonView"></Button> -->
+        </GridLayout>
+        
         <DatePicker  row="5" id="datePicker"
                 (loaded)="onPickerLoaded($event)" 
                 (dateChange)="onDateChanged($event)" 
