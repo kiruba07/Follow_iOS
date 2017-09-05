@@ -13,13 +13,6 @@ firebase._receivedPushTokenCallback = null;
 firebase._gIDAuthentication = null;
 firebase._cachedInvitation = null;
 
-// this requires you to download GoogleService-Info.plist and add it to app/App_Resources/iOS/, see https://firebase.google.com/support/guides/firebase-ios
-try {
-  FIRApp.configure();
-} catch (e) {
-  console.log(">>>> Firebase is not configured correctly; please remove your 'platforms/ios' folder, then run 'tns run ios'");
-}
-
 firebase._addObserver = function (eventName, callback) {
   var queue = utils.ios.getter(NSOperationQueue, NSOperationQueue.mainQueue);
   return utils.ios.getter(NSNotificationCenter, NSNotificationCenter.defaultCenter).addObserverForNameObjectQueueUsingBlock(eventName, null, queue, callback);
@@ -486,6 +479,10 @@ firebase.init = function (arg) {
       function runInit() {
         arg = arg || {};
 
+        // this requires you to download GoogleService-Info.plist and
+        // it to app/App_Resources/iOS/, see https://firebase.google.com/support/guides/firebase-ios
+        FIRApp.configure();
+
         if (arg.persist) {
           FIRDatabase.database().persistenceEnabled = true;
         }
@@ -606,6 +603,24 @@ firebase.analytics.setUserProperty = function (arg) {
       resolve();
     } catch (ex) {
       console.log("Error in firebase.analytics.setUserProperty: " + ex);
+      reject(ex);
+    }
+  });
+};
+
+firebase.analytics.setScreenName = function (arg) {
+  return new Promise(function (resolve, reject) {
+    try {
+      if (arg.screenName === undefined) {
+        reject("Argument 'screenName' is missing");
+        return;
+      }
+
+      FIRAnalytics.setScreenNameScreenClass(arg.screenName, null);
+
+      resolve();
+    } catch (ex) {
+      console.log("Error in firebase.analytics.setScreenName: " + ex);
       reject(ex);
     }
   });

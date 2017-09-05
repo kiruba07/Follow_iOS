@@ -14,13 +14,13 @@
     ]
   ],
   "_from": "nativescript-plugin-firebase@latest",
-  "_id": "nativescript-plugin-firebase@4.0.3",
+  "_id": "nativescript-plugin-firebase@4.0.5",
   "_inCache": true,
   "_location": "/nativescript-plugin-firebase",
   "_nodeVersion": "6.10.3",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/nativescript-plugin-firebase-4.0.3.tgz_1498755139433_0.18633826216682792"
+    "tmp": "tmp/nativescript-plugin-firebase-4.0.5.tgz_1500924627154_0.8118554395623505"
   },
   "_npmUser": {
     "name": "eddyverbruggen",
@@ -41,8 +41,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-plugin-firebase/-/nativescript-plugin-firebase-4.0.3.tgz",
-  "_shasum": "6e9497b7cfc58eb25333b293f523d7f4cbb90302",
+  "_resolved": "https://registry.npmjs.org/nativescript-plugin-firebase/-/nativescript-plugin-firebase-4.0.5.tgz",
+  "_shasum": "0ee810e52ebd6d161297e42a80fb71b7a4599e2c",
   "_shrinkwrap": null,
   "_spec": "nativescript-plugin-firebase",
   "_where": "/Users/kirubanandh/Documents/TNS/Follow_iOS",
@@ -68,10 +68,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "6e9497b7cfc58eb25333b293f523d7f4cbb90302",
-    "tarball": "https://registry.npmjs.org/nativescript-plugin-firebase/-/nativescript-plugin-firebase-4.0.3.tgz"
+    "shasum": "0ee810e52ebd6d161297e42a80fb71b7a4599e2c",
+    "tarball": "https://registry.npmjs.org/nativescript-plugin-firebase/-/nativescript-plugin-firebase-4.0.5.tgz"
   },
-  "gitHead": "a726738fada3996304a9d53aab4a48cc5de21eb8",
+  "gitHead": "9fc821c6ec254a90253d87868674673764f4692a",
   "homepage": "https://github.com/eddyverbruggen/nativescript-plugin-firebase",
   "keywords": [
     "NativeScript",
@@ -138,5 +138,5 @@
     "test": "echo 'TODO implement tests :)'"
   },
   "typings": "index.d.ts",
-  "version": "4.0.3"
+  "version": "4.0.5"
 }

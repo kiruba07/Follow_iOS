@@ -3,6 +3,24 @@
 [Firebase iOS SDK Changelog](https://firebase.google.com/support/release-notes/ios)
 [Firebase Android SDK Changelog](https://firebase.google.com/support/release-notes/android)
 
+
+## 4.0.5 (2017, July 22)
+
+### Fixes
+- [#387](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/issues/387) Fix issues
+- [#434](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/issues/434) JS: Error in firebase.init: TypeError: gson(...).toJson is not a function
+
+
+## 4.0.4 (2017, July 16)
+
+### New
+- [#420](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/issues/420) found no keychain client entitlements" after upgrade
+- [#430](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/issues/430) Can we set screenName?
+
+### Fixes
+- [#418](https://github.com/EddyVerbruggen/nativescript-plugin-firebase/issues/418) Logout breaking on Android when nativescript-fresco plugin is added to app
+
+
 ## 4.0.3 (2017, June 29)
 Webpack fix
 

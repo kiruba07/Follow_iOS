@@ -1,0 +1,18 @@
+#register{
+    background-color: #1F497D;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 5;
+    padding-bottom: 5;
+    height:40;
+}
+#fName,#lName,#eMail, #Password, #contactNumber{
+ margin-top: 3;
+  background-color: #E6B8AF;
+  border-bottom: 10px solid red;
+   padding-left:10;
+   min-height:45;
+}
+#contactNumber{
+margin-bottom: 3;
+}

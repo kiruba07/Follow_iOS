@@ -4,17 +4,13 @@
 
 
 <GridLayout rows="46,46,46,*,auto" id="gridlayout">
-        <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"
+       <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"
          (tap)="hideDatePicker($event)" returnKeyType="next"></TextField>
         <TextField row="1" id="category" [(ngModel)]="user.category" hint="Category" 
         (tap)="hideDatePicker($event)" returnKeyType="done" ></TextField>
         <TextField row="2" id="showDateTime" [text]="datePickervalue" [(ngModel)]="user.dateTime" 
         hint="Due Date & Time" (tap)="showDatePicker($event)" editable=false></TextField>
 
-        
-
-        <!-- <TextField row="3" id="assignee"  [(ngModel)]="user.assignee" hint="Assignee" ></TextField> -->
-        
         <StackLayout row="3" id="assignee" >
                 <Label text="Select Assignee" (tap)="selectAssignee()"></Label>
                 <RadListView  [items]="contactList" swipeActions="false"  
@@ -46,7 +42,7 @@
         <GridLayout  id="button" row="4" class="" columns="*,*" rows="40" [visibility]="buttonView">
                         <Button id="assignTask" row="0" col="0" (tap)="assignTask()" text="ASSIGN TASK"></Button>
                         <Button id="cancel" row="0" col="1" (tap)="cancel()" text="CANCEL"></Button>
-                        <!-- <Button row="4" id="assignTask" (tap)="assignTask()"  text="Assign Task" [visibility]="buttonView"></Button> -->
+                       
         </GridLayout>
         
         <DatePicker  row="5" id="datePicker"
@@ -56,5 +52,12 @@
                 verticalAlignment="center"
                 [visibility]="datePickerView"
                 >
-        </DatePicker>
+        </DatePicker> 
+        <!-- <StackLayout id="activityIndicatorView"> 
+                <ActivityIndicator  id="activityIndicator"
+                        busy="true" (busyChange)="onBusyChanged($event)" 
+                        
+                        class="activity-indicator"
+                ></ActivityIndicator>
+        </StackLayout>  -->
 </GridLayout>

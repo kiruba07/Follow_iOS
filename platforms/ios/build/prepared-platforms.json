@@ -9,6 +9,7 @@
     "@angular/router": true,
     "nativescript-accordion": true,
     "nativescript-angular": true,
+    "nativescript-local-notifications": true,
     "nativescript-plugin-firebase": true,
     "nativescript-telerik-ui-pro": true,
     "nativescript-theme-core": true,

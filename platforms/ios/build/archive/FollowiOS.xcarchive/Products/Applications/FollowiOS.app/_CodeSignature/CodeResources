@@ -62,459 +62,15 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		prFqiIuwyvMMlidwnVxgsgcMdS0=
+		7n+6mJ560QaJM+EEwfFnxHU+Xg8=
 		</data>
-		<key>Frameworks/Bolts.framework/Bolts</key>
+		<key>FollowiOS.entitlements</key>
 		<data>
-		vEjW7IJshnYssLAVgcEoJa9cTWE=
-		</data>
-		<key>Frameworks/Bolts.framework/Info.plist</key>
-		<data>
-		YvRcisnfnqxebHQRU7xaVY4SmKA=
-		</data>
-		<key>Frameworks/Bolts.framework/_CodeSignature/CodeResources</key>
-		<data>
-		lsJGmDvpRb7bvU+43fMnGOnB6cM=
-		</data>
-		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
-		<data>
-		yqCKHoD5mnzGLEVL5hKmeSciSU4=
-		</data>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y5WrSzFnUhxYXvR3KXMiSj/h06E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ar.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HV/bg9PTjWiemlePoYJ3UPpjNFY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/bn.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZHz6mzcH0mNy4mclUZpIVahbC6E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/cs.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZmgaOjPjB1XfYunN30U3b5XyuME=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/da.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9Xpzf9uJPappau0kHzMPV9We5s8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/de.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m5zSEVo/1wfIYqKbzr4xJX/QVSc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/el.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HGJCOkR8qcfNbjAd3MjuYgmAFro=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/en.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U5Dz4SBItBNA9+b+/WN8F/AQ1ss=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/en_GB.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3vcOPexz+Q//TkV0/wLQVy0vaPA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/es.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MYrgcBkHEYJMvKOIbdjQlFjH6+Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/es_ES.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I3ZGXyaP6t0j+yW5UJXEsy0hp6E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pwjOlw9TL13QP0Bkf1s0J1Kqhro=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fil.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4V0ES68RPXKjWj5i6tXKKJSZe90=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KGCrA4V3iW05/6GwUyrTYXl1ywI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/gu.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1mzX1ZuI1fFmaCwiv9gdTTORk3U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/he.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5J2ILV3YRnkCoyYDdboIL6m6dM8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xm2dYAzlhr4Y/bU21xEUhqeXDnE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			baPBBsia6NR01LlwRGGDkT4EIOQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hu.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OkSVSd0h7Jlb9s/+HF9lNH4ZWrU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/id.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CxSZ4Lpc/LLoKIRmpv/4Hk9K81w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/it.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+tR5MQb2cOQl2m+vFLuULsTW588=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ja.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yzaEwsmKxGTUxw3vNcTKQMa4YMs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/kn.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WjneEjaxY3uzi0UsAfhmUsVQ6/I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ko.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+ZKyPRzcZg8Ztpp6y2OcGsUm6PE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ml.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lpEg9eS5pxS2HCdbkfSUw9TSb6U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/mr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XiIx0AmcJ24cCb2yVEJMymlrKZc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ms.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s1XEm86DFP5tvwcgA5hXdTCJBO0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/nb.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C4hAnI+PiUqSiDLYMEVD4g3ZEgI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/nl.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BPiclwOsMR29+Z4WsXR2RkmZOUg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pa.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5VIMjD2aD1r/aG4fHiHXWOSJY2c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pl.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZaVuAkBOHFl+EUFRpdDjWjZRXMs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pt.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hib/xuWEDj6Tdcm3vhAUz3qwH9o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pt_PT.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uZ8Ihyhoug7GkDljHNjz5o9HUMs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ru.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WyUs8W5L9694r4f/LXupoD9JcBY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/sk.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aE64290bGuWlW/aFyXpKh/9yDfs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/sv.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s4pLiuKSlvc6hpLNImp6n9iokLE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ta.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PPgWpOHMckuWrhPdMoi6UgMbqOI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/te.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GYSJ0urek7WHcuPLJXorS/n7E+4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/th.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E+XQJCIP/TRBEKV7BGGctJZXK/A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/tr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PVP59glbvsHd23h6pgqCihMY/Tw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/vi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cwpqBoTUNP98ThR6uoCVHIWsYzs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QoYeFuY4/Ypu7Wn2nf8hu2WoAS4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh_Hant_HK.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xySG1hcG6NuWqCnHlP0Z9Ql07v8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh_Hant_TW.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Zg/v3pLNchv3J+VO7mRKrEkPANU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/Info.plist</key>
-		<data>
-		DhghaHkf5cUwuEqD2UJoJR6RyGQ=
-		</data>
-		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		7EEb4lwPl437z/DM0Wcpqa9lgnE=
-		</data>
-		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
-		<data>
-		xKYZmretxJmVNh8n4gA6peIzr7g=
-		</data>
-		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
-		<data>
-		bwxq1pQG3isiJFcJqsXhRG8JMFM=
-		</data>
-		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		tpOpq7hlhcNJ36njKffUSPqmVF0=
-		</data>
-		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2</key>
-		<data>
-		w23TANszZNzqJSBaLx3tukCJphs=
-		</data>
-		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib</key>
-		<data>
-		u7exNnsmLi94gg/Al7vmD1oHoT8=
-		</data>
-		<key>Frameworks/GTMOAuth2.framework/Info.plist</key>
-		<data>
-		N94AsuWQeCgUdg/g3PGQJ/UVGI4=
-		</data>
-		<key>Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Isf9JKxTkHK4j6cxyiHQSqPgJ4g=
+		M+At84pGmVF+58EsMZnLPvjokAY=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		OEY7VJGw4GmH4OJO/9yjlfZ5qfY=
+		wsKLHMOPLGFeH8jNoUez5ozDMY0=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -526,7 +82,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		R4n42xgfh6W6yrYZAnzgWR51y8o=
+		yw7gL8x3x6lSAQXZvvJaIT4x6oM=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -536,13 +92,25 @@
 		<data>
 		DuZjw2BMk+dRXIEHBvFy2AxT8jE=
 		</data>
+		<key>Frameworks/LocalNotificationsPlugin.framework/Info.plist</key>
+		<data>
+		cdvplKN/S/sirif3vFldAXh+ko4=
+		</data>
+		<key>Frameworks/LocalNotificationsPlugin.framework/LocalNotificationsPlugin</key>
+		<data>
+		nJVT/1tiHvJztOtP3Ra/VpeEIFw=
+		</data>
+		<key>Frameworks/LocalNotificationsPlugin.framework/_CodeSignature/CodeResources</key>
+		<data>
+		jJD7993780nrAPlv4C4GZZMcmvE=
+		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
 		a3bkyIvCUvqzjRko2sb/YsY5ACI=
 		</data>
 		<key>Frameworks/NativeScript.framework/NativeScript</key>
 		<data>
-		N1vdeWEf2MOelMFDG6VhzArE9X4=
+		36Q9N5XkuIFFd2Ot7yveJyGHGiw=
 		</data>
 		<key>Frameworks/NativeScript.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -554,7 +122,7 @@
 		</data>
 		<key>Frameworks/Protobuf.framework/Protobuf</key>
 		<data>
-		TcI+iVLmTIUq9WCakLsite3NGs0=
+		Tv1cd1hCoOmEYxBNqTEwA4gw82A=
 		</data>
 		<key>Frameworks/Protobuf.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -566,7 +134,7 @@
 		</data>
 		<key>Frameworks/TNSWidgets.framework/TNSWidgets</key>
 		<data>
-		I27X6S43NN6AH6ivmceSXrnok/0=
+		/VqbwRGI0/oRNnCybeVarPTah7c=
 		</data>
 		<key>Frameworks/TNSWidgets.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -578,7 +146,7 @@
 		</data>
 		<key>Frameworks/TelerikAppFeedback.framework/TelerikAppFeedback</key>
 		<data>
-		89sW9uMCFPObu06j/G1qy8sXHGA=
+		yInEKqDz4tlyUtB9NqkxoDpneSU=
 		</data>
 		<key>Frameworks/TelerikAppFeedback.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -590,7 +158,7 @@
 		</data>
 		<key>Frameworks/TelerikUI.framework/TelerikUI</key>
 		<data>
-		hlb4RWYdqPPfHLcmFSLlmo9NdXU=
+		o/lGHZqgpnmf4HCY5lNOBrgeTWc=
 		</data>
 		<key>Frameworks/TelerikUI.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -606,359 +174,15 @@
 		</data>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<data>
-		ppk2ss6jmZTEpMdY8em6Q1uH1SM=
+		hjde1O5XyPp6Qr4tVnZERTY5D4g=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
 		JDjdaOvtPtfQcKz6enylVKMXd5M=
 		</data>
-		<key>GoogleSignIn.bundle/Info.plist</key>
-		<data>
-		crpRzFuQ9ZvKhMPCppVFY+N8cyQ=
-		</data>
-		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
-		<data>
-		RzJ98PNefNfIZFh0iXp0SWl1RK4=
-		</data>
-		<key>GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cDxgICm2dFjfiPeYCfTua06ieMA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jxk2OQG/+udN2wGUOW9Su8bozmo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3SZfPmiX/uNms0dfyvpJ2YKfYAs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oIntgdmNT8vgklolp0V1aSwni9E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+r5IQg8vmMQGofVbtTfuIpAkegA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R4N2/n6PLvdXwzPAZSdBIQ42i5o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2WBjXO3mOTycjDC36lU+OkTmMQI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2WBjXO3mOTycjDC36lU+OkTmMQI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1L+WhN4hHZ+DMGL3814nf230sKU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5DCiJO9D0jvvC1MdVuH87FoKE4U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P9wjOJ2NnRD/MprJTtHsJv4WuYs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aGMUV/zy0qshVO3EGOASJGzb61k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/google.png</key>
-		<data>
-		guERtxRSG8LklxczLu47JIwLjiU=
-		</data>
-		<key>GoogleSignIn.bundle/google@2x.png</key>
-		<data>
-		4UwXGGzo+UtMgR0hUDrtRbq4Wqk=
-		</data>
-		<key>GoogleSignIn.bundle/google@3x.png</key>
-		<data>
-		A1wRWy89eRjMuVCP4K7S0AClNTw=
-		</data>
-		<key>GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rH8HlR4pGTObGw8bLy8hV1SaXCc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6RKTTGxHRy/nJvmB8Z60EcU7AsQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UYII/LAIXTZXAQZRhu8m6Hzo5X8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LL/K3xbMTK7IG6Qk+QFcn6ZhpHA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ngy2avHWwzrEJh13Pj0rUY8J9ww=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			db1eHjFG5mTeudktpC1Ot/Oi+80=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jULNLvjmokqVD3UHXOmQk+ZBjQc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			unBXa+ccwraCiXztEmucSgJEzP8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zTewpBsb/APJbytq7A50tSZ2bFs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vI3aDgwEwt3VJMFBK8qJAg0Ko5g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4m8TqoloX4KRLKngPPKzv9TLWXQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWB/f7My2pU8Dx9fPakAFD3XGwc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWB/f7My2pU8Dx9fPakAFD3XGwc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IUy+LgagdPrchWvzRocfuAOUl6c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XbTLbsoyl3Kgy6SWtyoU/xgnOU4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fpOOLcC4LVN6RY0r+k9g1nK8OBw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1qRPYCxnnE40LluJvBG62vyh/9k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gnOdeN9N3tSEMs8tka8GZZcoiGA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jt50UKMQoMZOD1aZlFjHdvxWbUU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MojegLj+aw/rwcX2jRoNMe9kYOs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DVT6LBWhlbRFyHW4QoctIqtm4JU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Xxgd4c4pIpGwWTLVSmbZJ9ZelUY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+FbfptuiJTrUGwKylxTvwQZvv1g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BmkG1GdZVSsmsERs6T99Ve1Eb6k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Info.plist</key>
 		<data>
-		GXzA02nd/pC3jja67NUNNVEOghI=
+		l6QWFwvFEUBhpmgxnUdWjGis5pY=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -1026,7 +250,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		tYrjntpN9UxaWFvFJ+lQi7fF/Kc=
+		KG/1z7p2a47rozXGbGTiNh+biBY=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -1034,7 +258,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		3FSXCnuxkOAII3XfNqBRmk1KwmE=
+		Z7rM5OphxRbaSVNC+VEh7v0Md7M=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1078,7 +302,11 @@
 		</data>
 		<key>app/app.component.js</key>
 		<data>
-		810UEaePQi2H6It7uvujoCFb0XY=
+		P/v+7dWk7yPZj08yFNld1c9+5Aw=
+		</data>
+		<key>app/app.component.ts</key>
+		<data>
+		7HkckC7NN2r5Zh9XRMXXcRlXg0k=
 		</data>
 		<key>app/app.css</key>
 		<data>
@@ -1086,11 +314,19 @@
 		</data>
 		<key>app/app.module.js</key>
 		<data>
-		3eTjq/bdfkM+6Y7nTF5n2Eif0mY=
+		m8BZUxqO9rOJ1JYHwdzGqBcABpI=
+		</data>
+		<key>app/app.module.ts</key>
+		<data>
+		BcFInVt/efBGiBTLNlNgROzfKHU=
 		</data>
 		<key>app/app.routing.js</key>
 		<data>
-		03hsTM2c8LBwhALvmbbbOq5lsOk=
+		XBw8FWZG86YOKpWXXPCrHguOHbI=
+		</data>
+		<key>app/app.routing.ts</key>
+		<data>
+		SvgS7Gnpjd9YwGB8amDC9YBiJtE=
 		</data>
 		<key>app/fonts/fontawesome-webfont.ttf</key>
 		<data>
@@ -1102,15 +338,27 @@
 		</data>
 		<key>app/item/item-detail.component.js</key>
 		<data>
-		CdSU/m4iK2HDGPTgM7vz1SifLUg=
+		See88MP+hj6ckwauLNV5+io0Occ=
+		</data>
+		<key>app/item/item-detail.component.ts</key>
+		<data>
+		WI/no9tXYi6q4T1ki6xFsHcrecw=
 		</data>
 		<key>app/item/item.js</key>
 		<data>
-		JDwKE+WHfN46zuiLk4igPAH6MRU=
+		rSXXgZX8iLf0dMTpxW4OIWw9mYc=
 		</data>
 		<key>app/item/item.service.js</key>
 		<data>
-		IKjpgOG8R4ychr51CzRL/WLojFY=
+		H57+e4NBXeQ+pmfQv7PY30uDprA=
+		</data>
+		<key>app/item/item.service.ts</key>
+		<data>
+		aEGKBYpaVjmcuGhGLfKS1/f9+oE=
+		</data>
+		<key>app/item/item.ts</key>
+		<data>
+		aL+OQHeheMJJbN8UbEcwudBbWlw=
 		</data>
 		<key>app/item/items.component.html</key>
 		<data>
@@ -1118,11 +366,23 @@
 		</data>
 		<key>app/item/items.component.js</key>
 		<data>
-		O/agtROMKQtetAQADByk1tQj2LA=
+		Neq9hYRcn3Nx+Dx/Vt7dziaF00g=
+		</data>
+		<key>app/item/items.component.ts</key>
+		<data>
+		0Gzr36D2jA1x/I2sHXStNQOm1Zs=
+		</data>
+		<key>app/main.aot.ts</key>
+		<data>
+		zrTHLgFJLwxz+z/Se6AOXm7yN6k=
 		</data>
 		<key>app/main.js</key>
 		<data>
-		DuoA4Y0lK1fM5vhmqAI/X37RnbY=
+		PGODR2ZrneZar/PuVRXliQUvKVY=
+		</data>
+		<key>app/main.ts</key>
+		<data>
+		4y8ylv8LIGm4LBv5RsavOSOiUT0=
 		</data>
 		<key>app/package.json</key>
 		<data>
@@ -1130,11 +390,15 @@
 		</data>
 		<key>app/pages/createtask/createtask-common.css</key>
 		<data>
-		4XISdntmJ1Uch2LITksJlvSQR5U=
+		wfwTya4RxBmIPPhihAdvKKmIpBI=
 		</data>
 		<key>app/pages/createtask/createtask.component.js</key>
 		<data>
-		VkUZHHNCVYXJZ3qKiAKj6gJEhSk=
+		GxboKgQUua8ZAYPP2ae14/Cc0FA=
+		</data>
+		<key>app/pages/createtask/createtask.component.ts</key>
+		<data>
+		iluUh+0B0MBCvjWyY36XiUb8ptc=
 		</data>
 		<key>app/pages/createtask/createtask.css</key>
 		<data>
@@ -1142,7 +406,7 @@
 		</data>
 		<key>app/pages/createtask/createtask.html</key>
 		<data>
-		kaxohOzKPjDe+DeSwemO3Dvml9c=
+		Zasz6+Qsg2MErz/GU+iwjVpRRbw=
 		</data>
 		<key>app/pages/mainfragment/mainfragment-common.css</key>
 		<data>
@@ -1150,7 +414,11 @@
 		</data>
 		<key>app/pages/mainfragment/mainfragment.component.js</key>
 		<data>
-		6kL8PN4PTn3CBLLOLZE+epi67/o=
+		8TxMFBhkLlwk6WtZKbFIbW/X8Ag=
+		</data>
+		<key>app/pages/mainfragment/mainfragment.component.ts</key>
+		<data>
+		hJ8bpt4ekXMJLXzTlVsF4rG3PR0=
 		</data>
 		<key>app/pages/mainfragment/mainfragment.css</key>
 		<data>
@@ -1162,11 +430,15 @@
 		</data>
 		<key>app/pages/maintenance/maintenance-common.css</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		dqEixeI2wGJMW+YQ+xd8rvHF+RM=
 		</data>
 		<key>app/pages/maintenance/maintenance.component.js</key>
 		<data>
-		6aiJxjliAPglLXstUHDbXYTcIBI=
+		VQDlWkv4PysBZ2OXpA8d91AczDY=
+		</data>
+		<key>app/pages/maintenance/maintenance.component.ts</key>
+		<data>
+		vB8YLRDT75mxa4mnOuydx9wlYoA=
 		</data>
 		<key>app/pages/maintenance/maintenance.css</key>
 		<data>
@@ -1174,7 +446,7 @@
 		</data>
 		<key>app/pages/maintenance/maintenance.html</key>
 		<data>
-		d2i73LKoNMWqEriMSL3+O6yNgfY=
+		YXY299pRCuE/OJnOQ5lBNy8svaI=
 		</data>
 		<key>app/pages/mytask/mytask-common.css</key>
 		<data>
@@ -1182,7 +454,11 @@
 		</data>
 		<key>app/pages/mytask/mytask.component.js</key>
 		<data>
-		AgfUPMuAXtiShWoiajtqG1L8LfY=
+		Kn82uMx3kFSU0hbJT1jg3jDLCxs=
+		</data>
+		<key>app/pages/mytask/mytask.component.ts</key>
+		<data>
+		XtOJGFDUGGgSrLrQcc81HxSRal4=
 		</data>
 		<key>app/pages/mytask/mytask.css</key>
 		<data>
@@ -1198,7 +474,11 @@
 		</data>
 		<key>app/pages/othertask/othertask.component.js</key>
 		<data>
-		vyCi33zrFQUG0VcTfIXtZ9y7aF4=
+		DO0wdm90XztMUTtqI1irSt4s1g8=
+		</data>
+		<key>app/pages/othertask/othertask.component.ts</key>
+		<data>
+		7OKzGhUhyIaEzXnGToxzoMpsf1c=
 		</data>
 		<key>app/pages/othertask/othertask.css</key>
 		<data>
@@ -1214,7 +494,11 @@
 		</data>
 		<key>app/pages/performance/performance.component.js</key>
 		<data>
-		A4v0mWCQm59h5/SjlsuRZsEKm24=
+		oEnII6YLEMdO5wVOSG1t1IBnaXM=
+		</data>
+		<key>app/pages/performance/performance.component.ts</key>
+		<data>
+		FcbWd4WwSzEiD7JavCevjCImcyE=
 		</data>
 		<key>app/pages/performance/performance.css</key>
 		<data>
@@ -1230,7 +514,11 @@
 		</data>
 		<key>app/pages/registration/registration.component.js</key>
 		<data>
-		PWP2oAo7gFaFV84WKEa8LTDlDyY=
+		INR7NuIbxiP3buAS4ApsGR0XNOg=
+		</data>
+		<key>app/pages/registration/registration.component.ts</key>
+		<data>
+		aZEAzzijzprg2oj0PZ3grL9rQGM=
 		</data>
 		<key>app/pages/registration/registration.css</key>
 		<data>
@@ -1242,27 +530,59 @@
 		</data>
 		<key>app/service/authentication.js</key>
 		<data>
-		KFUwptUA+4ci1feueHVItNrWQ8c=
+		naYTkBTwPRJszPNSoOppf0mfwkM=
+		</data>
+		<key>app/service/authentication.ts</key>
+		<data>
+		V6bp/ZIvzNUtwXh6bObK9E3+6D8=
 		</data>
 		<key>app/service/dataItem.js</key>
 		<data>
-		ZetJu+ODkY+0SldU2g8e+3a7M1Y=
+		5CX/S7qSsU0OsCfgUR5Tl41VveA=
 		</data>
 		<key>app/service/dataItem.service.js</key>
 		<data>
-		4Sjcsjy79FJLDjklz4MVX+o5xVM=
+		hNbeZUkHmKIo+FVT2tIyBdbV8iM=
+		</data>
+		<key>app/service/dataItem.service.ts</key>
+		<data>
+		4Ie9M6nLoqgwBzwqFkMXkj1rEfI=
+		</data>
+		<key>app/service/dataItem.ts</key>
+		<data>
+		3r8YM0yRY0hyrNgSHBUhH6mBnns=
+		</data>
+		<key>app/service/http-post.services.js</key>
+		<data>
+		QeZbjnMqzuBts+H7dQ8Vy1OgIY8=
+		</data>
+		<key>app/service/http-post.services.ts</key>
+		<data>
+		kY9LhIm1TweT67ZM6y0IsHroAe0=
 		</data>
 		<key>app/service/listviewitems.js</key>
 		<data>
-		3Yphr2Ro5lHIqPMl/yGq0lomDKY=
+		6uuQ/mKvMdYBhuRj+BrnRkO80Rc=
+		</data>
+		<key>app/service/listviewitems.ts</key>
+		<data>
+		53GXjBeJB0nAB7OTFf9PzhblDe0=
 		</data>
 		<key>app/service/mock-dataItems.js</key>
 		<data>
-		s6V8HfTgRKx2eDLLl7BMu0sZpxs=
+		nmAtiv97xqhoRIpFElom1gClFGY=
+		</data>
+		<key>app/service/mock-dataItems.ts</key>
+		<data>
+		75Y/wCJCBO0Ixi2paP5zyuTiFSs=
 		</data>
 		<key>app/service/user.js</key>
 		<data>
-		SFh2pppgGq8tt02wARf4DAkgkMA=
+		CYatDH2XUFM8MxrmamrOmt0kSDY=
+		</data>
+		<key>app/service/user.ts</key>
+		<data>
+		JahWcEdXhLtZPVnF9PYxpEgD7ps=
 		</data>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
 		<data>
@@ -4852,54 +4172,6 @@
 		<data>
 		/SSopMqIUh9iotTlifpKlG+QfVc=
 		</data>
-		<key>app/tns_modules/fs-promise/.jshintrc</key>
-		<data>
-		hPHEPtu+hTi7L8IcpSUkcV9S/hg=
-		</data>
-		<key>app/tns_modules/fs-promise/.npmignore</key>
-		<data>
-		zHsTWh9R5zUEn3cKtjPQJ6Kz2jU=
-		</data>
-		<key>app/tns_modules/fs-promise/.travis.yml</key>
-		<data>
-		DyHWRrkMJU2nrifk1AtInDv3/w8=
-		</data>
-		<key>app/tns_modules/fs-promise/LICENSE</key>
-		<data>
-		hnE0+4XMrdIdhNn9iOpLEPf+pX4=
-		</data>
-		<key>app/tns_modules/fs-promise/README.md</key>
-		<data>
-		aG4Fmuug/Q5jSZIH7mnpymYj38g=
-		</data>
-		<key>app/tns_modules/fs-promise/index.d.ts</key>
-		<data>
-		LESNMUlAnH1uUW8eNqotDAjoBG8=
-		</data>
-		<key>app/tns_modules/fs-promise/index.js</key>
-		<data>
-		6hhuW1//S51TRcoMorwfRO+ll5A=
-		</data>
-		<key>app/tns_modules/fs-promise/package.json</key>
-		<data>
-		Kw3B85wtrDYKxMH5waIyZ49bfaw=
-		</data>
-		<key>app/tns_modules/fs-promise/test/basic.js</key>
-		<data>
-		5xj894YZ/Ugtn9UBDrjArrip9RE=
-		</data>
-		<key>app/tns_modules/fs-promise/test/mocha.opts</key>
-		<data>
-		FCuRf2yK2W9SSZAehSK4iXVGfPg=
-		</data>
-		<key>app/tns_modules/fs-promise/test/mz.js</key>
-		<data>
-		xJk70PREmz7njsYwxaMaDWfZB64=
-		</data>
-		<key>app/tns_modules/fs-promise/test/register.js</key>
-		<data>
-		vm9LScA5EQTjqSK0ejkOLrSdsec=
-		</data>
 		<key>app/tns_modules/glob/LICENSE</key>
 		<data>
 		u0COkpyusXMZRbK6VLwzftuHzGY=
@@ -6052,30 +5324,6 @@
 		<data>
 		LsiSddAmFB3RCGybo+zx/KYLpkY=
 		</data>
-		<key>app/tns_modules/nativescript-hook/.npmignore</key>
-		<data>
-		RPICEdLv4EwvKdpogN2RZMCF4aY=
-		</data>
-		<key>app/tns_modules/nativescript-hook/LICENSE</key>
-		<data>
-		p8ynhW+Z+7dRoVvPF86gYCJ0HFM=
-		</data>
-		<key>app/tns_modules/nativescript-hook/LICENSE.md</key>
-		<data>
-		oDQ6/9z79YFodtlmEaPxVkpgPRU=
-		</data>
-		<key>app/tns_modules/nativescript-hook/README.md</key>
-		<data>
-		z+AzIcTU0ik7ctfAuHS5GLLlRng=
-		</data>
-		<key>app/tns_modules/nativescript-hook/index.js</key>
-		<data>
-		ncesWA1mYMivqauTLWYZFjPXRcQ=
-		</data>
-		<key>app/tns_modules/nativescript-hook/package.json</key>
-		<data>
-		NWezDYs1P4cpZxBBrohSG9KtO7o=
-		</data>
 		<key>app/tns_modules/nativescript-intl/README.md</key>
 		<data>
 		MUDkFX4XzEs6IawFqApmg1zoiQ4=
@@ -6104,6 +5352,38 @@
 		<data>
 		2BwHdQdo9WpB/sR/KyIgpaqe2c8=
 		</data>
+		<key>app/tns_modules/nativescript-local-notifications/.npmignore</key>
+		<data>
+		9au8O2Pr2sGBk4nn7hnQcm+ldGk=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/CHANGELOG.md</key>
+		<data>
+		fIweb5iurnC/Nd9wF9Z+QJcu/3U=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/LICENSE</key>
+		<data>
+		8Qg+SqR9Y8ZlF6UtwC1KD4m1KC0=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/README.md</key>
+		<data>
+		g7NfMeABhLACK8/0jaGHqAsHosY=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications-common.js</key>
+		<data>
+		u/W5XwQ4o2e8CXO6fmhKzLIg6N8=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications.d.ts</key>
+		<data>
+		9J1fIz30aEmHv78TJv9EnuZa/iY=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications.js</key>
+		<data>
+		acPEQHPBlJeM3M55fsxfOsH1MK4=
+		</data>
+		<key>app/tns_modules/nativescript-local-notifications/package.json</key>
+		<data>
+		kiUuY1O/aWLOW5RNlYkreO9QthA=
+		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/.npmignore</key>
 		<data>
 		w+Qb6OoKXqehBBU7KcV9Ndeas1A=
@@ -6114,7 +5394,7 @@
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/CHANGELOG.md</key>
 		<data>
-		k/GM/3LKE5jyPiCvYZa9P/1yNJU=
+		fgkRFzQgesKK1gfO1Q/E60gqU4g=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/LICENSE</key>
 		<data>
@@ -6122,7 +5402,7 @@
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/README.md</key>
 		<data>
-		QIUCMi3WK3qhSB88Bi7NsIJ2jUc=
+		EZcsgZ4OhinlSCMWtVWY8CjLNhY=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/es6-promise.d.ts</key>
 		<data>
@@ -6134,23 +5414,475 @@
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/firebase.d.ts</key>
 		<data>
-		AJsdqsIvQNIGI14W1yAqRTM7r28=
+		6qRmgqsHK3hwbYQYDDQqCi7V8bk=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/firebase.js</key>
 		<data>
-		OEukk3ODsJz80nwdWR4JA+sPdfE=
+		e7qZpxhl03C0hZCotB3uhv0Yqfs=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/index.d.ts</key>
 		<data>
 		b+PcFCwUXo+ngUVT7unfbNOJaBE=
 		</data>
-		<key>app/tns_modules/nativescript-plugin-firebase/nativescript-plugin-firebase-4.0.3.tgz</key>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/.npmignore</key>
 		<data>
-		Z94dz3OWoyg4uPs2Dnoe5ei+7rs=
+		3OUi9GHuN271HiyqbnNB2MHrUpU=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/CHANGELOG.md</key>
+		<data>
+		Psas3nTqSbglPPoy7e9b0T+7Hn8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/LICENSE</key>
+		<data>
+		3RZLxhG8p7qOrUDsTChRCB5aFrk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/README.md</key>
+		<data>
+		ywudNFHZk/9AJdi4p3zMo6MOGnE=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/copy-sync.md</key>
+		<data>
+		pUMl6ArUk2qiAs4CQVYJVPSHVQQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/copy.md</key>
+		<data>
+		NEfbeCe4yk2AH0h3HpQ8h0ZvHpQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/emptyDir-sync.md</key>
+		<data>
+		jG74CvIgV5mgzfjeLxZsbzvCd+k=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/emptyDir.md</key>
+		<data>
+		EVqv2rmpx8mJEPTLYc45qciimQ8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureDir-sync.md</key>
+		<data>
+		Tf3nIsyKN+TaV1KrKZSrFLzvE4w=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureDir.md</key>
+		<data>
+		yKNBYnk6TVsoRLkk3DmVV1Btnlo=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureFile-sync.md</key>
+		<data>
+		gBRFl/eyAxz0DfZt8fVgx9N3VPo=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureFile.md</key>
+		<data>
+		kZYCEe6UL4JWMH0qkUax1VbVbEk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureLink-sync.md</key>
+		<data>
+		61V7ay+XNDpjWCFhJyNQeErJUfM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureLink.md</key>
+		<data>
+		tj/l9Gb3Dsu6kM5DtKNC8cDK4Us=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureSymlink-sync.md</key>
+		<data>
+		cJKDHTV8L7VZ9mhT0N+xHZt8wqQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureSymlink.md</key>
+		<data>
+		O9mDmkfPPWDTk8RhboF/nOX9KZk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/move-sync.md</key>
+		<data>
+		j/wsnp0sNs8o94sXMehn0zULcIc=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/move.md</key>
+		<data>
+		Dr1qv+O/3IDM4hwWqBjzV27gkfo=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputFile-sync.md</key>
+		<data>
+		GpWncsGQWm3vqBn+AjRlEteZtyM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputFile.md</key>
+		<data>
+		9ycryVgO/krdjGyABzScFq9YjAs=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputJson-sync.md</key>
+		<data>
+		+bA9jRCKOJ+IebBvmWK2YqConjM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputJson.md</key>
+		<data>
+		UGxg8Ruobh9oQ4dKycyke2BtTgY=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/readJson-sync.md</key>
+		<data>
+		hjxHmhjM+O93ddZaXJFF2sQ9n4k=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/readJson.md</key>
+		<data>
+		7IHNI0i+IKFMYV0T8/pCrCK716Q=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/remove-sync.md</key>
+		<data>
+		YdFwRiaTC9TBXlQpaIDkVICoTmI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/remove.md</key>
+		<data>
+		YRt/uU60u0nzHzuNNsKG/UJVt74=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/writeJson-sync.md</key>
+		<data>
+		8ddKf+HA5yWy5SpV//Y0h3ICoV8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/writeJson.md</key>
+		<data>
+		AoQ0y/CVEwbnJkYaey66JxOi6lo=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/copy-file-sync.js</key>
+		<data>
+		OI3avgEiCfpx5Si/48mNmAYQtds=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/copy-sync.js</key>
+		<data>
+		8QyCYaBJlpFXII65LKh1hxlkM6I=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/index.js</key>
+		<data>
+		/zWEHtYXxq37j0aIoflvZcU3bYE=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/copy.js</key>
+		<data>
+		I2dBmnJ3LafeiWNzyollHREmSts=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/index.js</key>
+		<data>
+		4VZ8PxV0d+85lMZbSdgwHDvH0pk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/ncp.js</key>
+		<data>
+		jciUMlWpQO6O8WAaYRH+zD45nN4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/empty/index.js</key>
+		<data>
+		0yk7wpdkGtbfOQ58RFC1EcdOBvQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/file.js</key>
+		<data>
+		8p7UZiWZaaB34UKTXKdlmEsNh9M=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/index.js</key>
+		<data>
+		aOk9ZTQ1PpZl9dlU3nntsnKXto8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/link.js</key>
+		<data>
+		y5HzvVK2H7vlWFBL0+wU1Ek3w7w=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink-paths.js</key>
+		<data>
+		L8/87JMpE/EzLwOwZt7uEDf0v/k=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink-type.js</key>
+		<data>
+		pzA/Y3LqdELCdQw+HeiYAsBuYbQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink.js</key>
+		<data>
+		POl/8qNOiHEYh3rgRcyAFGyzAUU=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/index.js</key>
+		<data>
+		IuSx8LdFrIH0MTI/iLnto3PInbY=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/index.js</key>
+		<data>
+		2U3IvTcUvxKxcyoZqAjY6MhR4+8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/jsonfile.js</key>
+		<data>
+		hbK7sPGBEUMZk4MwbZkaCUt1RjY=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/output-json-sync.js</key>
+		<data>
+		90k7aliFH7dYEUX55VKj/bnFij4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/output-json.js</key>
+		<data>
+		PH+ZIcUE/cWcCkHDyPFhWfZdN8Y=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/index.js</key>
+		<data>
+		0MUZj586035Ydxk3BDKKsE81ce0=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js</key>
+		<data>
+		i8qpXR7rX11i96s4x3EHMX/mum0=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/mkdirs.js</key>
+		<data>
+		bZ1aZip9He/WS+GOx7IcwgG4t7w=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/win32.js</key>
+		<data>
+		WOeC8//DsEj8eArVRnDm5dJavFs=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/move-sync/index.js</key>
+		<data>
+		qbIXXum0j490/aOSLwzO9yrll0s=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/move/index.js</key>
+		<data>
+		mUaq9h2e9WZ1czGHDf941z9SZDQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/output/index.js</key>
+		<data>
+		clGP1kqm/+btaSCNiqWH5v4748U=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/remove/index.js</key>
+		<data>
+		KN3sqm6DHbUpYvmTO50OmW7tg2M=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/remove/rimraf.js</key>
+		<data>
+		x2tg4zXGeDLUeiF+a9lD1jZgh/w=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/util/assign.js</key>
+		<data>
+		YO5yuCdy6saSfcTaveu0t1gwX80=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/util/utimes.js</key>
+		<data>
+		s0I4Gpxur0iwANtxnp3E47C+K3U=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/package.json</key>
+		<data>
+		CaLgQ3G9lrDFSOkA/OiUsSuRGEg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.jshintrc</key>
+		<data>
+		hPHEPtu+hTi7L8IcpSUkcV9S/hg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.npmignore</key>
+		<data>
+		zHsTWh9R5zUEn3cKtjPQJ6Kz2jU=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.travis.yml</key>
+		<data>
+		DyHWRrkMJU2nrifk1AtInDv3/w8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/LICENSE</key>
+		<data>
+		hnE0+4XMrdIdhNn9iOpLEPf+pX4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/README.md</key>
+		<data>
+		aG4Fmuug/Q5jSZIH7mnpymYj38g=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/index.d.ts</key>
+		<data>
+		LESNMUlAnH1uUW8eNqotDAjoBG8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/index.js</key>
+		<data>
+		6hhuW1//S51TRcoMorwfRO+ll5A=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/package.json</key>
+		<data>
+		09HYjIXvbB4qD1bzL1FT4AsblqI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/basic.js</key>
+		<data>
+		5xj894YZ/Ugtn9UBDrjArrip9RE=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/mocha.opts</key>
+		<data>
+		FCuRf2yK2W9SSZAehSK4iXVGfPg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/mz.js</key>
+		<data>
+		xJk70PREmz7njsYwxaMaDWfZB64=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/register.js</key>
+		<data>
+		vm9LScA5EQTjqSK0ejkOLrSdsec=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/.npmignore</key>
+		<data>
+		RPICEdLv4EwvKdpogN2RZMCF4aY=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/LICENSE</key>
+		<data>
+		p8ynhW+Z+7dRoVvPF86gYCJ0HFM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/LICENSE.md</key>
+		<data>
+		oDQ6/9z79YFodtlmEaPxVkpgPRU=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/README.md</key>
+		<data>
+		z+AzIcTU0ik7ctfAuHS5GLLlRng=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/index.js</key>
+		<data>
+		ncesWA1mYMivqauTLWYZFjPXRcQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/package.json</key>
+		<data>
+		ceE7EUUhaN+LKYajYf+m98EqgNI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.jshintrc</key>
+		<data>
+		sOuZHHSH2zkDMVtBz+STPp833GI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.npmignore</key>
+		<data>
+		lA9HAZmpyZP8sVfm3OQM/WAA6Dk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.travis.yml</key>
+		<data>
+		nbk/aLtCN2NC/I3XhFoG4ttlRDg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/CHANGELOG.md</key>
+		<data>
+		gzGVpCIfdZLglyVoAkhs5YfbXsk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/LICENSE</key>
+		<data>
+		5ElhOFU/1i9srHRqnWzsoWZAex0=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/README.md</key>
+		<data>
+		FNh2WZ/VsicP/HZqcDy3HvrTGHs=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/docs/docco.css</key>
+		<data>
+		1EcomDSpAWkfLXgFyOYkKk8/eMA=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/docs/prompt.html</key>
+		<data>
+		1jQWErX2IWLhf55Szc9ocC66p/8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/add-properties.js</key>
+		<data>
+		He6sMcxewMJrdKryDNu2U09PPTU=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/existing-properties.js</key>
+		<data>
+		pNTsNaKv/lx2sePRwjyP9K4qLTo=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/history.js</key>
+		<data>
+		x5RJHlnWh8X4TTkn5J4NRcK7PoA=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/nested-properties-prompt.js</key>
+		<data>
+		2KWo+DPrgNdYmn7FVi6B5ol2heQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/old-schema.js</key>
+		<data>
+		XuzFFYSCUtqLbgWlTfG90UO1sFI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/override-validation.js</key>
+		<data>
+		+MtiMiuTEGN7Cv6d+ADZfxv7umI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/password.js</key>
+		<data>
+		tZQOBnX+9CIigDbuQhTkawWynes=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/prompt-override.js</key>
+		<data>
+		IMyKQOZil51PJoFr69e8Q/EoSMk=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/property-prompt.js</key>
+		<data>
+		/wmvvijpH32s/znLja5dgR/ASv4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/simple-prompt.js</key>
+		<data>
+		cQYV1aoVfkKJ0bBY3l/SAgeqnWE=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/yes-or-no-prompt.js</key>
+		<data>
+		SCgT/dVR25+DAp5PLoCpo7KFNQA=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/lib/prompt.js</key>
+		<data>
+		YGZyMUfs83TxBIQmrSKEn3UJ8M4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/package.json</key>
+		<data>
+		SfVvMCRGpyCxFcJGOd4QWLLJPAw=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/helpers.js</key>
+		<data>
+		sRqRZbVR7AlcX9OwOhuJHgUg0EM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/interactive-prompt-test.js</key>
+		<data>
+		FYNcFnzS0oO9kt12I2n2dEH6kBI=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/macros.js</key>
+		<data>
+		zzGj0JGbYX6xmITDWgFKi/7hbjY=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/prompt-test.js</key>
+		<data>
+		ihyOrtCyyJP0SK5DMieSK+9OCNg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/.npmignore</key>
+		<data>
+		IOqmj892hHFt5ya4GCJUhb7kZoQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/AUTHORS</key>
+		<data>
+		KyPsAIZnRR+QRlHgWlT3X/OqMaQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/LICENSE</key>
+		<data>
+		MvszDcO+wPc3UmPyIyYYimMYa/U=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/Makefile</key>
+		<data>
+		Ci3wQlTo/NsEUrD4a0RkdWaIXaA=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/README.md</key>
+		<data>
+		ViGwslT1Mu0s7zFS9eukazvwyLM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/index.js</key>
+		<data>
+		XHvgB6Q30Ge8APLyjm4+7jL+0lM=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parseJob.js</key>
+		<data>
+		w3AD5rLq1emnfOEy5XeuA52KuIQ=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parser/pbxproj.js</key>
+		<data>
+		lbVgNTMaP8ubUCQhj6tl4ZnZEv4=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parser/pbxproj.pegjs</key>
+		<data>
+		BhDeh+UMMjoGL/6zvAyGFn4wuOg=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxFile.js</key>
+		<data>
+		31mvPMK23/vR0eX1VXK7AW7JcW8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxProject.js</key>
+		<data>
+		PM4i+aIWiTz6qh5pUbbYo6+OsO8=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxWriter.js</key>
+		<data>
+		V8hWFBQg5/gM0AU+86Pojfr1mCw=
+		</data>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/package.json</key>
+		<data>
+		x4a6QcdEi3pDfLi6OUe53jsd+lY=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/package.json</key>
 		<data>
-		RvQ3DF6he62n+l/GSmlTNxrLr0M=
+		C5KS5XjCAov+bMRoe+5EBld0gJ4=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/postinstall-hooks.js</key>
 		<data>
@@ -6170,11 +5902,11 @@
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/scripts/installer.js</key>
 		<data>
-		GuCky9fDz8AtwIm1zrmc0A4kC7I=
+		T91l9PUmt8yZ08cRku5zdoXWPhA=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/scripts/postinstall.js</key>
 		<data>
-		m3KtXENGTGjtjMQSiSYz4EfgEPk=
+		b76SuO/oT5YqqEzthO+J57AgmDg=
 		</data>
 		<key>app/tns_modules/nativescript-plugin-firebase/scripts/webpack.config.js</key>
 		<data>
@@ -7347,106 +7079,6 @@
 		<key>app/tns_modules/plist/package.json</key>
 		<data>
 		ewUYEDnNhA6DY0zxSJyUwkCuKY0=
-		</data>
-		<key>app/tns_modules/prompt-lite/.jshintrc</key>
-		<data>
-		sOuZHHSH2zkDMVtBz+STPp833GI=
-		</data>
-		<key>app/tns_modules/prompt-lite/.npmignore</key>
-		<data>
-		lA9HAZmpyZP8sVfm3OQM/WAA6Dk=
-		</data>
-		<key>app/tns_modules/prompt-lite/.travis.yml</key>
-		<data>
-		nbk/aLtCN2NC/I3XhFoG4ttlRDg=
-		</data>
-		<key>app/tns_modules/prompt-lite/CHANGELOG.md</key>
-		<data>
-		gzGVpCIfdZLglyVoAkhs5YfbXsk=
-		</data>
-		<key>app/tns_modules/prompt-lite/LICENSE</key>
-		<data>
-		5ElhOFU/1i9srHRqnWzsoWZAex0=
-		</data>
-		<key>app/tns_modules/prompt-lite/README.md</key>
-		<data>
-		FNh2WZ/VsicP/HZqcDy3HvrTGHs=
-		</data>
-		<key>app/tns_modules/prompt-lite/docs/docco.css</key>
-		<data>
-		1EcomDSpAWkfLXgFyOYkKk8/eMA=
-		</data>
-		<key>app/tns_modules/prompt-lite/docs/prompt.html</key>
-		<data>
-		1jQWErX2IWLhf55Szc9ocC66p/8=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/add-properties.js</key>
-		<data>
-		He6sMcxewMJrdKryDNu2U09PPTU=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/existing-properties.js</key>
-		<data>
-		pNTsNaKv/lx2sePRwjyP9K4qLTo=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/history.js</key>
-		<data>
-		x5RJHlnWh8X4TTkn5J4NRcK7PoA=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/nested-properties-prompt.js</key>
-		<data>
-		2KWo+DPrgNdYmn7FVi6B5ol2heQ=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/old-schema.js</key>
-		<data>
-		XuzFFYSCUtqLbgWlTfG90UO1sFI=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/override-validation.js</key>
-		<data>
-		+MtiMiuTEGN7Cv6d+ADZfxv7umI=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/password.js</key>
-		<data>
-		tZQOBnX+9CIigDbuQhTkawWynes=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/prompt-override.js</key>
-		<data>
-		IMyKQOZil51PJoFr69e8Q/EoSMk=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/property-prompt.js</key>
-		<data>
-		/wmvvijpH32s/znLja5dgR/ASv4=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/simple-prompt.js</key>
-		<data>
-		cQYV1aoVfkKJ0bBY3l/SAgeqnWE=
-		</data>
-		<key>app/tns_modules/prompt-lite/examples/yes-or-no-prompt.js</key>
-		<data>
-		SCgT/dVR25+DAp5PLoCpo7KFNQA=
-		</data>
-		<key>app/tns_modules/prompt-lite/lib/prompt.js</key>
-		<data>
-		YGZyMUfs83TxBIQmrSKEn3UJ8M4=
-		</data>
-		<key>app/tns_modules/prompt-lite/package.json</key>
-		<data>
-		V8XDFbshoQhBZqHY4Vn63RYvCXU=
-		</data>
-		<key>app/tns_modules/prompt-lite/test/helpers.js</key>
-		<data>
-		sRqRZbVR7AlcX9OwOhuJHgUg0EM=
-		</data>
-		<key>app/tns_modules/prompt-lite/test/interactive-prompt-test.js</key>
-		<data>
-		FYNcFnzS0oO9kt12I2n2dEH6kBI=
-		</data>
-		<key>app/tns_modules/prompt-lite/test/macros.js</key>
-		<data>
-		zzGj0JGbYX6xmITDWgFKi/7hbjY=
-		</data>
-		<key>app/tns_modules/prompt-lite/test/prompt-test.js</key>
-		<data>
-		ihyOrtCyyJP0SK5DMieSK+9OCNg=
 		</data>
 		<key>app/tns_modules/read/LICENSE</key>
 		<data>
@@ -14540,58 +14172,6 @@
 		<data>
 		fVwckIZks99Km3JAChJmUroN2QU=
 		</data>
-		<key>app/tns_modules/xcode/.npmignore</key>
-		<data>
-		IOqmj892hHFt5ya4GCJUhb7kZoQ=
-		</data>
-		<key>app/tns_modules/xcode/AUTHORS</key>
-		<data>
-		KyPsAIZnRR+QRlHgWlT3X/OqMaQ=
-		</data>
-		<key>app/tns_modules/xcode/LICENSE</key>
-		<data>
-		MvszDcO+wPc3UmPyIyYYimMYa/U=
-		</data>
-		<key>app/tns_modules/xcode/Makefile</key>
-		<data>
-		Ci3wQlTo/NsEUrD4a0RkdWaIXaA=
-		</data>
-		<key>app/tns_modules/xcode/README.md</key>
-		<data>
-		ViGwslT1Mu0s7zFS9eukazvwyLM=
-		</data>
-		<key>app/tns_modules/xcode/index.js</key>
-		<data>
-		XHvgB6Q30Ge8APLyjm4+7jL+0lM=
-		</data>
-		<key>app/tns_modules/xcode/lib/parseJob.js</key>
-		<data>
-		w3AD5rLq1emnfOEy5XeuA52KuIQ=
-		</data>
-		<key>app/tns_modules/xcode/lib/parser/pbxproj.js</key>
-		<data>
-		lbVgNTMaP8ubUCQhj6tl4ZnZEv4=
-		</data>
-		<key>app/tns_modules/xcode/lib/parser/pbxproj.pegjs</key>
-		<data>
-		BhDeh+UMMjoGL/6zvAyGFn4wuOg=
-		</data>
-		<key>app/tns_modules/xcode/lib/pbxFile.js</key>
-		<data>
-		31mvPMK23/vR0eX1VXK7AW7JcW8=
-		</data>
-		<key>app/tns_modules/xcode/lib/pbxProject.js</key>
-		<data>
-		PM4i+aIWiTz6qh5pUbbYo6+OsO8=
-		</data>
-		<key>app/tns_modules/xcode/lib/pbxWriter.js</key>
-		<data>
-		V8hWFBQg5/gM0AU+86Pojfr1mCw=
-		</data>
-		<key>app/tns_modules/xcode/package.json</key>
-		<data>
-		sPC4mNg1T5wbSylkLEDgXwu27Fc=
-		</data>
 		<key>app/tns_modules/xmlbuilder/.npmignore</key>
 		<data>
 		u3Di/sK+ocS4TY5fztVpK/EXnAE=
@@ -15030,11 +14610,11 @@
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
-		vO/gVYVVkU1zHBaxd4xJ53/ga5k=
+		uVC4UsEAjsaAorNMAW+mHUKgk9o=
 		</data>
 		<key>build.xcconfig</key>
 		<data>
-		1tsERBASShQF8nZUXRzmqAHOV1E=
+		Bp7KIc5Vrx+AbnT3DhT/+Zmuy9c=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -15210,737 +14790,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			prFqiIuwyvMMlidwnVxgsgcMdS0=
+			7n+6mJ560QaJM+EEwfFnxHU+Xg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YcQljn2lB10BS5ho5F4snMq0xUnKO50xGF0mH6uHGpY=
+			AuROW/HtuQOA018jZZsBFgE2EN8lf2aa6XcOoWPiDIs=
 			</data>
 		</dict>
-		<key>Frameworks/Bolts.framework/Bolts</key>
+		<key>FollowiOS.entitlements</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vEjW7IJshnYssLAVgcEoJa9cTWE=
+			M+At84pGmVF+58EsMZnLPvjokAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pp0gcWorC3e+UTHzK/tPJtOkgqqGpklEFLU6zMWd8sU=
-			</data>
-		</dict>
-		<key>Frameworks/Bolts.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YvRcisnfnqxebHQRU7xaVY4SmKA=
-			</data>
-			<key>hash2</key>
-			<data>
-			LOUlIVpFYTZxd5Uj4dP2XeXfXnYfpfelXhgBKj9M9r0=
-			</data>
-		</dict>
-		<key>Frameworks/Bolts.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lsJGmDvpRb7bvU+43fMnGOnB6cM=
-			</data>
-			<key>hash2</key>
-			<data>
-			jo+7bm9o3KQ1tIZouTF1xoc5EDHp19cOOe1qvY+aaxM=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FBSDKCoreKit</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yqCKHoD5mnzGLEVL5hKmeSciSU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			zOa/1CTYzLiZER6WUt/+NQEgq9dIUNChZd31YnoM7dA=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y5WrSzFnUhxYXvR3KXMiSj/h06E=
-			</data>
-			<key>hash2</key>
-			<data>
-			VGQ/Kc9ZMnr50vLAmOQGqLmz5Ctn3ggiIb2wIlnBY2U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ar.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HV/bg9PTjWiemlePoYJ3UPpjNFY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hl9PxTirMTKZc8OMI/ZbHrz3oRBYl/r9uCH4UVmyWOs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/bn.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZHz6mzcH0mNy4mclUZpIVahbC6E=
-			</data>
-			<key>hash2</key>
-			<data>
-			Z6h15ADGZYSZf2wu2LMkL/0i+uSg2E3WSxUQch4FlYc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/cs.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZmgaOjPjB1XfYunN30U3b5XyuME=
-			</data>
-			<key>hash2</key>
-			<data>
-			Szz3w6EruRw9VIlA4lva+4eG4rqEoQI9lR1zRH8/CTA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/da.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9Xpzf9uJPappau0kHzMPV9We5s8=
-			</data>
-			<key>hash2</key>
-			<data>
-			MwPEO64toXvK0QbvOr/e3Kmdmk5DZd8GoSv3o5FagqM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/de.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m5zSEVo/1wfIYqKbzr4xJX/QVSc=
-			</data>
-			<key>hash2</key>
-			<data>
-			mCLmJkF/MI/4SJp/PweAnXv8UKW9A1JdcfgAnuZdiUo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/el.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HGJCOkR8qcfNbjAd3MjuYgmAFro=
-			</data>
-			<key>hash2</key>
-			<data>
-			oe1iUXBFjV4/59IHVH6to/Kamq5M65tayBcpyOHHo5Q=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/en.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U5Dz4SBItBNA9+b+/WN8F/AQ1ss=
-			</data>
-			<key>hash2</key>
-			<data>
-			VU3rNTSiFiWEAORU0bdhz5cHJQQfhuNX8Nhs2BvWkcI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/en_GB.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3vcOPexz+Q//TkV0/wLQVy0vaPA=
-			</data>
-			<key>hash2</key>
-			<data>
-			5oqwy1FFNaq6Uk2Ccou99C2FOjLBTH5G8h55Ska5Tqg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/es.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MYrgcBkHEYJMvKOIbdjQlFjH6+Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			X+6MDpHSCyZM4InEhr/Ft81mogIpfNQnFO/Ao9JHjw8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/es_ES.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I3ZGXyaP6t0j+yW5UJXEsy0hp6E=
-			</data>
-			<key>hash2</key>
-			<data>
-			IRkdJ988JXqZ6y9b037clbq+cg9foORI5+uMilYhOv8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pwjOlw9TL13QP0Bkf1s0J1Kqhro=
-			</data>
-			<key>hash2</key>
-			<data>
-			SnR8GWSeY45xyW0U7E5l9zgTM9RtkN/mXRYD+75CNEo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fil.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4V0ES68RPXKjWj5i6tXKKJSZe90=
-			</data>
-			<key>hash2</key>
-			<data>
-			EEcW94rBGmfERkeOyRG+nRnh0OPHpPvQ2h8Br5XJdBE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/fr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KGCrA4V3iW05/6GwUyrTYXl1ywI=
-			</data>
-			<key>hash2</key>
-			<data>
-			zJ+b3W86/5ibpIT62iSIRJ+8eYcxwtDlzQhsEjxYC7Q=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/gu.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1mzX1ZuI1fFmaCwiv9gdTTORk3U=
-			</data>
-			<key>hash2</key>
-			<data>
-			8y+tWmWqjEBkPlF8Pr/Xn5CQ4AA2jpiHxck+gx6DVKM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/he.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5J2ILV3YRnkCoyYDdboIL6m6dM8=
-			</data>
-			<key>hash2</key>
-			<data>
-			GN40dTMi4zvYK0vqdXrNETAWsEM1DAOp6u/SReypmzY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xm2dYAzlhr4Y/bU21xEUhqeXDnE=
-			</data>
-			<key>hash2</key>
-			<data>
-			THmKdZ2EftG6YE7vz/Mx4ssmyOp4Hl2SRZX/kWQ6WRs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			baPBBsia6NR01LlwRGGDkT4EIOQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			GSgAZJ2tDlb820oTgtkUKBekbX2h7p9292QuWeDsTm4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/hu.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OkSVSd0h7Jlb9s/+HF9lNH4ZWrU=
-			</data>
-			<key>hash2</key>
-			<data>
-			guNug3YIsOsMtsxPA6qIoMZe1byl1Q7Y2hvDmvlyKdU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/id.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CxSZ4Lpc/LLoKIRmpv/4Hk9K81w=
-			</data>
-			<key>hash2</key>
-			<data>
-			rEKR1ohebFJxPeaqx9qPa1KeKSJ+BU4aMUrQHZ7zV/I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/it.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+tR5MQb2cOQl2m+vFLuULsTW588=
-			</data>
-			<key>hash2</key>
-			<data>
-			3FHHo8iboftK1udSKTCQiR7RIJGBlEjxFzMxLYuES74=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ja.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yzaEwsmKxGTUxw3vNcTKQMa4YMs=
-			</data>
-			<key>hash2</key>
-			<data>
-			qEnlJTUnUj4daGpkA9ARdvZfxsILb66M0nRWJtCTpmk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/kn.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WjneEjaxY3uzi0UsAfhmUsVQ6/I=
-			</data>
-			<key>hash2</key>
-			<data>
-			sSubU1CwQkpTRZoF10lDPk+6AcBzkRyjgmFQSIHzUto=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ko.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+ZKyPRzcZg8Ztpp6y2OcGsUm6PE=
-			</data>
-			<key>hash2</key>
-			<data>
-			vwCY4WI8Y9iHFZyuAHdv5CLBIttNMb06BTx6uYIk0ZA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ml.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lpEg9eS5pxS2HCdbkfSUw9TSb6U=
-			</data>
-			<key>hash2</key>
-			<data>
-			6H1PTnxnEdyVee6toFA3l3o+4GXVjktntVqqp3pRW4E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/mr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XiIx0AmcJ24cCb2yVEJMymlrKZc=
-			</data>
-			<key>hash2</key>
-			<data>
-			FM+rE/RghDYUiW28NbiQg598XwHu1mRXrNUCFQcHBnU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ms.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s1XEm86DFP5tvwcgA5hXdTCJBO0=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZSVxqjQpQkkQV/jsB37WLIEpOwfxSoyJdeV/FNKAf9g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/nb.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C4hAnI+PiUqSiDLYMEVD4g3ZEgI=
-			</data>
-			<key>hash2</key>
-			<data>
-			rtBI+PCsCJpVES4Y9ngaHgUSLvyeJo2+3beaC3RZ6Qg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/nl.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BPiclwOsMR29+Z4WsXR2RkmZOUg=
-			</data>
-			<key>hash2</key>
-			<data>
-			EMsovna6qBAIcWTDcsgxGyxajhep4hWiDFlv1OF+yLc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pa.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5VIMjD2aD1r/aG4fHiHXWOSJY2c=
-			</data>
-			<key>hash2</key>
-			<data>
-			THrgFq0L6NTOJSCuT3HZb4RUTwwHjbv39GkpTXM6xfY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pl.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZaVuAkBOHFl+EUFRpdDjWjZRXMs=
-			</data>
-			<key>hash2</key>
-			<data>
-			ea+P1rS8+2v4QgVenRB2UTZ9gV2LiP16Xo/GEOZrv9s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pt.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hib/xuWEDj6Tdcm3vhAUz3qwH9o=
-			</data>
-			<key>hash2</key>
-			<data>
-			sbpPuF++wZViRVsMXrrdqadPjMYXtcT4kkdq39Ozqmc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/pt_PT.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uZ8Ihyhoug7GkDljHNjz5o9HUMs=
-			</data>
-			<key>hash2</key>
-			<data>
-			TsWiSMuJ+9E+oHIviRuBFXECY0EvnCl13eP7ROnTu8A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ru.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WyUs8W5L9694r4f/LXupoD9JcBY=
-			</data>
-			<key>hash2</key>
-			<data>
-			x0rmFEWfC0jComRxqE3x+IU++L8tLgThvsnCcnCaEVY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/sk.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aE64290bGuWlW/aFyXpKh/9yDfs=
-			</data>
-			<key>hash2</key>
-			<data>
-			UGU/jzqma4f3ynuxwULN/UWEFqWNUEqSVtiob2Roy/M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/sv.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s4pLiuKSlvc6hpLNImp6n9iokLE=
-			</data>
-			<key>hash2</key>
-			<data>
-			tZnBNpgYG37h8Y9dasthEGgTTYQmo/jMlbDmYZNoR8I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/ta.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PPgWpOHMckuWrhPdMoi6UgMbqOI=
-			</data>
-			<key>hash2</key>
-			<data>
-			0k6bPQVjF6ufw/XBAp0WppTvgmxJYk6IrKpk7Du4ErA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/te.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GYSJ0urek7WHcuPLJXorS/n7E+4=
-			</data>
-			<key>hash2</key>
-			<data>
-			BUztPb+p96il32Zvg54pY2O++WGHehmZhCMqbcYNd4w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/th.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E+XQJCIP/TRBEKV7BGGctJZXK/A=
-			</data>
-			<key>hash2</key>
-			<data>
-			zGK6ilawQBwYSEkSUSl+p4TcKk7PiiROZcw0M7xBxK4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/tr.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PVP59glbvsHd23h6pgqCihMY/Tw=
-			</data>
-			<key>hash2</key>
-			<data>
-			L5Gqg+PP/QzlyzRHhs4x8DjoojE62sLyiLi4eXbSpfc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/vi.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cwpqBoTUNP98ThR6uoCVHIWsYzs=
-			</data>
-			<key>hash2</key>
-			<data>
-			bW4Q0YnuB8hssucH/uiAolBEH3Q2B+tBzXRdAoChr1w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QoYeFuY4/Ypu7Wn2nf8hu2WoAS4=
-			</data>
-			<key>hash2</key>
-			<data>
-			5lnrBWA9DkXdBz3eebginlHLWlmboQlyQ6whABMQyHU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh_Hant_HK.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xySG1hcG6NuWqCnHlP0Z9Ql07v8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Iludrni/rPWHrpub2AeNQ4ujxHYDOuunz0qeMICrODc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/FacebookSDKStrings.bundle/Resources/zh_Hant_TW.lproj/FacebookSDK.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Zg/v3pLNchv3J+VO7mRKrEkPANU=
-			</data>
-			<key>hash2</key>
-			<data>
-			HnyFhs8bcJsiXJ7W7n6/5xud71fQof0EkFVqqiHoJ/g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DhghaHkf5cUwuEqD2UJoJR6RyGQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			imNtL2J94XsatGlqU13lB+AsCIgVaJ5ujnlLu0jivTE=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKCoreKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7EEb4lwPl437z/DM0Wcpqa9lgnE=
-			</data>
-			<key>hash2</key>
-			<data>
-			9uoRDBEol2bu74Iw8SKZb9aruIAQyRkmsbHNLxGJ80s=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKLoginKit.framework/FBSDKLoginKit</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xKYZmretxJmVNh8n4gA6peIzr7g=
-			</data>
-			<key>hash2</key>
-			<data>
-			f/37fi6+dTQ1PrHwJGYZN7uCrEKRPfRkNRMte0RLDpM=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKLoginKit.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bwxq1pQG3isiJFcJqsXhRG8JMFM=
-			</data>
-			<key>hash2</key>
-			<data>
-			nG9YJT4q/xONS5mdjWi5IaDUTeQeIoi6zgVPaT+L4P4=
-			</data>
-		</dict>
-		<key>Frameworks/FBSDKLoginKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tpOpq7hlhcNJ36njKffUSPqmVF0=
-			</data>
-			<key>hash2</key>
-			<data>
-			99RIMNQ+X473YMSOA0AHYT2Vf2bD7DygOuRGqRYEIKk=
-			</data>
-		</dict>
-		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w23TANszZNzqJSBaLx3tukCJphs=
-			</data>
-			<key>hash2</key>
-			<data>
-			fTGmXuPMcej7ijcxRVunOiz0CtYR0ThXHWmkhv83Zw0=
-			</data>
-		</dict>
-		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			u7exNnsmLi94gg/Al7vmD1oHoT8=
-			</data>
-			<key>hash2</key>
-			<data>
-			0kyVf9HOP1oKElcgieySbXZ3MpH8+gyvOO6awxsj5/Q=
-			</data>
-		</dict>
-		<key>Frameworks/GTMOAuth2.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			N94AsuWQeCgUdg/g3PGQJ/UVGI4=
-			</data>
-			<key>hash2</key>
-			<data>
-			EEZek+p0MMWUiNFOc/uixDMIsFmXxn+BC7oGcNGzB4w=
-			</data>
-		</dict>
-		<key>Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Isf9JKxTkHK4j6cxyiHQSqPgJ4g=
-			</data>
-			<key>hash2</key>
-			<data>
-			9RglJIoJpZvQlFCU7lcRCw0vGz5fhejRRzT3eLi87ds=
+			nwY9t/hJoKs7Z48t6gtRIhzxALBPB8fLw0YbWFvDxZI=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OEY7VJGw4GmH4OJO/9yjlfZ5qfY=
+			wsKLHMOPLGFeH8jNoUez5ozDMY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uq/SysBODBzlpDzSximaeQbP3k/PvPNv7huH4yrhJlU=
+			TI1Ob/p/DDds0bsro3AVXitByZriLsXTpp95g5IwjqA=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -15969,11 +14845,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R4n42xgfh6W6yrYZAnzgWR51y8o=
+			yw7gL8x3x6lSAQXZvvJaIT4x6oM=
 			</data>
 			<key>hash2</key>
 			<data>
-			V0ASZbuJyR9yNsWXaNG9RJ9lAJKbeg8F4u8t4w5q2S8=
+			aMhwP2i/OnUsacZ2Lv7Ut832YoesHZcNtc5dzful0uI=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -15998,6 +14874,39 @@
 			ltbbdAX/7d3zWMD9tUgyGH1f/UEhYUcNtYtMxGE9HdA=
 			</data>
 		</dict>
+		<key>Frameworks/LocalNotificationsPlugin.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cdvplKN/S/sirif3vFldAXh+ko4=
+			</data>
+			<key>hash2</key>
+			<data>
+			lMCKMeQrVgY5YkvXDCZJqRJU4kjARpgdFB73qiBUb2A=
+			</data>
+		</dict>
+		<key>Frameworks/LocalNotificationsPlugin.framework/LocalNotificationsPlugin</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nJVT/1tiHvJztOtP3Ra/VpeEIFw=
+			</data>
+			<key>hash2</key>
+			<data>
+			xiAdv7LeQiwOzh8dA1XqB8Bs6D8cUbhdFYxWTOfUMrE=
+			</data>
+		</dict>
+		<key>Frameworks/LocalNotificationsPlugin.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJD7993780nrAPlv4C4GZZMcmvE=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vxv8E4bvw/FF2A+XgawbTIpkEZ1p8KU2AQaWNpeLPKc=
+			</data>
+		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -16013,11 +14922,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N1vdeWEf2MOelMFDG6VhzArE9X4=
+			36Q9N5XkuIFFd2Ot7yveJyGHGiw=
 			</data>
 			<key>hash2</key>
 			<data>
-			LLJKRw7zKd7N2QjJFBZNGLaq+VQGWyNqQPYAhjxl1B8=
+			dJCA+s/BlwjOvfPp8awa/fawJ6caPpkvMjOd4kax9KM=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/_CodeSignature/CodeResources</key>
@@ -16046,11 +14955,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TcI+iVLmTIUq9WCakLsite3NGs0=
+			Tv1cd1hCoOmEYxBNqTEwA4gw82A=
 			</data>
 			<key>hash2</key>
 			<data>
-			xJKhU8U5AE2yrjkuebq/yJYwEt7K9E4ji+DfSYRSmmU=
+			//T0DU8E7vwpCnPxIMvqX6gRkzru82qeLG1bgWpVOuY=
 			</data>
 		</dict>
 		<key>Frameworks/Protobuf.framework/_CodeSignature/CodeResources</key>
@@ -16079,11 +14988,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I27X6S43NN6AH6ivmceSXrnok/0=
+			/VqbwRGI0/oRNnCybeVarPTah7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			ot7P/iAqIrv4zRlypXpy1kRAzX/YUZmFR5czEzwoFtg=
+			jx9VcfzLKWqm6VAfJxuloQKF/J0MMVH3T9JbgkEdIy8=
 			</data>
 		</dict>
 		<key>Frameworks/TNSWidgets.framework/_CodeSignature/CodeResources</key>
@@ -16112,11 +15021,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			89sW9uMCFPObu06j/G1qy8sXHGA=
+			yInEKqDz4tlyUtB9NqkxoDpneSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			+JWn4XLw60wnrvEsGyOYBR7OX1p3UgTlicPloRG6KJg=
+			PlvSoVUqdbfuOeoG62GFdMJt0OYy2YK4lU8gGRaEj20=
 			</data>
 		</dict>
 		<key>Frameworks/TelerikAppFeedback.framework/_CodeSignature/CodeResources</key>
@@ -16145,11 +15054,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hlb4RWYdqPPfHLcmFSLlmo9NdXU=
+			o/lGHZqgpnmf4HCY5lNOBrgeTWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			1iiVcsWdYANC7KnW4URXJXIL6uF7Tm7mQpyBZxXxoyg=
+			oiIlUcFFjGQIVjMptlvjsV82WMgKOxNNKeeLzN1KTDc=
 			</data>
 		</dict>
 		<key>Frameworks/TelerikUI.framework/_CodeSignature/CodeResources</key>
@@ -16189,11 +15098,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ppk2ss6jmZTEpMdY8em6Q1uH1SM=
+			hjde1O5XyPp6Qr4tVnZERTY5D4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			5iO0UOlGkxpiqmis2A562SGj2nn8sDvE1N/3ZjGJdiY=
+			PAx8C/5GNw7qiKmbmLkV3PplvsDOj9AOwkyCcUrAz2E=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
@@ -16206,529 +15115,6 @@
 			<data>
 			c2r7mEqVgKMrOzSQQBUgyK5q3aa2QDghmA4DSxYPKMk=
 			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			crpRzFuQ9ZvKhMPCppVFY+N8cyQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			P62KEtadyyGFxNAtD0gVfX69it1eoz/qReexokf7zyE=
-			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RzJ98PNefNfIZFh0iXp0SWl1RK4=
-			</data>
-			<key>hash2</key>
-			<data>
-			WU10pJ4we+fMnh7l8QI2hOaCDPEbzJaL7lkDkeGtWlo=
-			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cDxgICm2dFjfiPeYCfTua06ieMA=
-			</data>
-			<key>hash2</key>
-			<data>
-			QeWsAsqQdz3nqtJU93kytvszFvFRLmw0W1h+Rmlwfho=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jxk2OQG/+udN2wGUOW9Su8bozmo=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZfmeidsaGhR8JQbM6KjQwYNLlpei2eDR3UKkWLBcuhw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3SZfPmiX/uNms0dfyvpJ2YKfYAs=
-			</data>
-			<key>hash2</key>
-			<data>
-			kx9XTkE8E6q9RP94Pjo1EQQtF+LVoAsHtrstRw2/o+k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oIntgdmNT8vgklolp0V1aSwni9E=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q+HbBsKMKlrhfMNDnDtpIXaoETHxGFFSgxsXN5U5ITs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+r5IQg8vmMQGofVbtTfuIpAkegA=
-			</data>
-			<key>hash2</key>
-			<data>
-			HSf39naS/xqZ0zmjV2eRJpqEQ/XXahiRZ/TzW+2lmes=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R4N2/n6PLvdXwzPAZSdBIQ42i5o=
-			</data>
-			<key>hash2</key>
-			<data>
-			RuBwkBJ32OYhWsxkWpWiQm/kYRJjmcT7qxwABqVu9xM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2WBjXO3mOTycjDC36lU+OkTmMQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			5oyYC/GOYosb/fhfcdtDWh/ZIn9spDhwbqzhHacw6dQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2WBjXO3mOTycjDC36lU+OkTmMQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			5oyYC/GOYosb/fhfcdtDWh/ZIn9spDhwbqzhHacw6dQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1L+WhN4hHZ+DMGL3814nf230sKU=
-			</data>
-			<key>hash2</key>
-			<data>
-			rvLIqlTvGX2MdaFGD4AQyZRK7VCiKDsMAqPLg/fx0vk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5DCiJO9D0jvvC1MdVuH87FoKE4U=
-			</data>
-			<key>hash2</key>
-			<data>
-			Pe5RKPisvYpVr+z9xL0ETLp64N4F5eaoALJlc34APa8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P9wjOJ2NnRD/MprJTtHsJv4WuYs=
-			</data>
-			<key>hash2</key>
-			<data>
-			2jqJTq0bel6ohlwvErW+mfDMZ9SyU7XbfVxDJFRRoLo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aGMUV/zy0qshVO3EGOASJGzb61k=
-			</data>
-			<key>hash2</key>
-			<data>
-			CceqS0KGsVkiAAaIngsMVpQkBbOgAoss+5CMTUce5cM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/google.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			guERtxRSG8LklxczLu47JIwLjiU=
-			</data>
-			<key>hash2</key>
-			<data>
-			H2IokCB8oNkRwgBLBEZLd0w6oN+iN1BU/iAZdGyDMKU=
-			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/google@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4UwXGGzo+UtMgR0hUDrtRbq4Wqk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Mjq4n6IBYa2yGeFxUDX5MS6Ty2kwi1TyDkPS11aFwLI=
-			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/google@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			A1wRWy89eRjMuVCP4K7S0AClNTw=
-			</data>
-			<key>hash2</key>
-			<data>
-			vuNrWCRZeBKrexqD2NEDZOScuuIxG5X6EYoYNxvcJlU=
-			</data>
-		</dict>
-		<key>GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rH8HlR4pGTObGw8bLy8hV1SaXCc=
-			</data>
-			<key>hash2</key>
-			<data>
-			GG5Fd+wnZBEcg0OkegzcIjWn9HE0QZGfSR+3KnrtAxM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6RKTTGxHRy/nJvmB8Z60EcU7AsQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			wEHxJlEbvLb7hU7ofL2FfDX13pJ6dVRAjuFznjDnlp8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UYII/LAIXTZXAQZRhu8m6Hzo5X8=
-			</data>
-			<key>hash2</key>
-			<data>
-			he/9SVQjyA8PYs/R2dTeLOf9igAcPguZC02CsESsEqA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LL/K3xbMTK7IG6Qk+QFcn6ZhpHA=
-			</data>
-			<key>hash2</key>
-			<data>
-			RLK/rHW741lq7AOEDitscgdXlB0y9xumOHvxKZIodA4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ngy2avHWwzrEJh13Pj0rUY8J9ww=
-			</data>
-			<key>hash2</key>
-			<data>
-			JdOg09soRkPdvJSxgiCfoskvU3cz6ELwTi+4jYOXiJM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			db1eHjFG5mTeudktpC1Ot/Oi+80=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ong8D3nhGWQfs+yRetHtUHhEaFms4f1xhM/Z/k5Ycds=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jULNLvjmokqVD3UHXOmQk+ZBjQc=
-			</data>
-			<key>hash2</key>
-			<data>
-			7o4SjvNEt5bfDcNBXGs9jMLj1u6eoMTEE5+6KeDoIU0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			unBXa+ccwraCiXztEmucSgJEzP8=
-			</data>
-			<key>hash2</key>
-			<data>
-			QYe68xn7iXAZTFhmLehys+s/yS5C3fdgen/jns/deeM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zTewpBsb/APJbytq7A50tSZ2bFs=
-			</data>
-			<key>hash2</key>
-			<data>
-			dkpsHzBx5MRCV8wgSIlKEsNLFsFbsa7SKNEvnbyc9ek=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vI3aDgwEwt3VJMFBK8qJAg0Ko5g=
-			</data>
-			<key>hash2</key>
-			<data>
-			qzhg8aNd8zVLpTc5QRYR/MhH4dAZh3iAOAYkz+o0XvU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4m8TqoloX4KRLKngPPKzv9TLWXQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			c+PbYoLry3AjLPAvYONHcVl60jfkYpgDVwfdbVGOG3A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWB/f7My2pU8Dx9fPakAFD3XGwc=
-			</data>
-			<key>hash2</key>
-			<data>
-			ctPMiKEB/qnRRu3wweYrj/UUYBmhKJjEBW2sIW1dyyU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWB/f7My2pU8Dx9fPakAFD3XGwc=
-			</data>
-			<key>hash2</key>
-			<data>
-			ctPMiKEB/qnRRu3wweYrj/UUYBmhKJjEBW2sIW1dyyU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IUy+LgagdPrchWvzRocfuAOUl6c=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZJBKeZJOir9VJLitpufUU42wpNS5VZPl6Y0fImF55xQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XbTLbsoyl3Kgy6SWtyoU/xgnOU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			VW0ZrNINFZTWcvwG9EIgMvXVxn9YA70KP45Hg4lRLE8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fpOOLcC4LVN6RY0r+k9g1nK8OBw=
-			</data>
-			<key>hash2</key>
-			<data>
-			TGe/eN9P18suxLb7X1mwbCtoNXRIfxxwaJQTPvH5Cco=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1qRPYCxnnE40LluJvBG62vyh/9k=
-			</data>
-			<key>hash2</key>
-			<data>
-			Vwb9ExTGe6S5S7BTegcLSteiFFhKKwZZSJYLzlqESZg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gnOdeN9N3tSEMs8tka8GZZcoiGA=
-			</data>
-			<key>hash2</key>
-			<data>
-			yvueI88V8Lz3pz/ZmgDyeeD8hhunccQ5PsRVApQp6Mk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jt50UKMQoMZOD1aZlFjHdvxWbUU=
-			</data>
-			<key>hash2</key>
-			<data>
-			VjLtxICcSKnA1/BjlPISUBu68sr0thGR7cBhnGXp1KM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MojegLj+aw/rwcX2jRoNMe9kYOs=
-			</data>
-			<key>hash2</key>
-			<data>
-			ELN9x8rZefXceZlX+h6q0+KdoD9/KfgwWV30ZAjhahs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DVT6LBWhlbRFyHW4QoctIqtm4JU=
-			</data>
-			<key>hash2</key>
-			<data>
-			tfJEysLSnJZ9Vr8e6QHNx6KJkHl9HZogS1ByD7KFIpI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Xxgd4c4pIpGwWTLVSmbZJ9ZelUY=
-			</data>
-			<key>hash2</key>
-			<data>
-			CXFonEwOB280/OyTZgekOcnf7cE3aLu2J8YjQTb3G6k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+FbfptuiJTrUGwKylxTvwQZvv1g=
-			</data>
-			<key>hash2</key>
-			<data>
-			WYAJ9XvPgbNJDvefceY76te5PXwpDAhwKxR6NEC2dCA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BmkG1GdZVSsmsERs6T99Ve1Eb6k=
-			</data>
-			<key>hash2</key>
-			<data>
-			q9cnMFn9ze7oe33zAJd++Izm6xzT5qn1FgoA5PwoNcs=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
 		<dict>
@@ -16910,11 +15296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tYrjntpN9UxaWFvFJ+lQi7fF/Kc=
+			KG/1z7p2a47rozXGbGTiNh+biBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qwna2SFRNafYUcR4bXCT4g8LFiSk5JBQ0th+GoTKeqI=
+			UKsao0np+8A9nK9DSE9kDtbLwrcsV5aF4L9e3lwK18g=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -16932,11 +15318,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3FSXCnuxkOAII3XfNqBRmk1KwmE=
+			Z7rM5OphxRbaSVNC+VEh7v0Md7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pbue2K6wohG9VdgV4d5rWDauGN/LZDJTaMbO2LEGfMs=
+			zpju2Yq9bfAKZUkxMQDS0BJ+Z4Ck9LhjyZ/qbWCLUvI=
 			</data>
 		</dict>
 		<key>app/Images/Thumbs.db</key>
@@ -17042,11 +15428,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			810UEaePQi2H6It7uvujoCFb0XY=
+			P/v+7dWk7yPZj08yFNld1c9+5Aw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7rBQ9cDGd6KgB6dzA+mUNdxfIEdUHiGaZ2QPOsbMXr4=
+			hXagULzewu4LMQBe+F6hDAcB/afXRDittSvtmLiOaJY=
+			</data>
+		</dict>
+		<key>app/app.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7HkckC7NN2r5Zh9XRMXXcRlXg0k=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y0Yg55H8f0FRwfyQu0pdNJbaAt8jzL9ExEWOh1x2nSQ=
 			</data>
 		</dict>
 		<key>app/app.css</key>
@@ -17064,22 +15461,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3eTjq/bdfkM+6Y7nTF5n2Eif0mY=
+			m8BZUxqO9rOJ1JYHwdzGqBcABpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q421tkFCYUQrYX4rzSXKXxeRJXMKOVVxccPxPpXh780=
+			F5RlgttAuA5MJ1JU76zOoy3ehda/6v67q8A1qNTl/IU=
+			</data>
+		</dict>
+		<key>app/app.module.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BcFInVt/efBGiBTLNlNgROzfKHU=
+			</data>
+			<key>hash2</key>
+			<data>
+			tao8RVPDAXt7iRr66jCzcBPPtzlA+s2mtKxVbnzSW+M=
 			</data>
 		</dict>
 		<key>app/app.routing.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			03hsTM2c8LBwhALvmbbbOq5lsOk=
+			XBw8FWZG86YOKpWXXPCrHguOHbI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2/B9tGhM74HvR7aAre0pOm239WFyuzFUNbn+qGEvVFs=
+			/Kfo5zzWTVh67aoCSxHuYHavE3uf+OSUd69KoD+RJV4=
+			</data>
+		</dict>
+		<key>app/app.routing.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SvgS7Gnpjd9YwGB8amDC9YBiJtE=
+			</data>
+			<key>hash2</key>
+			<data>
+			YfrBVqlpSDNd7yRbtvWjo+V9uJrOFaF2ibCSweX5cTU=
 			</data>
 		</dict>
 		<key>app/fonts/fontawesome-webfont.ttf</key>
@@ -17108,33 +15527,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CdSU/m4iK2HDGPTgM7vz1SifLUg=
+			See88MP+hj6ckwauLNV5+io0Occ=
 			</data>
 			<key>hash2</key>
 			<data>
-			erKeD+vuYYgM9qMLZO+bxkWGe2cy7Dt0h6uvmM2Qwpo=
+			/PLrUfqMCtCq3arhK4fBt5/Ep3wwMSGRKUuPkda85sY=
+			</data>
+		</dict>
+		<key>app/item/item-detail.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WI/no9tXYi6q4T1ki6xFsHcrecw=
+			</data>
+			<key>hash2</key>
+			<data>
+			rzdFQiZV+aMLFSr4rv2sbJ7Ty0BX4LXoURHkZtLD6QU=
 			</data>
 		</dict>
 		<key>app/item/item.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JDwKE+WHfN46zuiLk4igPAH6MRU=
+			rSXXgZX8iLf0dMTpxW4OIWw9mYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			F10IjrwmyDjLdX2TDcofd64WAOVau9wN/uNhjp0HB+E=
+			Fo7MT0eCAmiLywvw6buUZ9Q0O2fW513KB0SIzAZ66C4=
 			</data>
 		</dict>
 		<key>app/item/item.service.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IKjpgOG8R4ychr51CzRL/WLojFY=
+			H57+e4NBXeQ+pmfQv7PY30uDprA=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4PDHfvxN/wh26jv5mjJekwm0I3N6+hINKdHEs4suR8=
+			4ydUGIfL092UMohHqbnQX7xtBmT/ob3Cr6mBLlYYjko=
+			</data>
+		</dict>
+		<key>app/item/item.service.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aEGKBYpaVjmcuGhGLfKS1/f9+oE=
+			</data>
+			<key>hash2</key>
+			<data>
+			JiQTYLuOajIvkyPy9shPN73UtW9GMii/jOGkm8lA5GA=
+			</data>
+		</dict>
+		<key>app/item/item.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aL+OQHeheMJJbN8UbEcwudBbWlw=
+			</data>
+			<key>hash2</key>
+			<data>
+			dA85Ua+uZsQS336svHL9H7I6W+vCTnOwS16VxIroyTs=
 			</data>
 		</dict>
 		<key>app/item/items.component.html</key>
@@ -17152,22 +15604,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O/agtROMKQtetAQADByk1tQj2LA=
+			Neq9hYRcn3Nx+Dx/Vt7dziaF00g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q+bbUtLZzkJQppk66EsC35q9/qkrsVaAKYLdBVIs/sg=
+			FuHtyXZvSdZfJEGH1g6slaNWQxpSrDVZP+3FmvZ+Zkk=
+			</data>
+		</dict>
+		<key>app/item/items.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0Gzr36D2jA1x/I2sHXStNQOm1Zs=
+			</data>
+			<key>hash2</key>
+			<data>
+			oz3Hv9oWLJU0DD1ZhKSkP/Cw/0omxF7YV0NFwxAeo9c=
+			</data>
+		</dict>
+		<key>app/main.aot.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zrTHLgFJLwxz+z/Se6AOXm7yN6k=
+			</data>
+			<key>hash2</key>
+			<data>
+			4i1XTjT4hO+f4mnlrscE+bWwQvsvlaNizGkmxYF9kJs=
 			</data>
 		</dict>
 		<key>app/main.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DuoA4Y0lK1fM5vhmqAI/X37RnbY=
+			PGODR2ZrneZar/PuVRXliQUvKVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YPVN1r/jO7wiJWUNh4ZIPZyVLLweqWveFzpa1SX0Alo=
+			lFgetAEQqbFp2N9GLDPD0p19tUe3uNGWSa4sDBnjeng=
+			</data>
+		</dict>
+		<key>app/main.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4y8ylv8LIGm4LBv5RsavOSOiUT0=
+			</data>
+			<key>hash2</key>
+			<data>
+			r0xFSlvGESqXxJV0eT2/cTXJtKzhKH/Q0WioJp5mEQo=
 			</data>
 		</dict>
 		<key>app/package.json</key>
@@ -17185,22 +15670,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4XISdntmJ1Uch2LITksJlvSQR5U=
+			wfwTya4RxBmIPPhihAdvKKmIpBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wLDy0gBzJUhbzgQsEMI1tt7FoN0PqLTYyNKQ+JMObwo=
+			Qz02lb8Jt1EGavoNYr5v6Mqfs92FjaP9EspxgvRS7k4=
 			</data>
 		</dict>
 		<key>app/pages/createtask/createtask.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VkUZHHNCVYXJZ3qKiAKj6gJEhSk=
+			GxboKgQUua8ZAYPP2ae14/Cc0FA=
 			</data>
 			<key>hash2</key>
 			<data>
-			pGOJSoABwK04Wl9DdKbS4vU5gnA0Q6idlF3rjE5ID14=
+			l74ADM2xzKF2h4L51KiI3F+UqHTEiM8b/6BVHY/6zHc=
+			</data>
+		</dict>
+		<key>app/pages/createtask/createtask.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iluUh+0B0MBCvjWyY36XiUb8ptc=
+			</data>
+			<key>hash2</key>
+			<data>
+			dTNok8I1DcoXVyAbM4eFdNwEJlAx6M1kA+EvlBb8nRg=
 			</data>
 		</dict>
 		<key>app/pages/createtask/createtask.css</key>
@@ -17218,11 +15714,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kaxohOzKPjDe+DeSwemO3Dvml9c=
+			Zasz6+Qsg2MErz/GU+iwjVpRRbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pLMbISQmN9oxTew8A+IAiMWWijfi9cwz+bPAX4r97to=
+			sHKDdpfAhtsrazZaEQmAM1n+PT/iKI6c1BrtbdwJcdw=
 			</data>
 		</dict>
 		<key>app/pages/mainfragment/mainfragment-common.css</key>
@@ -17240,11 +15736,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6kL8PN4PTn3CBLLOLZE+epi67/o=
+			8TxMFBhkLlwk6WtZKbFIbW/X8Ag=
 			</data>
 			<key>hash2</key>
 			<data>
-			8+1SFiaePbhyWK0q2Vl1OoDNZBm938EIbwfdCPnL5kw=
+			wREdEz6gEcQE1+NLIKtk5aRfUHs4R8S/wTxlkfq077I=
+			</data>
+		</dict>
+		<key>app/pages/mainfragment/mainfragment.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hJ8bpt4ekXMJLXzTlVsF4rG3PR0=
+			</data>
+			<key>hash2</key>
+			<data>
+			6MCP4UaUL7+zHwjFU3N3roapBl3aUU1dE453rubnJGc=
 			</data>
 		</dict>
 		<key>app/pages/mainfragment/mainfragment.css</key>
@@ -17273,22 +15780,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			dqEixeI2wGJMW+YQ+xd8rvHF+RM=
 			</data>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			Cye2101KRpIGMHvaeNNQ8Ux8B7XDjU3eovh5YppcliY=
 			</data>
 		</dict>
 		<key>app/pages/maintenance/maintenance.component.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6aiJxjliAPglLXstUHDbXYTcIBI=
+			VQDlWkv4PysBZ2OXpA8d91AczDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			hU19SzzlymjI3UxYqVovYC+U93jlIIWBRzHkJJR7YTk=
+			DLSGJxh3owVtUCwcHT+8IRBQlkn5U+g4WrvbGxApVtY=
+			</data>
+		</dict>
+		<key>app/pages/maintenance/maintenance.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vB8YLRDT75mxa4mnOuydx9wlYoA=
+			</data>
+			<key>hash2</key>
+			<data>
+			T3a4pnJuCqkT6QRGQm+K3+ChYYDFAnBH0t/uVJCETIA=
 			</data>
 		</dict>
 		<key>app/pages/maintenance/maintenance.css</key>
@@ -17306,11 +15824,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d2i73LKoNMWqEriMSL3+O6yNgfY=
+			YXY299pRCuE/OJnOQ5lBNy8svaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			uknwQocN36ZCooC2KBXmdqEjw4kDt8nr0suQqbRG+QY=
+			s8bolr/MoSjS2e/jp7YKDS20z9L8Fcn9C7TQSxxOM/Y=
 			</data>
 		</dict>
 		<key>app/pages/mytask/mytask-common.css</key>
@@ -17328,11 +15846,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AgfUPMuAXtiShWoiajtqG1L8LfY=
+			Kn82uMx3kFSU0hbJT1jg3jDLCxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6MC7BxR2zfpaumIov+EEFiA/mOi1vd9GDD0zi/WzOI=
+			YaWISy0T3AEX99IRJru5MVA2WVFDh2r724gYatrq3M8=
+			</data>
+		</dict>
+		<key>app/pages/mytask/mytask.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XtOJGFDUGGgSrLrQcc81HxSRal4=
+			</data>
+			<key>hash2</key>
+			<data>
+			iPyaB+/Avu7QAtM8RW0ap2r8LWuzHiHcsOjDbsAXdFU=
 			</data>
 		</dict>
 		<key>app/pages/mytask/mytask.css</key>
@@ -17372,11 +15901,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vyCi33zrFQUG0VcTfIXtZ9y7aF4=
+			DO0wdm90XztMUTtqI1irSt4s1g8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZBKmWqBTmmqdW2QR81T2SYkszMj7m7VH4QDfQTILYqA=
+			rQOH9N8+Bhdvp1u9nJ8SsD8tvY/ZIzYnXLUYEa3GP58=
+			</data>
+		</dict>
+		<key>app/pages/othertask/othertask.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7OKzGhUhyIaEzXnGToxzoMpsf1c=
+			</data>
+			<key>hash2</key>
+			<data>
+			lX9EjynsXh8vCz+ASKofIPe3u8HdCE79DOuu3mjWjJE=
 			</data>
 		</dict>
 		<key>app/pages/othertask/othertask.css</key>
@@ -17416,11 +15956,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A4v0mWCQm59h5/SjlsuRZsEKm24=
+			oEnII6YLEMdO5wVOSG1t1IBnaXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			azWwnYhxGTzgg03aZHqEdQApI81Nc9jOKejluqwLQO8=
+			kmSefysnBBtqBZ+ZGSM06cYxU6kByNnVz+aOWE7Tgyc=
+			</data>
+		</dict>
+		<key>app/pages/performance/performance.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FcbWd4WwSzEiD7JavCevjCImcyE=
+			</data>
+			<key>hash2</key>
+			<data>
+			9kAuWMiuj3KrlcY2natwEQGoSWicN8YJciypiL49zIY=
 			</data>
 		</dict>
 		<key>app/pages/performance/performance.css</key>
@@ -17460,11 +16011,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PWP2oAo7gFaFV84WKEa8LTDlDyY=
+			INR7NuIbxiP3buAS4ApsGR0XNOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			rBcLM1NQ6tvvAfqxt3etszFpKTywOj9/as8oXgpRAw8=
+			QjtGZKdy3RAiLn8XMWeSFj7ao7UjlY40ZvQ9uh1z5Ws=
+			</data>
+		</dict>
+		<key>app/pages/registration/registration.component.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aZEAzzijzprg2oj0PZ3grL9rQGM=
+			</data>
+			<key>hash2</key>
+			<data>
+			x+ppQUjPIutCznXqw0j8/rk8wWwE6ieuCTukbnKBeYk=
 			</data>
 		</dict>
 		<key>app/pages/registration/registration.css</key>
@@ -17493,66 +16055,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KFUwptUA+4ci1feueHVItNrWQ8c=
+			naYTkBTwPRJszPNSoOppf0mfwkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eUSi7raFVcp/0+YpMEYdQlAq2jgrvlf7oUeTZdP3VSA=
+			CtbFpXZHc+HhPvRwrslynfoQBh+hvWxo6mgXyEW1Lx4=
+			</data>
+		</dict>
+		<key>app/service/authentication.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V6bp/ZIvzNUtwXh6bObK9E3+6D8=
+			</data>
+			<key>hash2</key>
+			<data>
+			lDvuFReLiMKIRmjLUTquzkErQ0MRQRt0kpS2FHpmhjw=
 			</data>
 		</dict>
 		<key>app/service/dataItem.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZetJu+ODkY+0SldU2g8e+3a7M1Y=
+			5CX/S7qSsU0OsCfgUR5Tl41VveA=
 			</data>
 			<key>hash2</key>
 			<data>
-			S0a7V78iOBnoVXpXRlZyPDFTgbqOcAC84Tu+8/eJ2SY=
+			+VdGe9ssNQ8KAVC3ncnH13nZJOXktuzXziP//ZlryBA=
 			</data>
 		</dict>
 		<key>app/service/dataItem.service.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4Sjcsjy79FJLDjklz4MVX+o5xVM=
+			hNbeZUkHmKIo+FVT2tIyBdbV8iM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jZjL4jZwPzzzdYZhWDOyYDGQcvvqYLoPNKv8IivgNxY=
+			/zFQGlu2A/uocIGVFdmJRP3IVbxBiFw35gE2rLWXTss=
+			</data>
+		</dict>
+		<key>app/service/dataItem.service.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4Ie9M6nLoqgwBzwqFkMXkj1rEfI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xv4BnjwW99B+3KXMEOHggM+uIPk66E/yjZPLOmVEvbE=
+			</data>
+		</dict>
+		<key>app/service/dataItem.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3r8YM0yRY0hyrNgSHBUhH6mBnns=
+			</data>
+			<key>hash2</key>
+			<data>
+			8K71u0Dldi2j1X+w2E9TDkXnKNJh6Er6A7eH1WbDgHQ=
+			</data>
+		</dict>
+		<key>app/service/http-post.services.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QeZbjnMqzuBts+H7dQ8Vy1OgIY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			oqtbMEonmE0Fk01sztikjt9NndtQBqJVdnkuDRyugBI=
+			</data>
+		</dict>
+		<key>app/service/http-post.services.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kY9LhIm1TweT67ZM6y0IsHroAe0=
+			</data>
+			<key>hash2</key>
+			<data>
+			KRtpmlMzhcq7BJEJn8n6tr1QT6apXqaY7xk8MVaxiKg=
 			</data>
 		</dict>
 		<key>app/service/listviewitems.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Yphr2Ro5lHIqPMl/yGq0lomDKY=
+			6uuQ/mKvMdYBhuRj+BrnRkO80Rc=
 			</data>
 			<key>hash2</key>
 			<data>
-			BGzQ27JCqYJNTp4L56R/UAKJLmU7RAM/08kxjicVPLY=
+			eHdSFX1E7BJdI45gk5MBM+91xCTmCvRcDlUIoFTExqA=
+			</data>
+		</dict>
+		<key>app/service/listviewitems.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			53GXjBeJB0nAB7OTFf9PzhblDe0=
+			</data>
+			<key>hash2</key>
+			<data>
+			iMoDiwAF92QNOKQp2A4GXHJr5it+8/u43rxr47WZ1Hs=
 			</data>
 		</dict>
 		<key>app/service/mock-dataItems.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s6V8HfTgRKx2eDLLl7BMu0sZpxs=
+			nmAtiv97xqhoRIpFElom1gClFGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			FpjWLwUUhL30kO65XlhuMAvgNjMc6PSjQ2i/QlssiQg=
+			WWkwQQRLwJcTCaLQU+6CSAEPCQCmqvul4sETAZXNBZ0=
+			</data>
+		</dict>
+		<key>app/service/mock-dataItems.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			75Y/wCJCBO0Ixi2paP5zyuTiFSs=
+			</data>
+			<key>hash2</key>
+			<data>
+			+73+8eviDm9Nxp4idQur9SFFDM3LVrt/sEepMAADhrU=
 			</data>
 		</dict>
 		<key>app/service/user.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SFh2pppgGq8tt02wARf4DAkgkMA=
+			CYatDH2XUFM8MxrmamrOmt0kSDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			R4JPkaghFaaTcTJPaWOBm2Zju08kBWWi3yHaNH1htMs=
+			jgxS963nkfGgByu4Cbb8REzBMskHJ9gi5jlAzJTj/Sg=
+			</data>
+		</dict>
+		<key>app/service/user.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JahWcEdXhLtZPVnF9PYxpEgD7ps=
+			</data>
+			<key>hash2</key>
+			<data>
+			bAGdnk6lAH+d9yMlx6qUJa3yuyJbRZvRnpkfc0ogSrY=
 			</data>
 		</dict>
 		<key>app/tns_modules/@angular/animations/@angular/animations.es5.js</key>
@@ -27422,138 +26072,6 @@
 			ESGE5rrT/Oq0EXk2N+1DCvXT36ng9BVUWeGLlzuNjLo=
 			</data>
 		</dict>
-		<key>app/tns_modules/fs-promise/.jshintrc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hPHEPtu+hTi7L8IcpSUkcV9S/hg=
-			</data>
-			<key>hash2</key>
-			<data>
-			9KN2hhKDyT0fK0j8fgPFHltPg++/ZrVFJvZRWV/Hwgk=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/.npmignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zHsTWh9R5zUEn3cKtjPQJ6Kz2jU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ez+hVa11e6bVH6lS2Crh7wSDhOvfe8HXkTIM1fOOsuc=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/.travis.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DyHWRrkMJU2nrifk1AtInDv3/w8=
-			</data>
-			<key>hash2</key>
-			<data>
-			qPRf6nNXIeyXVe3YyQndxsiQVfw4Idgh1OqHaH/i104=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hnE0+4XMrdIdhNn9iOpLEPf+pX4=
-			</data>
-			<key>hash2</key>
-			<data>
-			99SuVg1pG0wdNrpW9CT73VZ615lKgcDceLlmVhjm/pg=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/README.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aG4Fmuug/Q5jSZIH7mnpymYj38g=
-			</data>
-			<key>hash2</key>
-			<data>
-			InhkwDWlPgda9eV4vuejMBVH+ZwAxwtIm47VkOISZ0s=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/index.d.ts</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LESNMUlAnH1uUW8eNqotDAjoBG8=
-			</data>
-			<key>hash2</key>
-			<data>
-			ofQaEqv3Ukzrr7QLTUF5UGUJc6glHhTCy1oAFJ09rbA=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/index.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6hhuW1//S51TRcoMorwfRO+ll5A=
-			</data>
-			<key>hash2</key>
-			<data>
-			b5VFgBNuIQeUq2GgV00lXXzWU0QbC4bprDRgoZDiYOA=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/package.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Kw3B85wtrDYKxMH5waIyZ49bfaw=
-			</data>
-			<key>hash2</key>
-			<data>
-			FI4fb+tiy513GO3ec9yXtSN3f7wRIUuP3vgChE8qEpM=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/test/basic.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5xj894YZ/Ugtn9UBDrjArrip9RE=
-			</data>
-			<key>hash2</key>
-			<data>
-			fycIjsF/pcaEZlIzMgXGG3GUHdwrUbHsFC0aQC+YuoY=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/test/mocha.opts</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FCuRf2yK2W9SSZAehSK4iXVGfPg=
-			</data>
-			<key>hash2</key>
-			<data>
-			tVmGLzF+9V53uOZ4A8xuLtkkzwWjdm7FDw/O10182OM=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/test/mz.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xJk70PREmz7njsYwxaMaDWfZB64=
-			</data>
-			<key>hash2</key>
-			<data>
-			1HVty7bxv9Id3DS+gohPDmMLBF7AT5mWpdDL2EMNP9I=
-			</data>
-		</dict>
-		<key>app/tns_modules/fs-promise/test/register.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vm9LScA5EQTjqSK0ejkOLrSdsec=
-			</data>
-			<key>hash2</key>
-			<data>
-			+/XvSePgzMIKyUmqZfgbGFq4Anyk0CGBSuBye6uM3/A=
-			</data>
-		</dict>
 		<key>app/tns_modules/glob/LICENSE</key>
 		<dict>
 			<key>hash</key>
@@ -30722,72 +29240,6 @@
 			liRJGHzXv51EdcPyRa3YfviYTKAIk4s9eCVLkJ5cZV0=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-hook/.npmignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RPICEdLv4EwvKdpogN2RZMCF4aY=
-			</data>
-			<key>hash2</key>
-			<data>
-			AVybdMYD1fTDJUlgWGlA46v8q/i9bZ9KSsAUy3dBFXg=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-hook/LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			p8ynhW+Z+7dRoVvPF86gYCJ0HFM=
-			</data>
-			<key>hash2</key>
-			<data>
-			xBDg5YLTvYdHKbyGGhH35f5BzxW4lFmwxKWajXL9vkA=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-hook/LICENSE.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oDQ6/9z79YFodtlmEaPxVkpgPRU=
-			</data>
-			<key>hash2</key>
-			<data>
-			z0g71kKAtVTHVXGkgvzB2zQb63R5ERwn+5nja55SQQI=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-hook/README.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z+AzIcTU0ik7ctfAuHS5GLLlRng=
-			</data>
-			<key>hash2</key>
-			<data>
-			f0g3YK13Dkdo4uBQhfj9oJ2X56vWPFNfYOvmaDwb2P0=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-hook/index.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ncesWA1mYMivqauTLWYZFjPXRcQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			DPnbtmJztYQPHnYWB2GnlzuEW3df6Wt634AePgpViMA=
-			</data>
-		</dict>
-		<key>app/tns_modules/nativescript-hook/package.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NWezDYs1P4cpZxBBrohSG9KtO7o=
-			</data>
-			<key>hash2</key>
-			<data>
-			hhQfbOtXXdxnvlifPl7I4nF/qZgw7i1QkRSdeEGmbio=
-			</data>
-		</dict>
 		<key>app/tns_modules/nativescript-intl/README.md</key>
 		<dict>
 			<key>hash</key>
@@ -30865,6 +29317,94 @@
 			hU/z8FFi9g/Zwh226XocURY795gYwvn6nnPSmbbBSco=
 			</data>
 		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9au8O2Pr2sGBk4nn7hnQcm+ldGk=
+			</data>
+			<key>hash2</key>
+			<data>
+			HRITjvRPTKKfvqVCqcQlolLSS19Q/BCQbOLOd+FCeWc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/CHANGELOG.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fIweb5iurnC/Nd9wF9Z+QJcu/3U=
+			</data>
+			<key>hash2</key>
+			<data>
+			BM0F+LWfIbsKdTLQYJbgBo4bjouua29mxzRt65O6RFU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8Qg+SqR9Y8ZlF6UtwC1KD4m1KC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yrm5Ms9e/9CX3mdfZgTwXcH6V1U61eJTgVY8DNmpIrQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g7NfMeABhLACK8/0jaGHqAsHosY=
+			</data>
+			<key>hash2</key>
+			<data>
+			vutWJThjZiJxv2mC0fMGwFJ+qy6L43pHu5HZNPRDQo0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications-common.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u/W5XwQ4o2e8CXO6fmhKzLIg6N8=
+			</data>
+			<key>hash2</key>
+			<data>
+			0BfZn2aIRWvVYS5deJFvPrlObJkHrPA6jbKLVW442Qs=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9J1fIz30aEmHv78TJv9EnuZa/iY=
+			</data>
+			<key>hash2</key>
+			<data>
+			93oSpAkOBO8tF7UBmQEPB8ksU2UoWwrRBO8VL/uGSag=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/local-notifications.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			acPEQHPBlJeM3M55fsxfOsH1MK4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ancOEWw5KSccKUCQD48DRMLPP3htG/YfyHSMfLjewUQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-local-notifications/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kiUuY1O/aWLOW5RNlYkreO9QthA=
+			</data>
+			<key>hash2</key>
+			<data>
+			I3L11Hg+5lKZR1uCeRU8WVkWc82JkQMQL9NuT8m9kgk=
+			</data>
+		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/.npmignore</key>
 		<dict>
 			<key>hash</key>
@@ -30891,11 +29431,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k/GM/3LKE5jyPiCvYZa9P/1yNJU=
+			fgkRFzQgesKK1gfO1Q/E60gqU4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			fYUbhWZeDWq8P7xJlLnLX2kcWtKg5swsjCIHIQVGhXc=
+			0TRehPFZ4slBnv/4wbXAfA2NvbxYyYa5kBZPazni608=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/LICENSE</key>
@@ -30913,11 +29453,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QIUCMi3WK3qhSB88Bi7NsIJ2jUc=
+			EZcsgZ4OhinlSCMWtVWY8CjLNhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			7sXF5dStO/5xKQek4wv+LorG5ZSMsX0a8AxHFCrneUk=
+			JBHve//kTY7qYZcupDVzA7E8/SsNSHq+gMgbiwFiXv0=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/es6-promise.d.ts</key>
@@ -30946,22 +29486,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AJsdqsIvQNIGI14W1yAqRTM7r28=
+			6qRmgqsHK3hwbYQYDDQqCi7V8bk=
 			</data>
 			<key>hash2</key>
 			<data>
-			DRRMX71wmXL8mgque9Drea0QHe21uVErpU/vJmhutWk=
+			z388TrrwiKN2z56CGUvVug4KZqyFz0VVB+/1/WoQka0=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/firebase.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OEukk3ODsJz80nwdWR4JA+sPdfE=
+			e7qZpxhl03C0hZCotB3uhv0Yqfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			szq7yo4kogncLzLfTx3M9xk5wKfhKh84hsHSA3ObOeA=
+			JfyPmOWhuQ6TVuMlJQgCnu1MTqrZrCmL1AhhG8kTYjI=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/index.d.ts</key>
@@ -30975,26 +29515,1269 @@
 			6vI5hUbNSl9nAPRHJFg4WfUEfqtoX921rNZ4tkpRXVM=
 			</data>
 		</dict>
-		<key>app/tns_modules/nativescript-plugin-firebase/nativescript-plugin-firebase-4.0.3.tgz</key>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/.npmignore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z94dz3OWoyg4uPs2Dnoe5ei+7rs=
+			3OUi9GHuN271HiyqbnNB2MHrUpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			D5iPYYa4WSCwWZ2Zj1eRE7a8dDFJP2hI/U6Q0Mh6M+Q=
+			SvftUK2AmkfxIgK6MLWQwS+s8MXQd4od/QO1wVbsiVM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/CHANGELOG.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Psas3nTqSbglPPoy7e9b0T+7Hn8=
+			</data>
+			<key>hash2</key>
+			<data>
+			VN0mC3lCDgMQjAJuZ+EQxjNeYOyx0QlkUd0DqWfjj+0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3RZLxhG8p7qOrUDsTChRCB5aFrk=
+			</data>
+			<key>hash2</key>
+			<data>
+			HnYClgKumyHMTmEtskltkv6+2IK6E7p0X4szCehfnTk=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ywudNFHZk/9AJdi4p3zMo6MOGnE=
+			</data>
+			<key>hash2</key>
+			<data>
+			W0vn4NPEmUM0IAhvaT4iDysUV3isWTjl66zDZ36wQCI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/copy-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pUMl6ArUk2qiAs4CQVYJVPSHVQQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			4gWYwWR3JSCrTcD1dAQlVpcMNO6BklMtPuTDwu62ers=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/copy.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NEfbeCe4yk2AH0h3HpQ8h0ZvHpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZC+LBIX7aX2IUREtnUv6hIo23+maQP31uPMbbBgUOjc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/emptyDir-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jG74CvIgV5mgzfjeLxZsbzvCd+k=
+			</data>
+			<key>hash2</key>
+			<data>
+			eFrvHNrY6i9A87NoE4lp30ifomio6dg87eolUY4YNWQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/emptyDir.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EVqv2rmpx8mJEPTLYc45qciimQ8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ok/bCt6qPwzjE19WMqigUZdbgol8652PFRMVE1jaSoA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureDir-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Tf3nIsyKN+TaV1KrKZSrFLzvE4w=
+			</data>
+			<key>hash2</key>
+			<data>
+			XQIld9YL2IWHbysvNJWrtQ21koey/dt1RA9QyAjkJEE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureDir.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yKNBYnk6TVsoRLkk3DmVV1Btnlo=
+			</data>
+			<key>hash2</key>
+			<data>
+			MGf9+xQho0QcK43Bvm0fjzmAeqdNlGk4tNVDFEohrQU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureFile-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gBRFl/eyAxz0DfZt8fVgx9N3VPo=
+			</data>
+			<key>hash2</key>
+			<data>
+			h1EDgzjgXeZYOls7LHj3Wishl3Yel3zPRWsnUDHpwhY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureFile.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kZYCEe6UL4JWMH0qkUax1VbVbEk=
+			</data>
+			<key>hash2</key>
+			<data>
+			b6ANQWZ9CkvW7faQEgKIQCBjMyAmCjcexPz3fovPvUc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureLink-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			61V7ay+XNDpjWCFhJyNQeErJUfM=
+			</data>
+			<key>hash2</key>
+			<data>
+			9q4cyxCQj29dEiskrjZFSPxigvkS0ZWxL0PZlUV46pI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureLink.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tj/l9Gb3Dsu6kM5DtKNC8cDK4Us=
+			</data>
+			<key>hash2</key>
+			<data>
+			gCNGdMcI5hvXFyzHjbinYf76hJihsp1PY42pTR96RiU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureSymlink-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cJKDHTV8L7VZ9mhT0N+xHZt8wqQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			TDLbSrkOb+6B4RLUBbQLQ25NLBK9drKgZJpoJprG9Mo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/ensureSymlink.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O9mDmkfPPWDTk8RhboF/nOX9KZk=
+			</data>
+			<key>hash2</key>
+			<data>
+			hFmFlB0fhVmixAPLWO8M7iQpQeYlSBeKd+TJ8aDaj2M=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/move-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j/wsnp0sNs8o94sXMehn0zULcIc=
+			</data>
+			<key>hash2</key>
+			<data>
+			bF1UOlCpV2Yp73uAVMrXzPFmUQ5u6J8C36LfWzx/FdU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/move.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dr1qv+O/3IDM4hwWqBjzV27gkfo=
+			</data>
+			<key>hash2</key>
+			<data>
+			ucE8H7x5ajLi4mkfH2C2Cj8wbq+fbLwFcIyuQNBIUzs=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputFile-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GpWncsGQWm3vqBn+AjRlEteZtyM=
+			</data>
+			<key>hash2</key>
+			<data>
+			jCw3wtrwybq06KM7gPG48oVRMSdjKh89EaKCfoTFLMY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputFile.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9ycryVgO/krdjGyABzScFq9YjAs=
+			</data>
+			<key>hash2</key>
+			<data>
+			PXcq/6L5t4f9uroZhjLSOh/dV0RutX4jyOHkei7dhaA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputJson-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+bA9jRCKOJ+IebBvmWK2YqConjM=
+			</data>
+			<key>hash2</key>
+			<data>
+			xE90od602bJ6xoiGnBLUIun+PIp88tMoCUTghxTMgok=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/outputJson.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UGxg8Ruobh9oQ4dKycyke2BtTgY=
+			</data>
+			<key>hash2</key>
+			<data>
+			tA4EC44LznpYWfnTX1NhT83nDZjzYKed4F6pkMle0YI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/readJson-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hjxHmhjM+O93ddZaXJFF2sQ9n4k=
+			</data>
+			<key>hash2</key>
+			<data>
+			VlgmqgomLNlme+dhFbBKmeoVc/Dcw3NT9VCU63nRzCo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/readJson.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7IHNI0i+IKFMYV0T8/pCrCK716Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			1eHGrWQ0dA6KYcJo+QrfWeDmjMhVy7ckqp24CkeZNoo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/remove-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YdFwRiaTC9TBXlQpaIDkVICoTmI=
+			</data>
+			<key>hash2</key>
+			<data>
+			9KRBm6WJJraMfbKuadXR/cVsNJTqPjOeDvwQHXWutH8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/remove.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YRt/uU60u0nzHzuNNsKG/UJVt74=
+			</data>
+			<key>hash2</key>
+			<data>
+			NL130ZggLUhzVkMVoGtPuAPt2c2jfXQWf6hHrXH+fWI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/writeJson-sync.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ddKf+HA5yWy5SpV//Y0h3ICoV8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Wdtt1r2GJYbaiam32FNP0yIe+lsBugWK4C9kL8xJ69k=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/docs/writeJson.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AoQ0y/CVEwbnJkYaey66JxOi6lo=
+			</data>
+			<key>hash2</key>
+			<data>
+			LTpb9fN2cR2FPAk1ZZuS7NtzSuinGAQQ1FXcwakr/pA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/copy-file-sync.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OI3avgEiCfpx5Si/48mNmAYQtds=
+			</data>
+			<key>hash2</key>
+			<data>
+			zrpx0DcZvLitjctFkBsyHXWO9nrN8hzrXp4veYS6S8s=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/copy-sync.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8QyCYaBJlpFXII65LKh1hxlkM6I=
+			</data>
+			<key>hash2</key>
+			<data>
+			4JIs3Qi8UL48YJ9DLH6BX1XsvVafQ0pZgd5gZItZKzc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy-sync/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/zWEHtYXxq37j0aIoflvZcU3bYE=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ngt8la01Hw52UHNaS03NoNXb7UNIN6jgim+42U0ua1E=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/copy.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I2dBmnJ3LafeiWNzyollHREmSts=
+			</data>
+			<key>hash2</key>
+			<data>
+			gYdD5jceo4lwr3gOMZzc+Tgt8i3ydptRYKvAqIT/GJc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4VZ8PxV0d+85lMZbSdgwHDvH0pk=
+			</data>
+			<key>hash2</key>
+			<data>
+			LUUpLcPSgMjuHjLDMuaf3YHs6YfuW6qFIt2L2SCLTIw=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/copy/ncp.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jciUMlWpQO6O8WAaYRH+zD45nN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			cYe7EX2FRiAtE7JYKXpb5r+OgJme8Vhs9z6V9Lg5Jb8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/empty/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0yk7wpdkGtbfOQ58RFC1EcdOBvQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qToWYLPDkGX0G8CFCEoCE3Yh2ot5hvK+KmP5Wykdt1Q=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/file.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8p7UZiWZaaB34UKTXKdlmEsNh9M=
+			</data>
+			<key>hash2</key>
+			<data>
+			Pi5GmjIVvwn+cJ/u+j99K5CFQgMmJ2EM7pTQ2NigUwY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aOk9ZTQ1PpZl9dlU3nntsnKXto8=
+			</data>
+			<key>hash2</key>
+			<data>
+			bI4dkthdBMJcGgdrEnDibfqjZYO6ldbVt4dPOxcAzq0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/link.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			y5HzvVK2H7vlWFBL0+wU1Ek3w7w=
+			</data>
+			<key>hash2</key>
+			<data>
+			gEUgejBH0jj1Y+ngtSTPZ/zPwBtwb+EPA5a5XImA8no=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink-paths.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L8/87JMpE/EzLwOwZt7uEDf0v/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			9gvGwAl6+Aoumk2EGdDk9eR2YsEZF5QkaI2FR2ep4Xw=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink-type.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pzA/Y3LqdELCdQw+HeiYAsBuYbQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			nMC2iEzzlOi+vRSfrlzoISTsjRlVLFcLmHP0atK5hW0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/ensure/symlink.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			POl/8qNOiHEYh3rgRcyAFGyzAUU=
+			</data>
+			<key>hash2</key>
+			<data>
+			pcKKN2BDX2WPv3bBkgKZMBxrqWY42ab3QsmenPMgal0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IuSx8LdFrIH0MTI/iLnto3PInbY=
+			</data>
+			<key>hash2</key>
+			<data>
+			G3xaQ+8wAaMwlbm4q3ixXkd/Y37bGqmsEwSfGrrQZbg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2U3IvTcUvxKxcyoZqAjY6MhR4+8=
+			</data>
+			<key>hash2</key>
+			<data>
+			iGjJR3ks6oMbaylrIJySF4EWU21MYH4UmeoLmlSxCro=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/jsonfile.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hbK7sPGBEUMZk4MwbZkaCUt1RjY=
+			</data>
+			<key>hash2</key>
+			<data>
+			b4+dw6t6BEdTtq5q41kNuOnTJ5E4SFr9A/nuFpSpWpU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/output-json-sync.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			90k7aliFH7dYEUX55VKj/bnFij4=
+			</data>
+			<key>hash2</key>
+			<data>
+			+DiCNcEYjrNc23eQgpAJIHkx+YOTP+3XgSriE4+RJOM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/json/output-json.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PH+ZIcUE/cWcCkHDyPFhWfZdN8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			+gmyFbn4979nx0vgrDUDSpMNgkk1mwTVO0wUhY91eS4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0MUZj586035Ydxk3BDKKsE81ce0=
+			</data>
+			<key>hash2</key>
+			<data>
+			cUtyIez5N8jPPf/vrrxphtANIwm8z6BI4yFzoAFlkp0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i8qpXR7rX11i96s4x3EHMX/mum0=
+			</data>
+			<key>hash2</key>
+			<data>
+			sx9Bvwh4rYu1VuZdCFqwo7DxOBXsLbiJV9eFdlkC6A4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/mkdirs.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bZ1aZip9He/WS+GOx7IcwgG4t7w=
+			</data>
+			<key>hash2</key>
+			<data>
+			8elZ/fg8BqlDTfkA+BxDcsWUikht6cOY714WZ9xMZ98=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/mkdirs/win32.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WOeC8//DsEj8eArVRnDm5dJavFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			pYQJMBqnPqbi7QfcEnhjjv7CMGbyDRbyld3NHRgFphw=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/move-sync/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qbIXXum0j490/aOSLwzO9yrll0s=
+			</data>
+			<key>hash2</key>
+			<data>
+			eLj+mWKZPF9/aiG3X+INyF0FwyITjFvyL9e7ZLuUo14=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/move/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mUaq9h2e9WZ1czGHDf941z9SZDQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZBgfw8szzI01lNi1Z9zUClpF3lIie0qLwxUtoSPIP3A=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/output/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			clGP1kqm/+btaSCNiqWH5v4748U=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jrw12x8hON9sZEmCGxFW8jdDWhS8XhAXvGZCCc794DU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/remove/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KN3sqm6DHbUpYvmTO50OmW7tg2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Zv3otlTdf5nKg1xQXUuq++TgdO90cjhLhvfrGVgR90=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/remove/rimraf.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x2tg4zXGeDLUeiF+a9lD1jZgh/w=
+			</data>
+			<key>hash2</key>
+			<data>
+			PDzk+ZRctqZrrx3uhXH+SkW3d5bQ0oYrEqMYSrcp+rs=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/util/assign.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YO5yuCdy6saSfcTaveu0t1gwX80=
+			</data>
+			<key>hash2</key>
+			<data>
+			hEi5Zz2XI3MYZuv26Id24ghqvsc9U49nqYh2xvaerAg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/lib/util/utimes.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s0I4Gpxur0iwANtxnp3E47C+K3U=
+			</data>
+			<key>hash2</key>
+			<data>
+			Qr98uBJFG5phoLlqtsURy4kq4YqZvGDNmQS2yhBxcm4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-extra/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CaLgQ3G9lrDFSOkA/OiUsSuRGEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			M0gxkYHHDT4s+R4jQlhfPNwviZsdplSsV7SJL77DSUc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.jshintrc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hPHEPtu+hTi7L8IcpSUkcV9S/hg=
+			</data>
+			<key>hash2</key>
+			<data>
+			9KN2hhKDyT0fK0j8fgPFHltPg++/ZrVFJvZRWV/Hwgk=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zHsTWh9R5zUEn3cKtjPQJ6Kz2jU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ez+hVa11e6bVH6lS2Crh7wSDhOvfe8HXkTIM1fOOsuc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/.travis.yml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DyHWRrkMJU2nrifk1AtInDv3/w8=
+			</data>
+			<key>hash2</key>
+			<data>
+			qPRf6nNXIeyXVe3YyQndxsiQVfw4Idgh1OqHaH/i104=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hnE0+4XMrdIdhNn9iOpLEPf+pX4=
+			</data>
+			<key>hash2</key>
+			<data>
+			99SuVg1pG0wdNrpW9CT73VZ615lKgcDceLlmVhjm/pg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aG4Fmuug/Q5jSZIH7mnpymYj38g=
+			</data>
+			<key>hash2</key>
+			<data>
+			InhkwDWlPgda9eV4vuejMBVH+ZwAxwtIm47VkOISZ0s=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/index.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LESNMUlAnH1uUW8eNqotDAjoBG8=
+			</data>
+			<key>hash2</key>
+			<data>
+			ofQaEqv3Ukzrr7QLTUF5UGUJc6glHhTCy1oAFJ09rbA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6hhuW1//S51TRcoMorwfRO+ll5A=
+			</data>
+			<key>hash2</key>
+			<data>
+			b5VFgBNuIQeUq2GgV00lXXzWU0QbC4bprDRgoZDiYOA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			09HYjIXvbB4qD1bzL1FT4AsblqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			uzam/vKzgtsTOLReC44WWhUUduQQwsFDjSuYv+wpdwE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/basic.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5xj894YZ/Ugtn9UBDrjArrip9RE=
+			</data>
+			<key>hash2</key>
+			<data>
+			fycIjsF/pcaEZlIzMgXGG3GUHdwrUbHsFC0aQC+YuoY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/mocha.opts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FCuRf2yK2W9SSZAehSK4iXVGfPg=
+			</data>
+			<key>hash2</key>
+			<data>
+			tVmGLzF+9V53uOZ4A8xuLtkkzwWjdm7FDw/O10182OM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/mz.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xJk70PREmz7njsYwxaMaDWfZB64=
+			</data>
+			<key>hash2</key>
+			<data>
+			1HVty7bxv9Id3DS+gohPDmMLBF7AT5mWpdDL2EMNP9I=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/fs-promise/test/register.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vm9LScA5EQTjqSK0ejkOLrSdsec=
+			</data>
+			<key>hash2</key>
+			<data>
+			+/XvSePgzMIKyUmqZfgbGFq4Anyk0CGBSuBye6uM3/A=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RPICEdLv4EwvKdpogN2RZMCF4aY=
+			</data>
+			<key>hash2</key>
+			<data>
+			AVybdMYD1fTDJUlgWGlA46v8q/i9bZ9KSsAUy3dBFXg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p8ynhW+Z+7dRoVvPF86gYCJ0HFM=
+			</data>
+			<key>hash2</key>
+			<data>
+			xBDg5YLTvYdHKbyGGhH35f5BzxW4lFmwxKWajXL9vkA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/LICENSE.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oDQ6/9z79YFodtlmEaPxVkpgPRU=
+			</data>
+			<key>hash2</key>
+			<data>
+			z0g71kKAtVTHVXGkgvzB2zQb63R5ERwn+5nja55SQQI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z+AzIcTU0ik7ctfAuHS5GLLlRng=
+			</data>
+			<key>hash2</key>
+			<data>
+			f0g3YK13Dkdo4uBQhfj9oJ2X56vWPFNfYOvmaDwb2P0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ncesWA1mYMivqauTLWYZFjPXRcQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			DPnbtmJztYQPHnYWB2GnlzuEW3df6Wt634AePgpViMA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/nativescript-hook/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ceE7EUUhaN+LKYajYf+m98EqgNI=
+			</data>
+			<key>hash2</key>
+			<data>
+			AQsyU24ksCErfw99FTkwgb5YadNM1uOlyvFXDfFh2pE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.jshintrc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sOuZHHSH2zkDMVtBz+STPp833GI=
+			</data>
+			<key>hash2</key>
+			<data>
+			JAWkaj7sa2WlxCUWQUueidczNes+iPAvfZMvmg0UJ04=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lA9HAZmpyZP8sVfm3OQM/WAA6Dk=
+			</data>
+			<key>hash2</key>
+			<data>
+			QNnT1XNzJzRjIbjQ8LDsGJzdX9vyDjoENLXKPdwPZXo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/.travis.yml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nbk/aLtCN2NC/I3XhFoG4ttlRDg=
+			</data>
+			<key>hash2</key>
+			<data>
+			dmR4DhWc3jE1p5MZgtN8BzMePXppDC7qRAsPX+HrJWk=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/CHANGELOG.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gzGVpCIfdZLglyVoAkhs5YfbXsk=
+			</data>
+			<key>hash2</key>
+			<data>
+			JomsoxcIX4uA4lBwAlNNRDDbhSUZkDRvy20FaUMWPTM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5ElhOFU/1i9srHRqnWzsoWZAex0=
+			</data>
+			<key>hash2</key>
+			<data>
+			8FI+1fIzsxfxaiQsNZ4DZwT08QH3Lq2f6ZVMPW4vt5I=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FNh2WZ/VsicP/HZqcDy3HvrTGHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			7BSDVgJ05dcpwaw4206ncS/nbSIQWR+WcjaSvANgNlg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/docs/docco.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1EcomDSpAWkfLXgFyOYkKk8/eMA=
+			</data>
+			<key>hash2</key>
+			<data>
+			omDREZ38/mBLHM5pYm2f1QiCrT3J/bthjyd3uaelLpc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/docs/prompt.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1jQWErX2IWLhf55Szc9ocC66p/8=
+			</data>
+			<key>hash2</key>
+			<data>
+			O9SIDfSd+oU5e38+x6HZh4+ZB2+URtQNWRXC4Intuc8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/add-properties.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			He6sMcxewMJrdKryDNu2U09PPTU=
+			</data>
+			<key>hash2</key>
+			<data>
+			w8ik3KuI/b2DgM+9y0FZWa3yHNkopT12O4mE9x0eV+E=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/existing-properties.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pNTsNaKv/lx2sePRwjyP9K4qLTo=
+			</data>
+			<key>hash2</key>
+			<data>
+			jOA64vWXF0+WyaeHkb49I9VqJEcr7jUlz6F+TeLhgcU=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/history.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x5RJHlnWh8X4TTkn5J4NRcK7PoA=
+			</data>
+			<key>hash2</key>
+			<data>
+			YfXLl/mXjVXdZrXIsFtIq0hwA/JBKeBJetvEXTKTVlQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/nested-properties-prompt.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2KWo+DPrgNdYmn7FVi6B5ol2heQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			VmGUUuio/8ZVWt/lLltKeMsEyFiTnU5/BBUe4je88HM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/old-schema.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XuzFFYSCUtqLbgWlTfG90UO1sFI=
+			</data>
+			<key>hash2</key>
+			<data>
+			f/wnWuZSQ4ZnZRu1hoyuHM51a8EYPOVObU/p+tI/jkE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/override-validation.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+MtiMiuTEGN7Cv6d+ADZfxv7umI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Vo1MNSWaDvYeZwEQnY1N334y9+HIGexXrimeP+IGIYM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/password.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tZQOBnX+9CIigDbuQhTkawWynes=
+			</data>
+			<key>hash2</key>
+			<data>
+			IQY/O6AxMUMxlXUZetBWGTfkGC6Q+1yoam5fz9LKcJs=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/prompt-override.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IMyKQOZil51PJoFr69e8Q/EoSMk=
+			</data>
+			<key>hash2</key>
+			<data>
+			/xFed6HioP8IisFKQ/aSWbHR1v+nTfrRxRQVy/+lzKE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/property-prompt.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/wmvvijpH32s/znLja5dgR/ASv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			JX7gTr2dFH3mzZfZqzxAGzPx5LbvYEcskls1y9fN5go=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/simple-prompt.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cQYV1aoVfkKJ0bBY3l/SAgeqnWE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6KQhbM8THJZZylb6U+UI0kFtT7GO4CMwqnfTA5r9q9o=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/examples/yes-or-no-prompt.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SCgT/dVR25+DAp5PLoCpo7KFNQA=
+			</data>
+			<key>hash2</key>
+			<data>
+			VgQl4rBW4BWkIXhMmZxIT5RueRSj3YfbfxCi08e+whI=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/lib/prompt.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YGZyMUfs83TxBIQmrSKEn3UJ8M4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ckrkuX/Qf4T8dpsrAVEmRcLUP98vbeTXYq4Dqlyhtjc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SfVvMCRGpyCxFcJGOd4QWLLJPAw=
+			</data>
+			<key>hash2</key>
+			<data>
+			2sMwwUtk8nWmQfc5/rycLF4GxB2Mk/I3+0im5PQoaSc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/helpers.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sRqRZbVR7AlcX9OwOhuJHgUg0EM=
+			</data>
+			<key>hash2</key>
+			<data>
+			cn/bArD+9cjILzdbmkEvcZtTvpsC83EXJtIispjbf8c=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/interactive-prompt-test.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FYNcFnzS0oO9kt12I2n2dEH6kBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ow1DdFQuqvYtZEunWNPVAZyAfKWNVXzsnE+4K1Odv3I=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/macros.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zzGj0JGbYX6xmITDWgFKi/7hbjY=
+			</data>
+			<key>hash2</key>
+			<data>
+			63PsonuRuy5gVUkA1XU9hxoGS0rjQqa4iQt7dNYV5Uo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/prompt-lite/test/prompt-test.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ihyOrtCyyJP0SK5DMieSK+9OCNg=
+			</data>
+			<key>hash2</key>
+			<data>
+			hTDQvnUIR5eOtNafTgPtHyYq1eyAtfoGqXBkOgsQOLw=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IOqmj892hHFt5ya4GCJUhb7kZoQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ye2/CLDe30EWFsjsbfP1DdAP9ofO2ME5Vo0/Vp0fhlA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/AUTHORS</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KyPsAIZnRR+QRlHgWlT3X/OqMaQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			oBNtNHpKaI/p9luWTXKGfHwNYZY0loNx6ES/f3oVZpE=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MvszDcO+wPc3UmPyIyYYimMYa/U=
+			</data>
+			<key>hash2</key>
+			<data>
+			H6I3W15M262FFRKom4C98ZjEk2Iy7zaMILBT1ADKAv4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/Makefile</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ci3wQlTo/NsEUrD4a0RkdWaIXaA=
+			</data>
+			<key>hash2</key>
+			<data>
+			lcNQ3IiZDvEGCwQ0hI7RZSpyH1vnZl/0UbdTUZuVhv8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ViGwslT1Mu0s7zFS9eukazvwyLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			TC0uxQkeNUXVdz/PsLkQO47NH2fGQxW1LZx6XEBWQxo=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XHvgB6Q30Ge8APLyjm4+7jL+0lM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8+tspTyiJdgc3M8NDc9+4j94CVhxsphDkKshR04K5OQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parseJob.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w3AD5rLq1emnfOEy5XeuA52KuIQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			zlbkzfoiwnLZ6JVM4O0IPM4BIY8/zRlszDi9RSxXCRc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parser/pbxproj.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lbVgNTMaP8ubUCQhj6tl4ZnZEv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			qCFHFtArMDWvcUbBXT9KiqaPzuMLA2Jv2gF3qM8Xfa0=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/parser/pbxproj.pegjs</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BhDeh+UMMjoGL/6zvAyGFn4wuOg=
+			</data>
+			<key>hash2</key>
+			<data>
+			wYNzF0Ek2brjfww3lP3Fs4T9kig3W2kgYklW11oKiwM=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxFile.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			31mvPMK23/vR0eX1VXK7AW7JcW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			uHvNcwftucq7YtdgFbzSR+Zwg7bW/ffdfPb7oAoooZc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxProject.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PM4i+aIWiTz6qh5pUbbYo6+OsO8=
+			</data>
+			<key>hash2</key>
+			<data>
+			mDyodyid2pgiHOzBvaL1nV2gAEEG/mWeljqXli+6wr4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/lib/pbxWriter.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V8hWFBQg5/gM0AU+86Pojfr1mCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			PKxrt8yRmSrbEL77aeRJKl+1MyFaMJ4gvEqK01gMsio=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-plugin-firebase/node_modules/xcode/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			x4a6QcdEi3pDfLi6OUe53jsd+lY=
+			</data>
+			<key>hash2</key>
+			<data>
+			BHKkyymrQttlBRqRnqmhuBVqZ103mIBg34NNPubZFK0=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/package.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RvQ3DF6he62n+l/GSmlTNxrLr0M=
+			C5KS5XjCAov+bMRoe+5EBld0gJ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			0fL4OQ+GbXr6LhBSyNvA7PutKNV07TfrcH3th7GWHGU=
+			TEnwHUyB+s7vOKdeUvR0OK0xIrelMHiq3EbWmmceRoc=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/postinstall-hooks.js</key>
@@ -31045,22 +30828,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GuCky9fDz8AtwIm1zrmc0A4kC7I=
+			T91l9PUmt8yZ08cRku5zdoXWPhA=
 			</data>
 			<key>hash2</key>
 			<data>
-			JemEbFgyfsyTSe5C5CAjyUQw7qN2I28cD2uFfwvChKI=
+			FDLdMrOyA82GsUnaMufliiM0h1Bcb5pWRFolQQBDBno=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/scripts/postinstall.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m3KtXENGTGjtjMQSiSYz4EfgEPk=
+			b76SuO/oT5YqqEzthO+J57AgmDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			vudcIcbm9U066VGjeZ8zhBDZennTDdPebr80QK0movI=
+			bSIisElrMQts+p4rlZ90akJ02a2ONPx5yjx9Fi78O9A=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-plugin-firebase/scripts/webpack.config.js</key>
@@ -34284,281 +34067,6 @@
 			<key>hash2</key>
 			<data>
 			6n+Ed8ZCssbgow+LQMQFaPM09WvqMTnZx1EMtdUKONA=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/.jshintrc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sOuZHHSH2zkDMVtBz+STPp833GI=
-			</data>
-			<key>hash2</key>
-			<data>
-			JAWkaj7sa2WlxCUWQUueidczNes+iPAvfZMvmg0UJ04=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/.npmignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lA9HAZmpyZP8sVfm3OQM/WAA6Dk=
-			</data>
-			<key>hash2</key>
-			<data>
-			QNnT1XNzJzRjIbjQ8LDsGJzdX9vyDjoENLXKPdwPZXo=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/.travis.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nbk/aLtCN2NC/I3XhFoG4ttlRDg=
-			</data>
-			<key>hash2</key>
-			<data>
-			dmR4DhWc3jE1p5MZgtN8BzMePXppDC7qRAsPX+HrJWk=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/CHANGELOG.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gzGVpCIfdZLglyVoAkhs5YfbXsk=
-			</data>
-			<key>hash2</key>
-			<data>
-			JomsoxcIX4uA4lBwAlNNRDDbhSUZkDRvy20FaUMWPTM=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5ElhOFU/1i9srHRqnWzsoWZAex0=
-			</data>
-			<key>hash2</key>
-			<data>
-			8FI+1fIzsxfxaiQsNZ4DZwT08QH3Lq2f6ZVMPW4vt5I=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/README.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FNh2WZ/VsicP/HZqcDy3HvrTGHs=
-			</data>
-			<key>hash2</key>
-			<data>
-			7BSDVgJ05dcpwaw4206ncS/nbSIQWR+WcjaSvANgNlg=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/docs/docco.css</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1EcomDSpAWkfLXgFyOYkKk8/eMA=
-			</data>
-			<key>hash2</key>
-			<data>
-			omDREZ38/mBLHM5pYm2f1QiCrT3J/bthjyd3uaelLpc=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/docs/prompt.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1jQWErX2IWLhf55Szc9ocC66p/8=
-			</data>
-			<key>hash2</key>
-			<data>
-			O9SIDfSd+oU5e38+x6HZh4+ZB2+URtQNWRXC4Intuc8=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/add-properties.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			He6sMcxewMJrdKryDNu2U09PPTU=
-			</data>
-			<key>hash2</key>
-			<data>
-			w8ik3KuI/b2DgM+9y0FZWa3yHNkopT12O4mE9x0eV+E=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/existing-properties.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pNTsNaKv/lx2sePRwjyP9K4qLTo=
-			</data>
-			<key>hash2</key>
-			<data>
-			jOA64vWXF0+WyaeHkb49I9VqJEcr7jUlz6F+TeLhgcU=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/history.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			x5RJHlnWh8X4TTkn5J4NRcK7PoA=
-			</data>
-			<key>hash2</key>
-			<data>
-			YfXLl/mXjVXdZrXIsFtIq0hwA/JBKeBJetvEXTKTVlQ=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/nested-properties-prompt.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2KWo+DPrgNdYmn7FVi6B5ol2heQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			VmGUUuio/8ZVWt/lLltKeMsEyFiTnU5/BBUe4je88HM=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/old-schema.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XuzFFYSCUtqLbgWlTfG90UO1sFI=
-			</data>
-			<key>hash2</key>
-			<data>
-			f/wnWuZSQ4ZnZRu1hoyuHM51a8EYPOVObU/p+tI/jkE=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/override-validation.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+MtiMiuTEGN7Cv6d+ADZfxv7umI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Vo1MNSWaDvYeZwEQnY1N334y9+HIGexXrimeP+IGIYM=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/password.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tZQOBnX+9CIigDbuQhTkawWynes=
-			</data>
-			<key>hash2</key>
-			<data>
-			IQY/O6AxMUMxlXUZetBWGTfkGC6Q+1yoam5fz9LKcJs=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/prompt-override.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IMyKQOZil51PJoFr69e8Q/EoSMk=
-			</data>
-			<key>hash2</key>
-			<data>
-			/xFed6HioP8IisFKQ/aSWbHR1v+nTfrRxRQVy/+lzKE=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/property-prompt.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/wmvvijpH32s/znLja5dgR/ASv4=
-			</data>
-			<key>hash2</key>
-			<data>
-			JX7gTr2dFH3mzZfZqzxAGzPx5LbvYEcskls1y9fN5go=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/simple-prompt.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cQYV1aoVfkKJ0bBY3l/SAgeqnWE=
-			</data>
-			<key>hash2</key>
-			<data>
-			6KQhbM8THJZZylb6U+UI0kFtT7GO4CMwqnfTA5r9q9o=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/examples/yes-or-no-prompt.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SCgT/dVR25+DAp5PLoCpo7KFNQA=
-			</data>
-			<key>hash2</key>
-			<data>
-			VgQl4rBW4BWkIXhMmZxIT5RueRSj3YfbfxCi08e+whI=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/lib/prompt.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YGZyMUfs83TxBIQmrSKEn3UJ8M4=
-			</data>
-			<key>hash2</key>
-			<data>
-			ckrkuX/Qf4T8dpsrAVEmRcLUP98vbeTXYq4Dqlyhtjc=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/package.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V8XDFbshoQhBZqHY4Vn63RYvCXU=
-			</data>
-			<key>hash2</key>
-			<data>
-			ahonVy3Svo/NEE10Fg7Dpu2VMzY1FOU2VHAztlbiGW4=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/test/helpers.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sRqRZbVR7AlcX9OwOhuJHgUg0EM=
-			</data>
-			<key>hash2</key>
-			<data>
-			cn/bArD+9cjILzdbmkEvcZtTvpsC83EXJtIispjbf8c=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/test/interactive-prompt-test.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FYNcFnzS0oO9kt12I2n2dEH6kBI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ow1DdFQuqvYtZEunWNPVAZyAfKWNVXzsnE+4K1Odv3I=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/test/macros.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zzGj0JGbYX6xmITDWgFKi/7hbjY=
-			</data>
-			<key>hash2</key>
-			<data>
-			63PsonuRuy5gVUkA1XU9hxoGS0rjQqa4iQt7dNYV5Uo=
-			</data>
-		</dict>
-		<key>app/tns_modules/prompt-lite/test/prompt-test.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ihyOrtCyyJP0SK5DMieSK+9OCNg=
-			</data>
-			<key>hash2</key>
-			<data>
-			hTDQvnUIR5eOtNafTgPtHyYq1eyAtfoGqXBkOgsQOLw=
 			</data>
 		</dict>
 		<key>app/tns_modules/read/LICENSE</key>
@@ -54064,149 +53572,6 @@
 			FTRTxNhKPC8TWJw3BVp9r/YdSEddzOVU9+7a0V/Hs+U=
 			</data>
 		</dict>
-		<key>app/tns_modules/xcode/.npmignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IOqmj892hHFt5ya4GCJUhb7kZoQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ye2/CLDe30EWFsjsbfP1DdAP9ofO2ME5Vo0/Vp0fhlA=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/AUTHORS</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KyPsAIZnRR+QRlHgWlT3X/OqMaQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			oBNtNHpKaI/p9luWTXKGfHwNYZY0loNx6ES/f3oVZpE=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MvszDcO+wPc3UmPyIyYYimMYa/U=
-			</data>
-			<key>hash2</key>
-			<data>
-			H6I3W15M262FFRKom4C98ZjEk2Iy7zaMILBT1ADKAv4=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/Makefile</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ci3wQlTo/NsEUrD4a0RkdWaIXaA=
-			</data>
-			<key>hash2</key>
-			<data>
-			lcNQ3IiZDvEGCwQ0hI7RZSpyH1vnZl/0UbdTUZuVhv8=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/README.md</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ViGwslT1Mu0s7zFS9eukazvwyLM=
-			</data>
-			<key>hash2</key>
-			<data>
-			TC0uxQkeNUXVdz/PsLkQO47NH2fGQxW1LZx6XEBWQxo=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/index.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XHvgB6Q30Ge8APLyjm4+7jL+0lM=
-			</data>
-			<key>hash2</key>
-			<data>
-			8+tspTyiJdgc3M8NDc9+4j94CVhxsphDkKshR04K5OQ=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/parseJob.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w3AD5rLq1emnfOEy5XeuA52KuIQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			zlbkzfoiwnLZ6JVM4O0IPM4BIY8/zRlszDi9RSxXCRc=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/parser/pbxproj.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lbVgNTMaP8ubUCQhj6tl4ZnZEv4=
-			</data>
-			<key>hash2</key>
-			<data>
-			qCFHFtArMDWvcUbBXT9KiqaPzuMLA2Jv2gF3qM8Xfa0=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/parser/pbxproj.pegjs</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BhDeh+UMMjoGL/6zvAyGFn4wuOg=
-			</data>
-			<key>hash2</key>
-			<data>
-			wYNzF0Ek2brjfww3lP3Fs4T9kig3W2kgYklW11oKiwM=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/pbxFile.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			31mvPMK23/vR0eX1VXK7AW7JcW8=
-			</data>
-			<key>hash2</key>
-			<data>
-			uHvNcwftucq7YtdgFbzSR+Zwg7bW/ffdfPb7oAoooZc=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/pbxProject.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PM4i+aIWiTz6qh5pUbbYo6+OsO8=
-			</data>
-			<key>hash2</key>
-			<data>
-			mDyodyid2pgiHOzBvaL1nV2gAEEG/mWeljqXli+6wr4=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/lib/pbxWriter.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V8hWFBQg5/gM0AU+86Pojfr1mCw=
-			</data>
-			<key>hash2</key>
-			<data>
-			PKxrt8yRmSrbEL77aeRJKl+1MyFaMJ4gvEqK01gMsio=
-			</data>
-		</dict>
-		<key>app/tns_modules/xcode/package.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sPC4mNg1T5wbSylkLEDgXwu27Fc=
-			</data>
-			<key>hash2</key>
-			<data>
-			woZ2iVUqb6cjR71ZJnfw5+Kb+wr/e/mjlH/EHLjW4Mk=
-			</data>
-		</dict>
 		<key>app/tns_modules/xmlbuilder/.npmignore</key>
 		<dict>
 			<key>hash</key>
@@ -55410,22 +54775,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vO/gVYVVkU1zHBaxd4xJ53/ga5k=
+			uVC4UsEAjsaAorNMAW+mHUKgk9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			l3BKiWC0+szu9UOXoI+10KRWJHw2JzWSFaoqJ98iZWw=
+			e/joE7ObU4L5jO1+1JUxZxM/FUkgLPoVg6yex5UVEFk=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1tsERBASShQF8nZUXRzmqAHOV1E=
+			Bp7KIc5Vrx+AbnT3DhT/+Zmuy9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			sFhz8RnRk4ETx44dDvQSjVCFRPaRL8Nb2rvuXdchOc8=
+			hICtQ9rdR6j/J+HSqSgRj86+cBt8RT/Q6nOkIUZaSLk=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
