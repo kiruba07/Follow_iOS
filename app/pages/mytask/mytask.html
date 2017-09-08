@@ -6,14 +6,16 @@
 <GridLayout id="myTaskDetailsDock">
     <RadListView  #myListView  [items]="dataItems" swipeActions="true"
      selectionBehavior="None"
+     
       (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
       pullToRefresh="true"
       (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+      
      
       >
       <ng-template  let-item="item">
-            <StackLayout orientation="vertical">
-                <GridLayout #gridLayout id="grid1" [class]="item.myCompletionStatus" columns="28,*,80" rows="*,*,*" >
+            <!-- <StackLayout orientation="vertical" isUserInteractionEnabled="false" > -->
+                <GridLayout  [class]="item.myCompletionStatus" columns="28,*,80" rows="*,*,*" >
                 
                     <Label id="asigneeName" class="asigneeName" [text]="item.createdBy"></Label>
                     <Label id="taskName" class="taskName" [text]="item.taskName" col="1"></Label>
@@ -27,13 +29,13 @@
                 
               </GridLayout>
 
-            </StackLayout>
-    </ng-template>
-
+            <!-- </StackLayout> -->
     
 
+        </ng-template>
+
         
-        <GridLayout *tkListItemSwipeTemplate columns="70, *, 70" id="gridSwipe">
+        <GridLayout *tkListItemSwipeTemplate columns="70, *, 70">
             <StackLayout id="deleteView" col="0"  (tap)="deleteTask($event)">
                 <Label id="deleteIcon" text="&#xf1f8; "></Label>
             </StackLayout>
@@ -41,9 +43,11 @@
                 <Label id="doneIcon" text="&#xf058; " ></Label>
             </StackLayout>
         </GridLayout>
+        
+    
     </RadListView>
    
-   <StackLayout id="float-btn">
+   <StackLayout id="float-btn" >
         <Label text="+" (tap)="createTask()" id="float-btn-txt"></Label>
         
     </StackLayout>

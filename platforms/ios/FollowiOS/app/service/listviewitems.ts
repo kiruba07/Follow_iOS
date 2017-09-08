@@ -44,7 +44,9 @@ export class ListViewItems
                         var createdByNumber;
                         var completionCount;
                         var createdByToken;
+                        var assigneeNumber;
             
+                        
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
                            resultJson[key]["dueDate"]==null && 
@@ -54,7 +56,8 @@ export class ListViewItems
                         resultJson[key]["recipentsCount"]==null &&
                         resultJson[key]["createdByRegId"]==null &&
                         resultJson[key]["completionCount"]==null &&
-                        resultJson[key]["createdByToken"]==null
+                        resultJson[key]["createdByToken"]==null &&
+                        resultJson[key]["assigneeName"]==null
                     
                         )
                         { 
@@ -71,6 +74,7 @@ export class ListViewItems
                             createdByNumber=resultJson[key]["createdByRegId"];
                             completionCount=resultJson[key]["completionCount"];
                             createdByToken=resultJson[key]["createdByToken"];
+                            assigneeNumber=resultJson[key]["assigneeName"];
 
                             if(resultJson[key]["myCompletionStatus"])
                             {
@@ -89,6 +93,8 @@ export class ListViewItems
                                     "myCompletionStatus":myCompletionStatus,
                                     "createdByNumber":createdByNumber,
                                     "createdByToken":createdByToken,
+                                    "assigneeNumber":assigneeNumber,
+                                    "completed":false
                                 },
                             );
                             }
@@ -115,7 +121,9 @@ export class ListViewItems
                         var createdByNumber;
                         var completionCount;
                         var createdByToken;
-            
+                        var assigneeNumber;
+
+                        
                         if(resultJson[key]["createdBy"]==null && 
                             resultJson[key]["taskName"]==null  && 
                            resultJson[key]["dueDate"]==null && 
@@ -125,7 +133,8 @@ export class ListViewItems
                         resultJson[key]["recipentsCount"]==null &&
                         resultJson[key]["createdByRegId"]==null &&
                         resultJson[key]["completionCount"]==null &&
-                        resultJson[key]["createdByToken"]==null
+                        resultJson[key]["createdByToken"]==null &&
+                        resultJson[key]["assigneeName"]==null
                          )
                         { 
                         }
@@ -141,6 +150,7 @@ export class ListViewItems
                             createdByNumber=resultJson[key]["createdByRegId"];
                             completionCount=resultJson[key]["completionCount"];
                             createdByToken=resultJson[key]["createdByToken"];
+                            assigneeNumber=resultJson[key]["assigneeName"];
 
                             if(resultJson[key]["myCompletionStatus"])
                             {
@@ -155,7 +165,9 @@ export class ListViewItems
                                     "key":key,
                                     "myCompletionStatus":myCompletionStatus,
                                     "createdByNumber":createdByNumber,
-                                    "createdByToken":createdByToken
+                                    "createdByToken":createdByToken,
+                                    "assigneeNumber":assigneeNumber,
+                                    "completed":true
                                 },
                             );
                             }

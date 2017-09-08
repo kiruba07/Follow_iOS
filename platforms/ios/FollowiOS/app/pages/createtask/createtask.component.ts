@@ -371,7 +371,8 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
-                    'createdByToken':deviceToken 
+                    'createdByToken':deviceToken,
+                    'assigneeName':this.selectedItems,
                 }
                 ).then(
                   (res)=>{
@@ -387,6 +388,9 @@ export class CreateTaskComponent
                   },(res)=>{
                     console.log("Problem in saving my task details---"+res);
                   });
+
+                  
+    
             }
             else
             {
@@ -404,7 +408,8 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
-                    'createdByToken':deviceToken 
+                    'createdByToken':deviceToken,
+                    'assigneeName':this.selectedItems,
             }).then(
                   (res)=>{
                     
@@ -420,8 +425,7 @@ export class CreateTaskComponent
                     console.log("Problem in saving my task details---"+res);
                   });
 
-               // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
-
+               
             
             }
         
