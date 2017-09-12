@@ -15,7 +15,7 @@
                         [visibility]="groupListVisibility">
                      
                         <ng-template  let-item="item">
-                                <StackLayout orientation="vertical">
+                                <StackLayout orientation="vertical" (tap)="groupTap(item)">
                                         <Label class="groupName" [text]="item.group"></Label>
                                 </StackLayout>
                         </ng-template>

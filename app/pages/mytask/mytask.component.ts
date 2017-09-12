@@ -39,7 +39,7 @@ export class MyTaskComponent implements OnInit
      pageTitle;
     layout=new Page();
     constructor(private router: Router,private myPostService: MyHttpPostService,private page: Page) {
-        this.listViewItems=new ListViewItems;
+      this.listViewItems=new ListViewItems;
         this.pageTitle="My Task";
         
         

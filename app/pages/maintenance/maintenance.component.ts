@@ -44,12 +44,13 @@ export class MaintenanceComponent implements OnInit
   selectedItems:string[]=[];
   selectedItemsName:string[]=[];
   selectedItemsToken:string[]=[];
+  contactListUpdate=new ObservableArray([]);
 
   constructor(private page: Page)
   {
     this.user=new User();
     this.listViewItems=new ListViewItems;
-    this.contactList=this.listViewItems.getContactList();
+    //this.contactList=this.listViewItems.getContactList();
 
   }
   ngOnInit() {
@@ -79,7 +80,13 @@ export class MaintenanceComponent implements OnInit
     this.categoryListVisibility = 'collapsed';
     this.categoryVisibility="collapsed";
     this.tickIconGroupVisibility="visible";
+
+    this.selectedItems.length=0
+    this.selectedItemsName.length=0;
+    this.selectedItemsToken.length=0;
+
     
+
     if(this.groupListVisibility=="visible")
     {
       this.groupListVisibility = 'collapsed';
@@ -87,6 +94,7 @@ export class MaintenanceComponent implements OnInit
     else{
         this.groupListVisibility = 'visible';
     }
+    this.contactList=this.listViewItems.getContactList();
 
   }
   showGroupList()
@@ -125,6 +133,18 @@ export class MaintenanceComponent implements OnInit
   public itemTap(item)
   {
       //console.log("Item tap=-========"+item.name);
+      console.log("Item tap=-========"+item.name);
+      console.log("Item tap selected-========"+item.selected);
+
+      this.selectedItems=this.listViewItems.selectedItems;
+      this.selectedItemsName=this.listViewItems.selectedItemsName;
+      this.selectedItemsToken=this.listViewItems.selectedItemsToken;
+
+      // console.log("Selected items======"+this.selectedItems);
+      // console.log("Selected items names======"+this.selectedItemsName);
+      
+      // console.log("Selected items token======"+this.selectedItemsToken);
+
       if(item.selected)
       {
           item.checkBox="\u{f096}";
@@ -132,7 +152,7 @@ export class MaintenanceComponent implements OnInit
           for(var i=0;i<this.selectedItems.length;i++)
           {
               var curItem=this.selectedItems[i];
-              //var curItemName=this.selectedItemsName[i]
+              
               console.log('cur item----'+curItem);
               if(curItem==item.number)
               {
@@ -143,9 +163,6 @@ export class MaintenanceComponent implements OnInit
                   
               }
           }
-
-
-          //this.selectedItems.splice(item.number,1);
           console.log("Selected items after slice======"+this.selectedItems);
 
       }
@@ -158,6 +175,7 @@ export class MaintenanceComponent implements OnInit
       }
 
       item.selected=!item.selected;
+      
       console.log("Selected items======"+this.selectedItems);
       console.log("Selected items names======"+this.selectedItemsName);
       
@@ -221,18 +239,11 @@ export class MaintenanceComponent implements OnInit
   {
       let tapIndex=this.groupListItems.indexOf(args.object.bindingContext);
       let groupDelete=this.groupListItems.getItem(tapIndex).group;
-      //let newCategoryArray:string[]=[];
+      
       let x=this;
       let devicePhoneNumber=getString("devicePhoneNumber");
 
-      // for(let i=0;i<this.categoryListItems.length;i++)
-      // {
-      //   if(this.categoryListItems.getItem(i).category==categoryDelete){}
-      //   else{
-      //     console.log("else");
-      //     newCategoryArray.push(this.categoryListItems.getItem(i).category);
-      //   }
-      // }
+      
       console.log("Group to delete==="+groupDelete);
       firebase.remove(
         '/DeviceDetails/'+devicePhoneNumber+'/groupList/'+groupDelete,
@@ -249,8 +260,26 @@ export class MaintenanceComponent implements OnInit
           console.log("Group list deleted failure.."+res);
         });
 
-      // this.categoryListItems.splice(tapIndex,categoryDelete);
-      // console.log("Category after deleted==="+this.categoryListItems);
+
+  }
+  groupTap(item){
+
+    console.log("Group Tapped=="+item.group);
+    this.user.newGroup=item.group;
+
+    this.selectedItems.length=0
+    this.selectedItemsName.length=0;
+    this.selectedItemsToken.length=0;
+
+    this.createGroupButton();
+
+    
+    this.contactList=this.listViewItems.getContactListForUpdate(item.group);
+
+    
+    //console.log("Contact List In group tap===="+this.contactList);
+
+
 
   }
   createNewCategory()
@@ -318,8 +347,7 @@ export class MaintenanceComponent implements OnInit
     }
     else{
 
-      // for(let i=0;i<this.selectedItems.length;i++){
-
+     
         
         var layout = this.page;
         this.user.newGroup="";
@@ -336,25 +364,29 @@ export class MaintenanceComponent implements OnInit
             
         }
 
-      firebase.setValue(
-        '/DeviceDetails/'+devicePhoneNumber+'/groupList/'+newGroupName,
-        {
-          devicePhoneNumber:this.selectedItems,
-          deviceToken:this.selectedItemsToken,
-        }).then((res)=>{
-          console.log("Group list updated success..");
-          timerModule.setTimeout(function ()
-          {
+       firebase.update(
+         '/DeviceDetails/'+devicePhoneNumber+'/groupList/'+newGroupName,
+         {
+           devicePhoneNumber:this.selectedItems,
+           deviceToken:this.selectedItemsToken,
+         }).then((res)=>{
+           console.log("Group list updated success..");
+           timerModule.setTimeout(function ()
+           {
                 
-                x.groupListItems=x.listViewItems.getGroupList(); 
-                x.showGroupList();
+                 x.groupListItems=x.listViewItems.getGroupList(); 
+                 x.showGroupList();
+                 // x.selectedItems=[];
+                 // x.selectedItemsName=[];
+                 // x.selectedItemsToken=[];
+
                 
-             },300);
+            },300);
            
-        },(res)=>{
-          console.log("Group list updated failure.."+res);
+         },(res)=>{
+           console.log("Group list updated failure.."+res);
         });
-      // }
+      
 
 
     }

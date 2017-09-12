@@ -11,9 +11,24 @@ import {
     clear
 } from "application-settings";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { MaintenanceComponent } from "../pages/maintenance/maintenance.component";
+import { Page } from "ui/page";
 
 export class ListViewItems
 {
+
+    selectedItems:string[]=[];
+    selectedItemsName:string[]=[];
+    selectedItemsToken:string[]=[];
+    //maintenanceComponent:MaintenanceComponent;
+   // maintenanceComponent=new MaintenanceComponent();
+
+    // constructor()
+    // {
+     
+    //   //this.maintenanceComponent=new MaintenanceComponent();
+  
+    // }
 
     getCategoryList()
     {
@@ -697,6 +712,174 @@ export class ListViewItems
         );
     
      return contactList;
+    }
+    getContactListForUpdate(groupName)
+    {
+
+        
+        let devicePhoneNumber=getString("devicePhoneNumber");
+        let x=this;
+
+        //get group Name contact list
+       // let contactGroupList=new ObservableArray([]);
+        let contactGroupList:string[]=[];
+        
+        let getGroupContactList=function(result)
+        {
+            if (!result.error)
+            {
+                
+                var resultJson=result.value;
+                for(var key in resultJson)
+                {
+                    //console.log("Group list Name=="+key);
+                    if(key==null || key=="null"){}
+                    else{
+                        console.log("Group list Name=="+resultJson[key]);
+                        contactGroupList.push(resultJson[key]);
+                    }
+                }
+            }
+        };
+        firebase.query(
+            getGroupContactList,
+        '/DeviceDetails/'+devicePhoneNumber+'/groupList/'+groupName+'/devicePhoneNumber',
+            {
+                
+                singleEvent: true,
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+
+        //get all contact list
+        let contactList=new ObservableArray([]);
+        let onQueryEvent = function(result)
+        {
+        
+        if (!result.error)
+        {
+            
+            var resultJson=result.value;
+            //store only items already in the list
+            for(var key in resultJson)
+            {
+                
+                if(resultJson[key]==null || resultJson[key]=="null"){}
+                else
+                {
+
+                    if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null && resultJson[key]["deviceToken"]){}
+                    else
+                    {
+                        //let number=key.toString;
+                        //console.log("Value is not null");
+                        if(contactGroupList.indexOf(key) > -1)
+                        {
+                            console.log("Key IF==="+key);
+                            contactList.push({
+
+                            "name":resultJson[key]["fName"]+" "+resultJson[key]["lName"],
+                            "number":key,
+                            "checkBox":"\u{f046}",
+                            "selected":true,
+                            "nameLabel":resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0),
+                             "deviceToken":resultJson[key]["deviceToken"],
+                            });
+
+                            x.selectedItems.push(key);
+                            x.selectedItemsName.push(resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0));
+                            x.selectedItemsToken.push(resultJson[key]["deviceToken"]);
+
+                            // x.maintenanceComponent.selectedItems=x.selectedItems;
+                            // x.maintenanceComponent.selectedItemsName=x.selectedItemsName;
+                            // x.maintenanceComponent.selectedItemsToken=x.selectedItemsToken;
+
+                        
+                        }
+                        else{
+                            console.log("Key else==="+key);
+                        }
+                        
+                    }
+                }
+                console.log("Contact list----"+contactList);
+                // console.log("Numbner list- ---"+x.selectedItems);
+                // console.log("name list----"+x.selectedItemsName);
+                // console.log("Token list----"+x.selectedItemsToken);
+
+
+            }
+            //store only items not in the list
+            for(var key in resultJson)
+            {
+                
+                if(resultJson[key]==null || resultJson[key]=="null"){}
+                else
+                {
+
+                    if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null && resultJson[key]["deviceToken"]){}
+                    else
+                    {
+                        //let number=key.toString;
+                        //console.log("Value is not null");
+                        if(contactGroupList.indexOf(key) > -1)
+                        {
+                            console.log("Key IF==="+key);
+                        
+                        }
+                        else{
+                            console.log("Key else==="+key);
+                            contactList.push({
+
+                            "name":resultJson[key]["fName"]+" "+resultJson[key]["lName"],
+                            "number":key,
+                            "checkBox":"\u{f096}",
+                            "selected":false,
+                            "nameLabel":resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0),
+                             "deviceToken":resultJson[key]["deviceToken"],
+                            });
+                        }
+                        
+                    }
+                }
+                console.log("Contact list- sort---"+contactList);
+            }
+
+         }
+   
+        }
+        firebase.query(
+            onQueryEvent,
+        '/DeviceDetails/',
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                //value: 'taskName' // mandatory when type is 'child'
+                },
+                
+            }
+        );
+       
+        
+        return contactList;
+    }
+    dynamicSort(property)
+     {
+        var sortOrder = 1;
+        if(property[0] === "-") {
+            sortOrder = -1;
+            property = property.substr(1);
+        }
+        return function (a,b) {
+            var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+            return result * sortOrder;
+        }
     }
 
 }
