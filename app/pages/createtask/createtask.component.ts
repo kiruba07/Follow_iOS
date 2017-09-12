@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { User } from "../../service/user";
 import firebase = require("nativescript-plugin-firebase");
@@ -20,7 +20,7 @@ import { ListViewEventData, RadListView } from "nativescript-telerik-ui-pro/list
 import { DatePicker } from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import { Page } from "ui/page";
-
+import { SelectedIndexChangedEventData } from "nativescript-drop-down";
 import { RouterExtensions } from "nativescript-angular/router";
 import { MyHttpPostService } from "../../service/http-post.services";
 
@@ -30,7 +30,8 @@ import { MyHttpPostService } from "../../service/http-post.services";
   templateUrl: "pages/createtask/createtask.html",
   styleUrls: ["pages/createtask/createtask-common.css", "pages/createtask/createtask.css"]
 })
-export class CreateTaskComponent
+export class CreateTaskComponent implements OnInit
+
 {
   // Your TypeScript logic goes here
    user: User
@@ -38,11 +39,14 @@ export class CreateTaskComponent
    selectedItems:string[]=[];
    selectedItemsName:string[]=[];
    selectedItemsToken:string[]=[];
+   categoryListItems=new ObservableArray([]);
+   categoryListArray:string[]=[];
    listViewItems:ListViewItems;
     observable:Observable
     checkTry;
     datePickerView:string;
     buttonView:string;
+    selectedCategory:string;
     
     show:string="";
     day:string="";
@@ -56,9 +60,15 @@ export class CreateTaskComponent
     {
         this.user = new User();
         this.observable= new Observable;
+        this.selectedCategory="";
         
         this.listViewItems=new ListViewItems;
         this.contactList=this.listViewItems.getContactList();
+        
+        
+        
+       
+
         this.show="collapse";
         this.datePickerView="collapse";
         this.buttonView="visible";
@@ -66,12 +76,34 @@ export class CreateTaskComponent
         this.pageTitle="Create Task";
         
     }
+    ngOnInit() {
+        console.log("onit");
+        this.categoryListArray=this.listViewItems.getCategoryListForCreateTask();
+        this.categoryListArray.push("Default");
+        // for(let i=0;i<this.categoryListItems.length;i++)
+        // {
+        //     console.log("this.categoryListItems.getItem(i).category===="+this.categoryListItems.getItem(i).category);
+        //     this.categoryListArray.push(this.categoryListItems.getItem(i).category);
+          
+        // }
+        // console.log("Category List Array========"+this.categoryListArray);
+    }
+
 
      public goBack() {
          console.log("Back tapped");
         this.routerExtensions.backToPreviousPage();
     }
+    public onchange(args: SelectedIndexChangedEventData)
+    {
 
+        console.log(`Drop Down selected index changed from ${args.oldIndex} to ${args.newIndex}`);
+        let newIndex:number=args.newIndex;
+        this.selectedCategory=this.categoryListArray[newIndex];
+        console.log("selectedCategory++++++"+this.selectedCategory);
+
+
+    }
     hideDatePicker(args){
         console.log("tapped---");
         this.datePickerView = 'collapse';
@@ -205,16 +237,16 @@ export class CreateTaskComponent
 
     var x=this;
     var taskName=this.user.taskName;
-    var category=this.user.category;
+    var category=this.selectedCategory;
     var dateTime=this.user.dateTime;
    // var assignee=this.user.assignee;
 
     // console.log("Task name---"+taskName);
-    // console.log("Category---"+category);
+    console.log("Category---"+category);
      //console.log("Date time---"+dateTime);
     //console.log("Assignee---"+assignee);
 
-    //check the last key in TaskDetails table
+    
     if(taskName==null || category==null || this.selectedItems.length<1 || dateTime=="Select End date")
     {
     console.log("Empty =====");
@@ -511,7 +543,10 @@ export class CreateTaskComponent
                         'assigneeName':this.selectedItemsName[j],
                         'remainderCount':0,
                         'deletionCount':0,
-                        'completionStatus':false
+                        "deviceToken":this.selectedItemsToken[j],
+                        'completionStatus':false,
+                        'taskName':taskName,
+                        'createdBy':deviceRegisteredUserName
                     });
                 }
 
@@ -546,15 +581,22 @@ export class CreateTaskComponent
                   });
 
                // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
+
+
+            
             for(var j=0;j<this.selectedItems.length;j++)
                 {
+                   // console.log("======================Device Token==============="+this.selectedItemsToken[j]);
                     firebase.setValue(
                     'OtherTaskDetails/'+devicePhoneNumber+'/'+id+'/AssigneeDetails/'+this.selectedItems[j],
                     {
                         'assigneeName':this.selectedItemsName[j],
                         'remainderCount':0,
                         'deletionCount':0,
-                        'completionStatus':false
+                        "deviceToken":this.selectedItemsToken[j],
+                        'completionStatus':false,
+                        'taskName':taskName,
+                        'createdBy':deviceRegisteredUserName
                     });
                 }
             

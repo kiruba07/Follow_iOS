@@ -7,6 +7,7 @@ import { NativeScriptUICalendarModule } from "nativescript-telerik-ui-pro/calend
 import { NativeScriptUIListViewModule } from "nativescript-telerik-ui-pro/listview/angular";
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
+import { DropDownModule } from "nativescript-drop-down/angular";
 //import { AccordionModule } from "nativescript-accordion/angular";
 
 
@@ -27,6 +28,7 @@ import { routes, navigatableComponents } from "./app.routing";
     NativeScriptRouterModule,
     NativeScriptUICalendarModule,
     NativeScriptUIListViewModule,
+    DropDownModule,
     NativeScriptRouterModule.forRoot(routes)],
     
   schemas: [NO_ERRORS_SCHEMA],

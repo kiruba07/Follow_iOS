@@ -1,13 +1,106 @@
-#activityIndicatorView{
-   
-    background-color: gray;
-    opacity:0.8;
+#maintenanceLayout{
+    background-color: #38761D;
+    background-color: #F1EAEA;
     height:100%;
+    font-family: 'FontAwesome',fontawesome-webfont;
+
+}
+#group,#category{
+     
+    background-color: white;
+ 
+    /* height:auto; */
+    
+   
     
 
 }
-#activityIndicator{
+#groupLabel,#catrgoryLabel{
+    background-color: #93C47D;
+    background-color: #CFE2F3;
+    /* min-height:50;  */
+    padding-left:10;
+    color: black;
+    margin-bottom:5;
+    font-size:20;
+}
+#groupList{
+    background-color: white;
+    
+}
+.groupName{
+    height:50;
+    padding-left:10;
+    background-color:#E6EAF0;
+    margin-bottom:5;
+    color:rgb(111, 113, 119);
+}
+.categoryName{
+    height:50;
+    padding-left:10;
+    background-color:#E6EAF0;
+    margin-bottom:5;
+    color:rgb(111, 113, 119);
+}
+#deleteIcon{
+    width:30;
+    font-size:30;
+    text-align: center;
     color:black;
-    height:900;
-    width:800;
+    
+}
+#deleteView{
+    background-color:#FF1844;
+    background-color:#AEAEF0;
+    margin-top:0; 
+    margin-bottom:5;
+    padding-top:10;      
+       
+}
+
+#createGroupButton{
+    background-color: #AEAEF0;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom:5;
+    height:40;
+}
+#newCategory,#newGroupCreation{
+    height:40;
+    margin-bottom:5;
+    padding-left:10;
+    width:100%;
+    color:rgb(111, 113, 119);
+}
+#tick{
+
+    width:10%;
+    background-color:#AEAEF0;
+    margin-bottom:5;
+    margin-right:5;
+    color:black;
+    padding-left:8;
+    font-size:30;
+
+}
+#contactList{
+    margin-top:5;
+    /* background-color:white; */
+    background-color:white;
+    /* margin-bottom:5; */
+    color:rgb(111, 113, 119);
+}
+#contactListView{
+    background-color:#E6EAF0;
+    margin-bottom:2;
+    padding-left:10;
+    padding-top:5;
+    font-size:19;
+    min-height: 40;
+    
+}
+#checkboxToggle{
+    font-size:29;
 }

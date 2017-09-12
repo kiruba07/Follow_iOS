@@ -6,6 +6,10 @@
     margin-top:3;
     padding-left:10;
 }
+#category{
+    font-size:19;
+    /* text-align: center; */
+}
 #contactList{
     margin-top:10;
     background-color:#E6B8A5;

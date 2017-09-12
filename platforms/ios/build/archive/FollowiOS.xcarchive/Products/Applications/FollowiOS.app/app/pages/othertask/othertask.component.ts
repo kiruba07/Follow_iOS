@@ -65,8 +65,10 @@ export class OtherTaskComponent implements OnInit
         var swipeView = args['object'];
         var leftItem = swipeView.getViewById<View>('emptyView');
         var rightItem = swipeView.getViewById<View>('deleteView');
-        swipeLimits.left = leftItem.getMeasuredWidth();
+        //swipeLimits.left = leftItem.getMeasuredWidth();
+        swipeLimits.left = 0;
         swipeLimits.right = rightItem.getMeasuredWidth();
+       // swipeLimits.right = 0;
         swipeLimits.threshold = leftItem.getMeasuredWidth() / 2;
     }
 
@@ -100,6 +102,9 @@ export class OtherTaskComponent implements OnInit
             {
                 console.log("IF");
                 var resultJson=result.value;
+                let assigneeDeviceToken;
+                let taskName;
+                let createdByName;
                 console.log("Result=="+resultJson);
                 for(var key1 in resultJson)
                 {
@@ -107,15 +112,42 @@ export class OtherTaskComponent implements OnInit
                     if(key1==null || key1=="null"){}
                     else
                     {
+                        //assigneeDeviceToken=resultJson[key1]["deviceToken"];
+                        //taskName=resultJson[key1]["taskName"];
+                        //createdByName=resultJson[key1]["createdBy"];
+                        //console.log("assigneeDeviceToken===="+assigneeDeviceToken);
                         //delete the task in my task details
                         firebase.remove(
                         '/MyTaskDetails/'+key1+'/'+itemKey,
-                        )
+                        ).then(
+                            (res)=>{
+                              console.log("Task has been deleted successfully in My task details---");
+                             // x.sendPushNotificationForDeletion(assigneeDeviceToken,taskName,createdByName);
+                            },(res)=>{
+                              console.log("Problem in deleting My task details---"+res);
+                            });
+
 
                     }
                     
                 }  
-                x.deleteOtherTask(devicePhoneNumber,tapIndex,itemKey);   
+
+                x.deleteOtherTask(devicePhoneNumber,tapIndex,itemKey);
+                for(var key1 in resultJson)
+                {
+                    
+                    if(key1==null || key1=="null"){}
+                    else
+                    {
+                        assigneeDeviceToken=resultJson[key1]["deviceToken"];
+                        taskName=resultJson[key1]["taskName"];
+                        createdByName=resultJson[key1]["createdBy"];
+                        console.log("assigneeDeviceToken===="+assigneeDeviceToken);
+                        x.sendPushNotificationForDeletion(assigneeDeviceToken,taskName,createdByName);
+                    }
+                    
+                }  
+
                                 
             }
               
@@ -159,30 +191,7 @@ export class OtherTaskComponent implements OnInit
       
     cancel()
     {
-        this.showDetailedView="collapse";
-      
-        console.log("this.deviceFCMId--"+this.deviceFCMId);
-         
-        
-        let data={
-            "notification": {
-                 "title": "Test Notification",
-                 "body": "5 to 1",
-                 "priority": "high"
-                 
-               },
-               "to":this.deviceFCMId
-             };
-             console.log("data=="+JSON.stringify(data));
-        this.myPostService
-        .postData(data).subscribe((res)=>{
-
-            console.log("Success");
-        },(error)=>{
-            console.log("failure==="+error);
-        });
-
-        
+        this.showDetailedView="collapse";    
     }
 
     
@@ -203,6 +212,49 @@ export class OtherTaskComponent implements OnInit
         }
         );
     }
+    sendPushNotification(deviceToken,taskName,createdByName){
+        
+        //send push notification
+        let data={
+            "notification": {
+                "title": "Reminder!",
+                "body": "Reminder sent by "+createdByName+" for "+taskName,
+                "priority": "high"
+                
+              },
+              "to":deviceToken
+            };
+            console.log("data=="+JSON.stringify(data));
+        this.myPostService
+        .postData(data).subscribe((res)=>{
+  
+            console.log("Reminder Success");
+        },(error)=>{
+            console.log("Reminder Failure==="+error);
+        });
+    }
+    sendPushNotificationForDeletion(assigneeDeviceToken,taskName,createdByName)
+    {
+        
+        //send push notification
+        let data={
+            "notification": {
+                "title": "Task Removed!",
+                "body": createdByName+" has removed the "+taskName,
+                "priority": "high"
+                
+              },
+              "to":assigneeDeviceToken
+            };
+            console.log("data=="+JSON.stringify(data));
+        this.myPostService
+        .postData(data).subscribe((res)=>{
+  
+            console.log("Reminder Success");
+        },(error)=>{
+            console.log("Reminder Failure==="+error);
+        });
+    }
     sendReminder()
     {
         
@@ -219,25 +271,23 @@ export class OtherTaskComponent implements OnInit
             var number=this.detailedDataItems.getItem(i).assigneeNumber;
             var cStatus=this.detailedDataItems.getItem(i).completionStatus;
             var rCount=this.detailedDataItems.getItem(i).remainderCount;
+            let deviceToken=this.detailedDataItems.getItem(i).deviceToken;
+            let taskName=this.detailedDataItems.getItem(i).taskName;
+            let createdByName=this.detailedDataItems.getItem(i).createdBy;
             console.log("Number===="+number);
             console.log("cStatus===="+cStatus);
             console.log("rCount===="+rCount);
+            console.log("Device Token===="+deviceToken);
+            console.log("Task Name===="+taskName);
+            console.log("Created By===="+createdByName);
+            
             if(!cStatus)
             this.getRemainderCountAndUpdate(number,cStatus,rCount);
+            this.sendPushNotification(deviceToken,taskName,createdByName);
             
             
             
         }
-
-        // var tapIndex=this.dataItems.indexOf(tappedItemKey);
-        // console.log("Index==="+tapIndex);
-        // let overAllRemainderCount=this.dataItems.getItem(tapIndex).remainderCount;
-        // console.log("overAllRemainderCount====="+overAllRemainderCount);
-        // firebase.update(
-        // '/OtherTaskDetails/'+devicePhoneNumber+'/'+tappedItemKey,
-        // {
-        //     'remainderCount':overAllRemainderCount+1,
-        // });
 
         var onQueryEvent=function(result){
             if(!result.error)
@@ -287,43 +337,7 @@ export class OtherTaskComponent implements OnInit
         this.detailedDataItems=this.listViewItems.getOtherTaskDetailsDetailedDetails(item.key);
         
         this.showDetailedView="visible";
-
-        
-        
-         
-
-        // var layout = this.page;
-        
-
-
-        // var idName="taskDetailedView"+item.key;
-        // var detailedViewLayout = layout.getViewById(idName);
-        // console.log("ID==="+detailedViewLayout);
-        // console.log(" class=="+detailedViewLayout.className.split(" ")[1]);
-
-      //  layout.className="taskDetailedView";
-        //var classLayout=layout.className="taskDetailedView";
-       // console.log("Calss Layout=="+classLayout);
-       // layout.set("class","taskDetailedView hide");
-
-
-        // if(detailedViewLayout.className.split(" ")[1]=='show')
-        // {
-        //     // console.log("IF==");
-        //     detailedViewLayout.set("class","taskDetailedView hide");
-            
-        // }
-        // else{
-            
-        //     // console.log("ELSE==");
-        //     detailedViewLayout.set("class","taskDetailedView show");
-            
-        // }
-        
-        
-        //detailedViewLayout.set("visibility","visible");
-        //var taskField = layout.getViewById("taskName");
-        
+    
     }
 
     createTask(){

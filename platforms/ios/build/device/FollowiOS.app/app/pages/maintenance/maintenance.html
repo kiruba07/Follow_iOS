@@ -1,7 +1,67 @@
-<StackLayout id="activityIndicatorView"> 
-                <ActivityIndicator  id="activityIndicator"
-                        busy="true" (busyChange)="onBusyChanged($event)" 
+<StackLayout id="maintenanceLayout">
+        <!-- <StackLayout id="group"> -->
+                       
+                <GridLayout rows="50,auto,auto,50,auto,*" id="group">
+                        <Label id="groupLabel" text="Group" row="0" (tap)="showGroupList()"></Label>
+                        <Button id="createGroupButton" row="1" (tap)="createGroupButton()" text="NEW GROUP" [visibility]="groupListVisibility"></Button>
                         
-                        class="activity-indicator"
-                ></ActivityIndicator>
-        </StackLayout> 
+                        <RadListView  items="dbvj" swipeActions="true" 
+                        selectionBehavior="None" 
+                        pullToRefresh="false"
+                        (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
+                        (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+                        id="groupList"
+                        row="2"
+                        [visibility]="groupListVisibility">
+                     
+                        <ng-template  let-item="item">
+                                <StackLayout orientation="vertical">
+                                        <Label class="groupName" text="VISA team"></Label>
+                                </StackLayout>
+                        </ng-template>
+                        <GridLayout *tkListItemSwipeTemplate  columns="*, *, 100" id="groupSwipe">
+                                        <StackLayout id="emptyView" col="0">
+                                             <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                                        <StackLayout id="deleteView" col="2"  (tap)="deleteGroup($event)">>
+                                            <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                        </GridLayout>
+                        </RadListView>
+                <!-- </GridLayout> -->
+        <!-- </StackLayout> -->
+         <!-- <StackLayout id="category"> -->
+               
+                        <Label id="catrgoryLabel" text="Category" row="3" (tap)="showCategoryList()"></Label>                                
+                        <GridLayout id="createCate" row="4" columns="*,auto" rows="*,*" [visibility]="categoryListVisibility">
+                        <TextField  row="0" col="0"7 id="newCategory"  hint="Add new group" [(ngModel)]="user.newCategory"></TextField>
+                        <Label row="0" col="1" id="tick" text="&#xf00c; "  (tap)="createNewCategory()" [visibility]="tickIconVisibility"></Label>
+                        </GridLayout>
+                        
+                        <RadListView  [items]="categoryListItems" swipeActions="true" 
+                        selectionBehavior="None" 
+                        pullToRefresh="true"
+                        (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
+                        (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+                        row="5"
+                        id="categoryList"
+                        [visibility]="categoryListVisibility">
+                         <ng-template  let-item="item">
+                                <StackLayout orientation="vertical">
+                                <Label class="categoryName"  [text]="item.category"></Label>
+                        </StackLayout>
+                        </ng-template>
+                        <GridLayout *tkListItemSwipeTemplate  columns="*, *, 100" id="categorySwipe">
+                                        <StackLayout id="emptyView" col="0">
+                                             <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                                        <StackLayout id="deleteView" col="2"  (tap)="deleteCategory($event)">>
+                                            <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                        </GridLayout>
+                        </RadListView>
+               </GridLayout>
+
+        <!-- </StackLayout>  -->
+
+</StackLayout>

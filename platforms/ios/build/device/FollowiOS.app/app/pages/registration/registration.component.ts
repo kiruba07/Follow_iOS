@@ -41,12 +41,14 @@ export class RegistrationComponent {
 
   var password=this.user.password;
   var phoneNumber=this.user.phoneNumber;
+  var deviceToken=getString("deviceToken");
   
    console.log("fNmae-//////----"+fName);
    console.log("lName-//////----"+lName);
    console.log("eMail-//////----"+eMail);
   console.log("password--/////--"+password);
   console.log("phone number-//////--"+phoneNumber);
+  console.log("deviceToken-//////--"+deviceToken);
 
   if(fName==null || lName==null || eMail==null || password == null || phoneNumber ==null){
 
@@ -87,7 +89,7 @@ export class RegistrationComponent {
         console.log("Authentication Success---"+res);
 
         //on authentication success save the device details in the database
-        this.authentication.saveDeviceDetails(fName,lName,eMail,password,phoneNumber).then(
+        this.authentication.saveDeviceDetails(fName,lName,eMail,password,phoneNumber,deviceToken).then(
         (res)=>
         {
           console.log("Device details saved in DB---"+res);

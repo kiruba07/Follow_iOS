@@ -40,33 +40,44 @@ export class AppComponent {
       
       onPushTokenReceivedCallback: function (token) 
       {
-        console.log("Firebase plugin received a push token: " + token);
+        
+        var tokenString=token.toString();
+        console.log("Firebase plugin received a push token: " + tokenString);
+        setString("deviceToken",tokenString);
         
       },
       onMessageReceivedCallback: function (message) {
-        console.log("--- message received: " + message.title);  
-        LocalNotifications.schedule([{
-          id: 1,
-          title: 'The title',
-          body: 'Recurs every minute until cancelled',
-          //ticker: 'The ticker',
-          badge: 1,
-          //groupedMessages:["The first", "Second", "Keep going", "one more..", "OK Stop"], //android only
-          //groupSummary:"Summary of the grouped messages above", //android only
-          //ongoing: true, // makes the notification ongoing (Android only)
-          //smallIcon: 'res://heart',
-          //interval: 'minute',
-          //sound: require("application").ios ? "customsound-ios.wav" : "customsound-android", // can be also `null`, "default"
-          at: new Date(new Date().getTime() + (0.5 * 1000)) // 10 seconds from now
-        }]).then(
-            function() {
-              console.log("Notification scheduled");
-            },
-            function(error) {
-              console.log("scheduling error: " + error);
-            }
-        )
 
+        if (message.foreground) {
+          console.log("App is in foreground");
+         }
+         else{
+              console.log("App is in background");
+            
+            console.log("--- Message Title: " + message.title);  
+            console.log("--- Message Body: " + message.body);  
+            LocalNotifications.schedule([{
+              id: 1,
+              title: message.title,
+              body: message.body,
+              //ticker: 'The ticker',
+            //  badge: 1,
+              //groupedMessages:["The first", "Second", "Keep going", "one more..", "OK Stop"], //android only
+              //groupSummary:"Summary of the grouped messages above", //android only
+              //ongoing: true, // makes the notification ongoing (Android only)
+              //smallIcon: 'res://heart',
+              //interval: 'minute',
+              //sound: require("application").ios ? "customsound-ios.wav" : "customsound-android", // can be also `null`, "default"
+              at: new Date(new Date().getTime() + (0.001 * 1000)) // 10 seconds from now
+            }]).then(
+                function() {
+                  console.log("Notification scheduled");
+                },
+                function(error) {
+                  console.log("scheduling error: " + error);
+                }
+            )
+          }
       }
       
     }).then(

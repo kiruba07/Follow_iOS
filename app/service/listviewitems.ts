@@ -15,7 +15,155 @@ import { ObservableArray } from "tns-core-modules/data/observable-array";
 export class ListViewItems
 {
 
-      
+    getCategoryList()
+    {
+
+        let categoryListItems=new ObservableArray([]);
+        var onQueryEvent = function(result)
+        {
+        
+        if (!result.error) {
+         
+            var resultJson=result.value;
+            
+                for(var key in resultJson)
+                {
+                    
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
+                    else{
+                        console.log("resultJson[key]==="+resultJson[key]);
+                       
+                        let category;
+                        category=resultJson[key];
+                        categoryListItems.push(
+                        {
+                             "category":category ,
+                        },
+                        );         
+                    }
+ 
+                }
+                console.log("Category List=========="+categoryListItems);
+
+            }
+        };
+        let devicePhoneNumber=getString("devicePhoneNumber");
+        console.log("Device Phone Number----"+devicePhoneNumber);
+        firebase.query(
+            onQueryEvent,
+           '/DeviceDetails/'+devicePhoneNumber+'/categoryList/list/',
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+                                
+       
+        return categoryListItems;
+    }
+    getGroupList(){
+
+        let groupListItems=new ObservableArray([]);
+        var onQueryEvent = function(result)
+        {
+        
+        if (!result.error) {
+         
+            var resultJson=result.value;
+            
+                for(var key in resultJson)
+                {
+                    
+                    if(key==null || key=="null"){}
+                    else{
+                        console.log("[key]==="+key);
+                        
+                       
+                        let group;
+                        group=key;
+                        groupListItems.push(
+                        {
+                             "group":group ,
+                        },
+                        );         
+                    }
+ 
+                }
+                console.log("Group List=========="+groupListItems);
+
+            }
+        };
+        let devicePhoneNumber=getString("devicePhoneNumber");
+        console.log("Device Phone Number----"+devicePhoneNumber);
+        firebase.query(
+            onQueryEvent,
+           '/DeviceDetails/'+devicePhoneNumber+'/groupList/',
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+                                
+       
+        return groupListItems;
+    }
+    getCategoryListForCreateTask()
+    {
+
+        let categoryListItems:string[]=[];
+        var onQueryEvent = function(result)
+        {
+        
+        if (!result.error) {
+         
+            var resultJson=result.value;
+            
+                for(var key in resultJson)
+                {
+                    
+                    if(resultJson[key]==null || resultJson[key]=="null"){}
+                    else{
+                        console.log("resultJson[key]==="+resultJson[key]);
+                       
+                        let category;
+                        category=resultJson[key];
+                        categoryListItems.push(category);       
+                    }
+ 
+                }
+                console.log("Category List==== create task======"+categoryListItems);
+
+            }
+        };
+        let devicePhoneNumber=getString("devicePhoneNumber");
+        console.log("Device Phone Number----"+devicePhoneNumber);
+        firebase.query(
+            onQueryEvent,
+           '/DeviceDetails/'+devicePhoneNumber+'/categoryList/list/',
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+                                
+       
+        return categoryListItems;
+    }
     getMyTaskdetails()
     {
         var dataItems=new ObservableArray([]);
@@ -233,7 +381,11 @@ export class ListViewItems
 
                             if(resultJson[key]["assigneeName"]==null && 
                                 resultJson[key]["deletionCount"]==null  && 
-                            resultJson[key]["remainderCount"]==null ){}
+                            resultJson[key]["remainderCount"]==null &&
+                            resultJson[key]["completionStatus"]==null &&
+                            resultJson[key]["deviceToken"]==null &&
+                            resultJson[key]["taskName"]==null &&
+                            resultJson[key]["createdBy"]==null){}
                             else
                             {    
                                 //   console.log("ELSE===");
@@ -244,15 +396,36 @@ export class ListViewItems
                                         // console.log("aName=="+resultJson[key]["AssigneeDetails"][key1]["assigneeName"]);
                                         // console.log("dCount=="+resultJson[key]["AssigneeDetails"][key1]["deletionCount"]);
                                         // console.log("rCount=="+resultJson[key]["AssigneeDetails"][key1]["remainderCount"]);
+                                        let deletionStatus:number=resultJson[key]["deletionCount"];
+                                        let completionStatus:boolean=resultJson[key]["completionStatus"];
+                                        let visibilityDelete:string;
+                                        let visibilityComplete:string;
+
+                                        if(deletionStatus>0){
+                                            visibilityDelete="visible";
+                                        }
+                                        else{
+                                            visibilityDelete="collapsed";
+                                        }
+                                        if(completionStatus){
+                                            visibilityComplete="visible";
+                                        }
+                                        else{
+                                            visibilityComplete="collapsed";
+                                        }
                                         detailedDataItems.push(
                                         {
                                                 "assigneeName":resultJson[key]["assigneeName"] , 
                                                 "remainderCount":resultJson[key]["remainderCount"], 
                                                 "deletionCount": resultJson[key]["deletionCount"],
+                                                "deletionStatus":visibilityDelete,
+                                                "completionStatusFlag":visibilityComplete,
                                                 "assigneeNumber": key, 
                                                 "completionStatus":resultJson[key]["completionStatus"],
+                                                "deviceToken":resultJson[key]["deviceToken"],
+                                                "taskName":resultJson[key]["taskName"],
+                                                "createdBy":resultJson[key]["createdBy"]
 
-                                        
                                             },
                                         );
                                         // console.log("For loop==="+detailedDataItems);

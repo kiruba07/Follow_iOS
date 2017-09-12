@@ -6,8 +6,19 @@
 <GridLayout rows="46,46,46,*,auto" id="gridlayout">
        <TextField row="0" id="taskName" [(ngModel)]="user.taskName"  hint="Task Name"
          (tap)="hideDatePicker($event)" returnKeyType="next"></TextField>
-        <TextField row="1" id="category" [(ngModel)]="user.category" hint="Category" 
-        (tap)="hideDatePicker($event)" returnKeyType="done" ></TextField>
+        <!-- <TextField row="1" id="category" [(ngModel)]="user.category" hint="Category" 
+        (tap)="hideDatePicker($event)" returnKeyType="done" ></TextField> -->
+        <DropDown #dd
+        [items]="categoryListArray"
+        [(ngModel)]="user.category"
+        id="category"
+        hint="Category"
+        row="1"
+        (tap)="hideDatePicker($event)"
+        (selectedIndexChanged)="onchange($event)"
+        returnKeyType="done"
+       ></DropDown>
+
         <TextField row="2" id="showDateTime" [text]="datePickervalue" [(ngModel)]="user.dateTime" 
         hint="Due Date & Time" (tap)="showDatePicker($event)" editable=false></TextField>
 

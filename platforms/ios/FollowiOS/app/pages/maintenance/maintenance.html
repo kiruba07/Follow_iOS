@@ -1,7 +1,89 @@
-<StackLayout id="activityIndicatorView"> 
-                <ActivityIndicator  id="activityIndicator"
-                        busy="true" (busyChange)="onBusyChanged($event)" 
+<StackLayout id="maintenanceLayout">
+        <!-- <StackLayout id="group"> -->
+                       
+                <GridLayout rows="50,auto,auto,50,auto,*,auto" id="group">
+                        <Label id="groupLabel" text="Group" row="0" (tap)="showGroupList()"></Label>
+                        <Button id="createGroupButton" row="1" (tap)="createGroupButton()" text="NEW GROUP" [visibility]="groupListVisibility"></Button>
                         
-                        class="activity-indicator"
-                ></ActivityIndicator>
-        </StackLayout> 
+                        <RadListView  [items]="groupListItems" swipeActions="true" 
+                        selectionBehavior="None" 
+                        pullToRefresh="false"
+                        (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
+                        (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+                        id="groupList"
+                        row="2"
+                        [visibility]="groupListVisibility">
+                     
+                        <ng-template  let-item="item">
+                                <StackLayout orientation="vertical">
+                                        <Label class="groupName" [text]="item.group"></Label>
+                                </StackLayout>
+                        </ng-template>
+                        <GridLayout *tkListItemSwipeTemplate  columns="*, *, 100" id="groupSwipe">
+                                        <StackLayout id="emptyView" col="0">
+                                             <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                                        <StackLayout id="deleteView" col="2"  (tap)="deleteGroup($event)">>
+                                            <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                        </GridLayout>
+                        </RadListView>
+              
+               
+                        <Label id="catrgoryLabel" text="Category" row="3" (tap)="showCategoryList()" [visibility]="categoryVisibility"></Label>                                
+                        <GridLayout id="createCate" row="4" columns="*,auto" rows="*,*" [visibility]="categoryListVisibility">
+                        <TextField  row="0" col="0"7 id="newCategory"  hint="Add new category" [(ngModel)]="user.newCategory"></TextField>
+                        <Label row="0" col="1" id="tick" text="&#xf00c; "  (tap)="createNewCategory()" [visibility]="tickIconVisibility"></Label>
+                        </GridLayout>
+                        
+                        <RadListView  [items]="categoryListItems" swipeActions="true" 
+                        selectionBehavior="None" 
+                        pullToRefresh="true"
+                        (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
+                        (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
+                        row="5"
+                        id="categoryList"
+                        [visibility]="categoryListVisibility">
+                         <ng-template  let-item="item">
+                                <StackLayout orientation="vertical">
+                                <Label class="categoryName"  [text]="item.category"></Label>
+                        </StackLayout>
+                        </ng-template>
+                        <GridLayout *tkListItemSwipeTemplate  columns="*, *, 100" id="categorySwipe">
+                                        <StackLayout id="emptyView" col="0">
+                                             <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                                        <StackLayout id="deleteView" col="2"  (tap)="deleteCategory($event)">>
+                                            <Label id="deleteIcon" text="&#xf1f8; " ></Label>
+                                        </StackLayout>
+                        </GridLayout>
+                        </RadListView>
+                        <StackLayout row="1" [visibility]="newGroupCreateVisibility">
+                                <GridLayout id="createGroup" columns="*,auto" rows="*,*" >
+                                        <TextField  row="0" col="0" id="newGroupCreation"  hint="Add new group" [(ngModel)]="user.newGroup"></TextField>
+                                        <Label row="0" col="1" id="tick" text="&#xf00c; "  (tap)="createNewGroup()" [visibility]="tickIconGroupVisibility"></Label>
+                                </GridLayout>
+                        </StackLayout>
+                        <RadListView  row="2" [items]="contactList" swipeActions="false"  
+                        [visibility]="newGroupCreateVisibility"
+                        id="contactList"
+                        selectionBehavior="Press" 
+                        multipleSelection="true"
+                       (itemSelected)="onItemSelected($event)" 
+                       (itemDeselected)="onItemDeselected($event)">
+                        <ng-template  let-item="item"> 
+                                <StackLayout orientation="horizontal" id="contactListView">
+        
+                                        <GridLayout rows="*" columns="35,*" id="contactGridLayout" >                         
+                                        <Label row="0" col="0"  class="uncheck" [text]="item.checkBox" id="checkboxToggle" (tap)="itemTap(item)"></Label>
+                                        <Label row="0" col="1"  id="contactName" [text]="item.name" (tap)="itemTap(item)"></Label>
+                                        <Label row="0" col="2"  id="contactName" [text]="item.number" visibility="collapse"></Label>
+        
+        
+                                        </GridLayout>
+                                
+                                </StackLayout>
+                       </ng-template> 
+                        </RadListView>
+               </GridLayout>
+</StackLayout>

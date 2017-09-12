@@ -10,5 +10,6 @@ export class User {
   dateTime:string;
   assignee:string[];
   show:boolean;
+  newCategory:string;
 
 }

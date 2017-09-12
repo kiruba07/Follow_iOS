@@ -22,10 +22,11 @@ import {TextField} from "ui/text-field";
 import { Page } from "ui/page";
 
 import { RouterExtensions } from "nativescript-angular/router";
-
+import { MyHttpPostService } from "../../service/http-post.services";
 
 @Component({
   selector: "my-app",
+  providers: [MyHttpPostService],
   templateUrl: "pages/createtask/createtask.html",
   styleUrls: ["pages/createtask/createtask-common.css", "pages/createtask/createtask.css"]
 })
@@ -36,6 +37,7 @@ export class CreateTaskComponent
    contactList=new ObservableArray([]);
    selectedItems:string[]=[];
    selectedItemsName:string[]=[];
+   selectedItemsToken:string[]=[];
    listViewItems:ListViewItems;
     observable:Observable
     checkTry;
@@ -50,7 +52,7 @@ export class CreateTaskComponent
     taskField;
     today=new Date();
     pageTitle;
-    constructor(private router: Router,private page: Page,private routerExtensions: RouterExtensions)
+    constructor(private router: Router,private page: Page,private routerExtensions: RouterExtensions,private myPostService: MyHttpPostService)
     {
         this.user = new User();
         this.observable= new Observable;
@@ -169,6 +171,8 @@ export class CreateTaskComponent
                     console.log('index ::::::'+i);
                     this.selectedItems.splice(i,1);
                     this.selectedItemsName.splice(i,1);
+                    this.selectedItemsToken.splice(i,1);
+                    
                 }
             }
 
@@ -181,11 +185,13 @@ export class CreateTaskComponent
              item.checkBox="\u{f046}";
             this.selectedItems.push(item.number);
             this.selectedItemsName.push(item.nameLabel);
+            this.selectedItemsToken.push(item.deviceToken);
             
         }
 
         item.selected=!item.selected;
         console.log("Selected items======"+this.selectedItems);
+        console.log("Selected items token======"+this.selectedItemsToken);
         
 
 
@@ -339,15 +345,18 @@ export class CreateTaskComponent
         var myCompletionStatus=false;
         var idTemp;
        
+        console.log("Selected items token======"+this.selectedItemsToken);
+
         var devicePhoneNumber=getString("devicePhoneNumber");
         var deviceRegisteredUserName=getString("deviceRegisteredUserName");
+        var deviceToken=getString("deviceToken"); 
        
         
         for(var i=0;i<this.selectedItems.length;i++)
         {
             
             //console.log("i value items=====i========="+i+"======"+this.selectedItems[i]);
-
+            let index=i;
             if(id=="1")
             {
                 firebase.setValue(
@@ -362,17 +371,26 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
+                    'createdByToken':deviceToken,
+                    'assigneeName':this.selectedItems,
                 }
                 ).then(
                   (res)=>{
                    // console.log("Task has been saved successfully in my task details first time---"+res);
+                   console.log("Selected items token======"+this.selectedItemsToken[index]);
+                    this.sendPushNotification(this.selectedItemsToken[index],deviceRegisteredUserName,taskName);
+
                     this.router.navigate([
                               '/mainfragment',
                               { outlets: { mytaskoutlet: ['mytask'] } }
                             ]);
+                    
                   },(res)=>{
                     console.log("Problem in saving my task details---"+res);
                   });
+
+                  
+    
             }
             else
             {
@@ -390,10 +408,14 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
+                    'createdByToken':deviceToken,
+                    'assigneeName':this.selectedItems,
             }).then(
                   (res)=>{
                     
                         console.log("===IF==");
+                        console.log("Selected items token======"+this.selectedItemsToken[index]);
+                        y.sendPushNotification(this.selectedItemsToken[index],deviceRegisteredUserName,taskName);
                     y.router.navigate([
                               '/mainfragment',
                               { outlets: { mytaskoutlet: ['mytask'] } }
@@ -403,13 +425,34 @@ export class CreateTaskComponent
                     console.log("Problem in saving my task details---"+res);
                   });
 
-               // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
-
+               
             
             }
         
         }
     } 
+    public sendPushNotification(assigneeDeviceToken,deviceRegisteredUserName,taskName){
+        console.log("Checking");
+        console.log("Token===="+assigneeDeviceToken);
+        //send push notification
+        let data={
+            "notification": {
+                "title": "New Task Received!",
+                "body": deviceRegisteredUserName+" has assigned "+taskName,
+                "priority": "high"
+                
+              },
+              "to":assigneeDeviceToken
+            };
+            console.log("data=="+JSON.stringify(data));
+        this.myPostService
+        .postData(data).subscribe((res)=>{
+  
+            console.log("Reminder Success");
+        },(error)=>{
+            console.log("Reminder Failure==="+error);
+        });
+    }
     public enterDataIntoOtherTaskDetails(id,taskName,category,dateTime,x)
     {
         var y=this;
@@ -423,6 +466,7 @@ export class CreateTaskComponent
         var devicePhoneNumber=getString("devicePhoneNumber");
         var deviceRegisteredUserName=getString("deviceRegisteredUserName");
         var deletionCount=0;
+        var deviceToken=getString("deviceToken"); 
        
         
         // for(var i=0;i<this.selectedItems.length;i++)
@@ -445,7 +489,8 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
-                    'deletionCount':deletionCount
+                    'deletionCount':deletionCount,
+                    'createdByToken':deviceToken 
                 }
                 ).then(
                   (res)=>{
@@ -465,7 +510,11 @@ export class CreateTaskComponent
                     {
                         'assigneeName':this.selectedItemsName[j],
                         'remainderCount':0,
-                        'deletionCount':0
+                        'deletionCount':0,
+                        "deviceToken":this.selectedItemsToken[j],
+                        'completionStatus':false,
+                        'taskName':taskName,
+                        'createdBy':deviceRegisteredUserName
                     });
                 }
 
@@ -490,7 +539,8 @@ export class CreateTaskComponent
                     'createdByRegId':devicePhoneNumber,
                     'completionCount':completionCount,
                     'myCompletionStatus':myCompletionStatus,
-                    'deletionCount':deletionCount
+                    'deletionCount':deletionCount,
+                    'createdByToken':deviceToken 
             }).then(
                   (res)=>{
                     console.log("Task has been saved successfully in other task details-========"+res);
@@ -499,15 +549,22 @@ export class CreateTaskComponent
                   });
 
                // this.getLastCountAndEnterDetails(i,this.selectedItems.length,this.selectedItems[i],recipentsCount,remainderCount,deviceRegisteredUserName,devicePhoneNumber,completionCount,myCompletionStatus,taskName,category,dateTime,x),i;
+
+
+            
             for(var j=0;j<this.selectedItems.length;j++)
                 {
+                   // console.log("======================Device Token==============="+this.selectedItemsToken[j]);
                     firebase.setValue(
                     'OtherTaskDetails/'+devicePhoneNumber+'/'+id+'/AssigneeDetails/'+this.selectedItems[j],
                     {
                         'assigneeName':this.selectedItemsName[j],
                         'remainderCount':0,
                         'deletionCount':0,
-                        'completionStatus':false
+                        "deviceToken":this.selectedItemsToken[j],
+                        'completionStatus':false,
+                        'taskName':taskName,
+                        'createdBy':deviceRegisteredUserName
                     });
                 }
             

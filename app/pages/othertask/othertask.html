@@ -95,7 +95,7 @@
                     </GridLayout>
                         <ListView [items]="detailedDataItems">
                             <template let-item="item">
-                                <GridLayout  class="gridLayout" columns="*,*,*" rows="*">
+                                <GridLayout  class="gridLayout" columns="*,*,*,*" rows="*">
                                         <StackLayout  orientation="horizontal" row="0" col="0">
                                             <Label id="asigneeName" class="asigneeNameDetailed" [text]="item.assigneeName"></Label>                                                        
                                         </StackLayout>
@@ -105,8 +105,12 @@
                                         </StackLayout>
                                                     
                                         <StackLayout orientation="horizontal" row="0" col="2">
-                                            <Label text="&#xf1f8; " class="deletionFlag" ></Label>                                        
-                                            <Label id="deleteCount" class="deleteCount" [text]="item.deletionCount" ></Label>
+                                            <Label text="&#xf1f8; " class="deletionFlag"  [visibility]="item.deletionStatus"></Label>                                        
+                                            <!-- <Label id="deleteCount" class="deleteCount" [text]="item.deletionCount" ></Label> -->
+                                        </StackLayout>
+                                        <StackLayout orientation="horizontal" row="0" col="3">
+                                            <Label text="&#xf00c; " class="completionFlag" [visibility]="item.completionStatusFlag"></Label>                                        
+                                            <!-- <Label id="deleteCount" class="deleteCount" [text]="item.deletionCount" ></Label> -->
                                         </StackLayout>
                                                         
                                         <!-- <StackLayout row="2" orientation="horizontal" row="0" col="3">             

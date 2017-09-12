@@ -9,13 +9,14 @@ export class Authentication{
         password: password
       })
     }
-    saveDeviceDetails(fName,lName,eMail,password,phoneNumber){
+    saveDeviceDetails(fName,lName,eMail,password,phoneNumber,deviceToken){
           return firebase.setValue(
             '/DeviceDetails/'+phoneNumber+'/',
             {
                 'fName':fName,
                 'lName':lName,
                 'password':password,
+                'deviceToken':deviceToken
             }
         )
     }
