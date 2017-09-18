@@ -713,6 +713,159 @@ export class ListViewItems
     
      return contactList;
     }
+    getContactListWithGroup()
+    {
+
+        let devicePhoneNumber=getString("devicePhoneNumber");
+        let x=this;
+        let contactList=new ObservableArray([]);
+        let contactGroupListArray:any[]=[];
+        let contactGroupListStringArray:string[]=[];
+
+        //get group contact list
+        let getGroupContactList=function(result)
+        {
+
+            if (!result.error)
+            {
+                
+                var resultJson=result.value;
+                for(var key in resultJson)
+                {
+                   
+                    if(key==null || key=="null"){}
+                    else{
+                        console.log("Group list Name=="+key);
+
+                        console.log("Group list DEVCE PHONE=="+resultJson[key]["devicePhoneNumber"]);
+                        console.log("Group list DEVICE TOKEN=="+resultJson[key]["deviceToken"]);
+                        console.log("Group list DEVICE Names=="+resultJson[key]["deviceName"]);
+
+                        
+                        let deviceStingNumberArray:string=null;
+                        let deviceStingNameLabelArray:string=null;
+                        let deviceStingTokenArray:string=null;
+                        
+                        for(let i=0;i<resultJson[key]["devicePhoneNumber"].length;i++){
+
+                            if(deviceStingNumberArray==null)
+                            deviceStingNumberArray="G"+resultJson[key]["devicePhoneNumber"][i];
+                            else
+                            deviceStingNumberArray=deviceStingNumberArray+",G"+resultJson[key]["devicePhoneNumber"][i];
+                        }
+
+                        for(let i=0;i<resultJson[key]["deviceName"].length;i++)
+                        {
+                            
+                         if(deviceStingNameLabelArray==null)
+                         deviceStingNameLabelArray=resultJson[key]["deviceName"][i];
+                        else
+                        deviceStingNameLabelArray=deviceStingNameLabelArray+","+resultJson[key]["deviceName"][i];
+                        }
+
+                        
+                        for(let i=0;i<resultJson[key]["deviceToken"].length;i++)
+                        {
+                        
+                        if(deviceStingTokenArray==null)
+                        deviceStingTokenArray=resultJson[key]["deviceToken"][i];
+                        else
+                        deviceStingTokenArray=deviceStingTokenArray+","+resultJson[key]["deviceToken"][i];
+                        }
+                                                    
+
+
+                        console.log("Split=="+deviceStingNumberArray);
+                        console.log("Split=="+deviceStingNameLabelArray);
+                        console.log("Split=="+deviceStingTokenArray);
+                        
+                       
+                        contactGroupListArray.push({
+                            "name":key,
+                            "number":deviceStingNumberArray,
+                            "checkBox":"\u{f096}",
+                            "selected":false,
+                            "nameLabel":deviceStingNameLabelArray,
+                            "deviceToken":deviceStingTokenArray,
+                            });
+
+                    }
+                }
+                console.log("contactGroupListArray=="+contactGroupListArray);
+
+            }
+
+        };
+       
+        firebase.query(
+            getGroupContactList,
+        '/DeviceDetails/'+devicePhoneNumber+'/groupList/',
+            {
+                
+                singleEvent: true,
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                },
+                
+            }
+        );
+
+        //get normal contact list
+        let onQueryEvent = function(result)
+        {
+        
+            contactList.push(contactGroupListArray);
+        if (!result.error)
+        {
+            
+            var resultJson=result.value;
+            
+            for(var key in resultJson)
+            {
+                
+                if(resultJson[key]==null || resultJson[key]=="null"){}
+                else
+                {
+
+                    if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null && resultJson[key]["deviceToken"]){}
+                    else
+                    {
+                        
+                        
+                        contactList.push({
+
+                            "name":resultJson[key]["fName"]+" "+resultJson[key]["lName"],
+                            "number":key,
+                            "checkBox":"\u{f096}",
+                            "selected":false,
+                            "nameLabel":resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0),
+                             "deviceToken":resultJson[key]["deviceToken"],
+                            });
+
+                    }
+                }
+                console.log("Contact list final list---"+contactList);
+            }
+            }
+        }
+        firebase.query(
+            onQueryEvent,
+        '/DeviceDetails/',
+            {
+                
+                singleEvent: true,
+                
+                orderBy: {
+                    type: firebase.QueryOrderByType.KEY,
+                //value: 'taskName' // mandatory when type is 'child'
+                },
+                
+            }
+        );
+
+        return contactList;
+
+    }
     getContactListForUpdate(groupName)
     {
 
@@ -721,7 +874,7 @@ export class ListViewItems
         let x=this;
 
         //get group Name contact list
-       // let contactGroupList=new ObservableArray([]);
+       
         let contactGroupList:string[]=[];
         
         let getGroupContactList=function(result)
@@ -732,7 +885,7 @@ export class ListViewItems
                 var resultJson=result.value;
                 for(var key in resultJson)
                 {
-                    //console.log("Group list Name=="+key);
+                   
                     if(key==null || key=="null"){}
                     else{
                         console.log("Group list Name=="+resultJson[key]);
@@ -774,8 +927,7 @@ export class ListViewItems
                     if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null && resultJson[key]["deviceToken"]){}
                     else
                     {
-                        //let number=key.toString;
-                        //console.log("Value is not null");
+                        
                         if(contactGroupList.indexOf(key) > -1)
                         {
                             console.log("Key IF==="+key);
@@ -793,9 +945,7 @@ export class ListViewItems
                             x.selectedItemsName.push(resultJson[key]["fName"].charAt(0)+resultJson[key]["lName"].charAt(0));
                             x.selectedItemsToken.push(resultJson[key]["deviceToken"]);
 
-                            // x.maintenanceComponent.selectedItems=x.selectedItems;
-                            // x.maintenanceComponent.selectedItemsName=x.selectedItemsName;
-                            // x.maintenanceComponent.selectedItemsToken=x.selectedItemsToken;
+                            
 
                         
                         }
@@ -806,9 +956,7 @@ export class ListViewItems
                     }
                 }
                 console.log("Contact list----"+contactList);
-                // console.log("Numbner list- ---"+x.selectedItems);
-                // console.log("name list----"+x.selectedItemsName);
-                // console.log("Token list----"+x.selectedItemsToken);
+               
 
 
             }
@@ -823,8 +971,7 @@ export class ListViewItems
                     if(resultJson[key]["fName"]==null && resultJson[key]["lName"]==null && resultJson[key]["deviceToken"]){}
                     else
                     {
-                        //let number=key.toString;
-                        //console.log("Value is not null");
+                        
                         if(contactGroupList.indexOf(key) > -1)
                         {
                             console.log("Key IF==="+key);

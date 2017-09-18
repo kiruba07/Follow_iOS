@@ -369,6 +369,8 @@ export class MaintenanceComponent implements OnInit
          {
            devicePhoneNumber:this.selectedItems,
            deviceToken:this.selectedItemsToken,
+           deviceName:this.selectedItemsName
+
          }).then((res)=>{
            console.log("Group list updated success..");
            timerModule.setTimeout(function ()

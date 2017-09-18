@@ -36,9 +36,12 @@ export class CreateTaskComponent implements OnInit
   // Your TypeScript logic goes here
    user: User
    contactList=new ObservableArray([]);
+   contactGroupList=new ObservableArray([]);
    selectedItems:string[]=[];
    selectedItemsName:string[]=[];
    selectedItemsToken:string[]=[];
+   selectedItemsGroupArray:string[]=[];
+   selectedItemsIndividualArray:string[]=[];
    categoryListItems=new ObservableArray([]);
    categoryListArray:string[]=[];
    listViewItems:ListViewItems;
@@ -63,11 +66,8 @@ export class CreateTaskComponent implements OnInit
         this.selectedCategory="";
         
         this.listViewItems=new ListViewItems;
-        this.contactList=this.listViewItems.getContactList();
-        
-        
-        
-       
+       // this.contactList=this.listViewItems.getContactList();
+        this.contactList=this.listViewItems.getContactListWithGroup();
 
         this.show="collapse";
         this.datePickerView="collapse";
@@ -188,41 +188,169 @@ export class CreateTaskComponent implements OnInit
     }    
     public itemTap(item)
     {
-        //console.log("Item tap=-========"+item.name);
+        
+        let currentItemArray:string[]=[];
         if(item.selected)
         {
             item.checkBox="\u{f096}";
 
-            for(var i=0;i<this.selectedItems.length;i++)
+            //new code starts
+            for(let i=0;i<item.number.split(",").length;i++)
             {
-                var curItem=this.selectedItems[i];
-                //var curItemName=this.selectedItemsName[i]
-                console.log('cur item----'+curItem);
-                if(curItem==item.number)
+                if(item.number.split(",")[i].split("G")[1])
                 {
-                    console.log('index ::::::'+i);
-                    this.selectedItems.splice(i,1);
-                    this.selectedItemsName.splice(i,1);
-                    this.selectedItemsToken.splice(i,1);
+                    //this.selectedItems.push(item.number.split(",")[i].split("G")[1]);
                     
+                   // currentItemArray.push(item.number.split(",")[i].split("G")[1]);
+
+
+                        for(var j=0;j<this.selectedItems.length;j++)
+                        {
+                            var loopNumber=this.selectedItems[j];
+                            
+                            //console.log('cur item----'+loopNumber);
+                            
+                            if(this.selectedItemsIndividualArray.indexOf(loopNumber)>-1){
+                                this.selectedItemsGroupArray.splice(j,1);
+                            }
+                            else
+                            if(loopNumber==item.number.split(",")[i].split("G")[1])
+                            {
+                                this.selectedItems.splice(j,1);
+                                this.selectedItemsName.splice(j,1);
+                                this.selectedItemsToken.splice(j,1);
+
+                                this.selectedItemsGroupArray.splice(j,1);
+                                
+                            }
+                        }   
                 }
+                else
+                {
+                    
+                    //this.selectedItems.push(item.number.split(",")[i]);
+                   // currentItemArray.push(item.number.split(",")[i]);
+                        for(var j=0;j<this.selectedItems.length;j++)
+                        {
+                            var loopNumber=this.selectedItems[j];
+                            
+                            //console.log('cur item----'+loopNumber);
+                            if(this.selectedItemsGroupArray.indexOf(loopNumber)>-1){
+                                this.selectedItemsIndividualArray.splice(j,1);
+                            }
+                            else
+                            if(loopNumber==item.number)
+                            {
+                                this.selectedItems.splice(j,1);
+                                this.selectedItemsName.splice(j,1);
+                                this.selectedItemsToken.splice(j,1);
+                              
+                                this.selectedItemsIndividualArray.splice(j,1);
+
+                                
+                            }
+                        } 
+
+                }
+                
             }
+            //new code ends
+            
+
+
+            // original code starts
+            // for(var i=0;i<this.selectedItems.length;i++)
+            // {
+            //     var loopNumber=this.selectedItems[i];
+            //     //new code starts
+            //     console.log('cur item----'+loopNumber);
+            //     if(currentItemArray.indexOf(loopNumber) > -1){
+            //         console.log("IF");
+            //     }
+            //     else{
+            //         console.log("ELSE");
+            //     }
+            //     //new code ends
+
+            //     if(loopNumber==item.number)
+            //     {
+            //         this.selectedItems.splice(i,1);
+            //         this.selectedItemsName.splice(i,1);
+            //         this.selectedItemsToken.splice(i,1);
+                    
+            //     }
+            // }
+
+            // original code ends
 
 
             //this.selectedItems.splice(item.number,1);
-            console.log("Selected items after slice======"+this.selectedItems);
+            //console.log("Selected items after slice======"+this.selectedItems);
 
         }
         else{
              item.checkBox="\u{f046}";
-            this.selectedItems.push(item.number);
-            this.selectedItemsName.push(item.nameLabel);
-            this.selectedItemsToken.push(item.deviceToken);
+
+             
+             for(let i=0;i<item.number.split(",").length;i++)
+             {
+                 if(item.number.split(",")[i].split("G")[1])
+                 {
+                     this.selectedItems.push(item.number.split(",")[i].split("G")[1]);
+                     this.selectedItemsGroupArray.push(item.number.split(",")[i].split("G")[1]);
+                 }
+                 else
+                 {
+                     
+                     this.selectedItems.push(item.number.split(",")[i]);
+                     this.selectedItemsIndividualArray.push(item.number.split(",")[i]);
+                 }
+                 
+             }
+            
+              for(let i=0;i<item.nameLabel.split(",").length;i++){
+                  
+                  this.selectedItemsName.push(item.nameLabel.split(",")[i]);
+              }
+           
+             for(let i=0;i<item.deviceToken.split(",").length;i++){
+                 
+                 this.selectedItemsToken.push(item.deviceToken.split(",")[i]);
+             }
+            
+            
+            //original code starts
+           // this.selectedItems.push(item.number);
+            //this.selectedItemsName.push(item.nameLabel);
+            //this.selectedItemsToken.push(item.deviceToken);
+            //original code ends
+
+            
+            
             
         }
 
         item.selected=!item.selected;
+
+       
+        //new code starts
+         this.selectedItems = this.selectedItems.filter(function(elem, index, self) {
+             return index == self.indexOf(elem);
+         })
+
+         this.selectedItemsName = this.selectedItemsName.filter(function(elem, index, self) {
+            return index == self.indexOf(elem);
+        })
+
+         this.selectedItemsToken = this.selectedItemsToken.filter(function(elem, index, self) {
+             return index == self.indexOf(elem);
+         })
+         //new code ends
+
+
+        //console.log("Check======"+arr);
         console.log("Selected items======"+this.selectedItems);
+        console.log("Selected items Name======"+this.selectedItemsName);
         console.log("Selected items token======"+this.selectedItemsToken);
         
 
